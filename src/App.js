@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 function App() {
+  const [open, setOpen] = useState([])
+
   const recipes = [
     {
       name: 'Roasted vegetables',
@@ -21,7 +23,7 @@ function App() {
 
   return (
     <CardContainer>
-      {recipes.map(recipe => (
+      {recipes.map((recipe, index) => (
         <CardStyled>
           <BookmarkStyled />
           <h1>{recipe.name}</h1>
@@ -30,22 +32,28 @@ function App() {
               <li> {product} </li>
             ))}
           </ul>
-          <ImageStyled src={recipe.image} />
+          <ImageStyled src={recipe.image} alt="" />
 
-          <h4 onClick={toggleInstruction}> Instruction</h4>
-          <ToggleText>{recipe.instruction}</ToggleText>
+          <h4 onClick={() => toggleInstruction(index)}> Instruction</h4>
+          <ToggleText open={open} index={index}>
+            {recipe.instruction}
+          </ToggleText>
         </CardStyled>
       ))}
     </CardContainer>
   )
 
-  function toggleInstruction() {}
+  function toggleInstruction(index) {
+    !open.includes(index)
+      ? setOpen([...open, index])
+      : setOpen([open.splice(index, 1)])
+  }
 }
 
 export default App
 
 const ToggleText = styled.p`
-  visibility: hidden;
+  display: ${props => (props.open.includes(props.index) ? `block` : `none`)};
 `
 
 const CardContainer = styled.div`
@@ -63,7 +71,6 @@ const CardStyled = styled.section`
   padding: 0px 30px 20px;
   border-radius: 5px;
   box-shadow: 0 10px 10px #0002;
-  height: auto;
 `
 const BookmarkStyled = styled.button`
   height: 33px;
