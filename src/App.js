@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 function App() {
   const recipes = [
@@ -19,24 +20,57 @@ function App() {
   ]
 
   return (
-    <div>
+    <CardContainer>
       {recipes.map(recipe => (
-        <div>
+        <CardStyled>
+          <BookmarkStyled />
           <h1>{recipe.name}</h1>
           <ul>
             {recipe.products.map(product => (
               <li> {product} </li>
             ))}
           </ul>
-          <img src={recipe.image} />
+          <ImageStyled src={recipe.image} />
           <div>
             <h4> Instruction</h4>
             {recipe.instruction}
           </div>
-        </div>
+        </CardStyled>
       ))}
-    </div>
+    </CardContainer>
   )
 }
 
 export default App
+
+const CardContainer = styled.div`
+  background-color: rgb(254, 244, 157);
+  display: grid;
+  gap: 30px;
+  scroll-behavior: smooth;
+  padding: 20px 20px;
+  padding: 40px 60px;
+`
+
+const CardStyled = styled.section`
+  position: relative;
+  background: white;
+  padding: 0px 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px #0002;
+`
+const BookmarkStyled = styled.button`
+  height: 32px;
+  padding: 0;
+  outline: 0;
+  border: 13px solid gray;
+  border-bottom-color: white;
+  position: absolute;
+  right: 20px;
+  top: -9px;
+`
+
+const ImageStyled = styled.img`
+  height: 100px;
+  width: 220px;
+`
