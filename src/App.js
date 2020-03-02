@@ -31,22 +31,27 @@ function App() {
             ))}
           </ul>
           <ImageStyled src={recipe.image} />
-          <div>
-            <h4> Instruction</h4>
-            {recipe.instruction}
-          </div>
+
+          <h4 onClick={toggleInstruction}> Instruction</h4>
+          <ToggleText>{recipe.instruction}</ToggleText>
         </CardStyled>
       ))}
     </CardContainer>
   )
+
+  function toggleInstruction() {}
 }
 
 export default App
 
+const ToggleText = styled.p`
+  visibility: hidden;
+`
+
 const CardContainer = styled.div`
   background-color: rgb(254, 244, 157);
   display: grid;
-  gap: 30px;
+  gap: 35px;
   scroll-behavior: smooth;
   padding: 20px 20px;
   padding: 40px 60px;
@@ -58,18 +63,18 @@ const CardStyled = styled.section`
   padding: 0px 30px 20px;
   border-radius: 5px;
   box-shadow: 0 10px 10px #0002;
+  height: auto;
 `
 const BookmarkStyled = styled.button`
-  height: 32px;
+  height: 33px;
   padding: 0;
   outline: 0;
   border: 13px solid gray;
   border-bottom-color: white;
   position: absolute;
-  right: 20px;
-  top: -9px;
+  right: 21px;
+  top: -11px;
 `
-
 const ImageStyled = styled.img`
   height: 100px;
   width: 220px;
