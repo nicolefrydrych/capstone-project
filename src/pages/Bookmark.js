@@ -16,5 +16,5 @@ const BookmarkStyled = styled.button`
   border-bottom-color: white;
   position: absolute;
   right: 21px;
-  top: -11px;
+  top: -15px;
 `

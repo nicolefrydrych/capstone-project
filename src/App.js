@@ -19,6 +19,14 @@ export default function App() {
       instruction:
         'Cut vegetables in slices. Add some spices and put them in the oven at 180° for about 45 minutes.',
     },
+    {
+      id: 3,
+      name: 'Roasted potatoes ',
+      products: ['potatoes'],
+      image: 'https://i.picsum.photos/id/1037/200/200.jpg',
+      instruction:
+        'Cut potatoes in slices. Add some spices and put them in the oven at 180° for about 45 minutes.',
+    },
   ]
 
   return (
