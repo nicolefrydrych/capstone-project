@@ -3,22 +3,34 @@ import styled from 'styled-components'
 import { useToggle } from 'react-hooks-lib'
 import Bookmark from './Bookmark'
 
-export default function Card({ recipe }) {
+export default function Card({
+  id,
+  name,
+  instruction,
+  image,
+  products,
+  handleBookmarkClick,
+  isBookmarked,
+}) {
   const { on, toggle } = useToggle(false)
 
   return (
     <CardStyled>
-      <Bookmark />
-      <h1>{recipe.name}</h1>
+      <Bookmark
+        id={id}
+        onBookmarkClick={handleBookmarkClick}
+        isBookmarked={isBookmarked}
+      />
+      <h1>{name}</h1>
       <ul>
-        {recipe.products.map(product => (
+        {products.map(product => (
           <li> {product} </li>
         ))}
       </ul>
-      <ImageStyled src={recipe.image} />
+      <ImageStyled src={image} />
 
       <h4 onClick={toggle}> Instruction</h4>
-      {on && <div>{recipe.instruction}</div>}
+      {on && <div>{instruction}</div>}
     </CardStyled>
   )
 }
