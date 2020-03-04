@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useToggle } from 'react-hooks-lib'
 
-export default function Bookmark() {
-  const { on, toggle } = useToggle(false)
-
-  return <BookmarkStyled onClick={toggle} active={on} />
+export default function Bookmark({ id, onBookmarkClick, isBookmarked }) {
+  return (
+    <BookmarkStyled onClick={() => onBookmarkClick(id)} active={isBookmarked} />
+  )
 }
 
 const BookmarkStyled = styled.button`
@@ -16,5 +15,5 @@ const BookmarkStyled = styled.button`
   border-bottom-color: white;
   position: absolute;
   right: 21px;
-  top: -11px;
+  top: -15px;
 `

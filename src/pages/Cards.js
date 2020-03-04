@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import Card from './Card'
 
-export default function Cards({ recipes }) {
+export default function Cards({ recipes, onBookmarkClick }) {
   return (
     <CardContainer>
       {recipes.map(recipe => (
-        <Card recipe={recipe}></Card>
+        <Card {...recipe} handleBookmarkClick={onBookmarkClick}></Card>
       ))}
     </CardContainer>
   )
@@ -17,6 +17,5 @@ const CardContainer = styled.div`
   display: grid;
   gap: 35px;
   scroll-behavior: smooth;
-  padding: 20px 20px;
   padding: 40px 60px;
 `
