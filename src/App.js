@@ -38,7 +38,7 @@ export default function App() {
     return JSON.parse(localStorage.getItem(key))
   }
 
-  function setToLocal(key, data) {
+  function saveToLocal(key, data) {
     localStorage.setItem(key, JSON.stringify(data))
   }
 
@@ -58,7 +58,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    setToLocal('recipes', recipes)
+    saveToLocal('recipes', recipes)
   })
 
   return (
