@@ -8,7 +8,11 @@ export default function Cards({ recipes, onBookmarkClick }) {
     <CardContainer>
       <ProductList />
       {recipes.map(recipe => (
-        <Card {...recipe} handleBookmarkClick={onBookmarkClick}></Card>
+        <Card
+          key={recipe.id}
+          {...recipe}
+          handleBookmarkClick={onBookmarkClick}
+        ></Card>
       ))}
     </CardContainer>
   )

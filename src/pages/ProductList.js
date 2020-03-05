@@ -20,8 +20,8 @@ export default function ProductList() {
 
   return (
     <ProductContainer>
-      {products.map(product => (
-        <Product link={product}></Product>
+      {products.map((product, index) => (
+        <Product key={index} link={product}></Product>
       ))}
     </ProductContainer>
   )
