@@ -37,13 +37,16 @@ export default function Card({
 
 const CardStyled = styled.section`
   position: relative;
-  background: white;
+  background-image: linear-gradient(60deg, darkseagreen, moccasin);
   padding: 0px 30px 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
+  border: 4px solid green;
 `
 
 const ImageStyled = styled.img`
   height: 100px;
   width: 220px;
+  border-radius: 5px;
+  border: 3px solid black;
 `

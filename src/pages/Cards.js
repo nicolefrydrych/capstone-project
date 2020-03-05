@@ -1,12 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import Card from './Card'
+import ProductList from './ProductList'
 
 export default function Cards({ recipes, onBookmarkClick }) {
   return (
     <CardContainer>
+      <ProductList />
       {recipes.map(recipe => (
-        <Card {...recipe} handleBookmarkClick={onBookmarkClick}></Card>
+        <Card
+          key={recipe.id}
+          {...recipe}
+          handleBookmarkClick={onBookmarkClick}
+        ></Card>
       ))}
     </CardContainer>
   )
