@@ -27,7 +27,9 @@ const LinkStyled = styled(NavLink)`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: #e6d97a;
+  color: white;
 
   &.active {
     background: #d67894;
@@ -36,6 +38,7 @@ const LinkStyled = styled(NavLink)`
 
 const NavigationStyled = styled.nav`
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-flow: column;
   gap: 2px;
 `

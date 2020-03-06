@@ -67,16 +67,18 @@ export default function App() {
 
   return (
     <Router>
+      <Header headerName="Vegan Cuisine" />
       <AppGrid>
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <Cards recipes={recipes} onBookmarkClick={handleBookmarkClick} />
-          </Route>
-          <Route path="/favourites">
-            <section>Favourites</section>
-          </Route>
-        </Switch>
+        <ContentCointainer>
+          <Switch>
+            <Route exact path="/">
+              <Cards recipes={recipes} onBookmarkClick={handleBookmarkClick} />
+            </Route>
+            <Route path="/favourites">
+              <section>Favourites</section>
+            </Route>
+          </Switch>
+        </ContentCointainer>
         <Navigation />
       </AppGrid>
     </Router>
@@ -85,13 +87,10 @@ export default function App() {
 
 const AppGrid = styled.div`
   display: grid;
-  grid-template-rows: 55px auto 55px;
-  overflow-y: scroll;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: 100%;
+  grid-template-rows: auto 55px;
+
+  height: 100vh;
 `
-//
+const ContentCointainer = styled.div`
+  overflow: auto;
+`
