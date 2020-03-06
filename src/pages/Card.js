@@ -24,7 +24,7 @@ export default function Card({
       <h1>{name}</h1>
       <ul>
         {products.map(product => (
-          <li> {product} </li>
+          <ListStyled> {product} </ListStyled>
         ))}
       </ul>
       <ImageStyled src={image} />
@@ -37,12 +37,14 @@ export default function Card({
 
 const CardStyled = styled.section`
   position: relative;
+  display: grid;
+  gap: 15px;
   background-image: linear-gradient(60deg, darkseagreen, moccasin);
-  padding: 0px 30px 20px;
+  padding: 20px 20px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
   border: 4px solid green;
-  width: 220px;
+  width: 270px;
 `
 
 const ImageStyled = styled.img`
@@ -50,4 +52,7 @@ const ImageStyled = styled.img`
   width: 220px;
   border-radius: 5px;
   border: 3px solid black;
+`
+const ListStyled = styled.ul`
+  padding: 1px 13px;
 `

@@ -71,4 +71,8 @@ export default function App() {
 
 const Global = styled.div`
   background-color: rgb(254, 244, 157);
+  width: 500px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
 `
