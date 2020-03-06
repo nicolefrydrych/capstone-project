@@ -32,5 +32,5 @@ const Containerall = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 100px;
 `

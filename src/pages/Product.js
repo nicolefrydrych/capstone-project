@@ -11,6 +11,6 @@ export default function Product({ link }) {
 const StyledImage = styled.img`
   width: 60px;
   height: 60px;
-  border: solid ${props => (props.active ? 'black' && '4px' : 'white')};
+  border: 2px solid ${props => (props.active ? '#4d383d' : 'white')};
   border-radius: 10%;
 `

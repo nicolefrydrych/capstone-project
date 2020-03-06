@@ -39,19 +39,17 @@ const CardStyled = styled.section`
   position: relative;
   display: grid;
   gap: 15px;
-  background-image: linear-gradient(60deg, darkseagreen, moccasin);
+  background-image: linear-gradient(60deg, #eda781, moccasin);
   padding: 20px 20px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
-  border: 4px solid green;
-  width: 270px;
+  width: 280px;
 `
 
 const ImageStyled = styled.img`
   height: 100px;
-  width: 220px;
-  border-radius: 5px;
-  border: 3px solid black;
+  width: 240px;
+  border: 5px solid #f7f5e6;
 `
 const ListStyled = styled.ul`
   padding: 1px 13px;

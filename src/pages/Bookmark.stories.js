@@ -8,7 +8,6 @@ export default {
 }
 
 const styles = {
-  border: '1px solid blue',
   position: 'absolute',
   left: '50%',
   top: '50%',
