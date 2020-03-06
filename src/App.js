@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Cards from './pages/Cards'
+import Navigation from './Navigation'
+import Header from './Header'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const recipesData = [
   {
@@ -63,16 +66,32 @@ export default function App() {
   })
 
   return (
-    <Global>
-      <Cards recipes={recipes} onBookmarkClick={handleBookmarkClick} />
-    </Global>
+    <Router>
+      <AppGrid>
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Cards recipes={recipes} onBookmarkClick={handleBookmarkClick} />
+          </Route>
+          <Route path="/favourites">
+            <section>Favourites</section>
+          </Route>
+        </Switch>
+        <Navigation />
+      </AppGrid>
+    </Router>
   )
 }
 
-const Global = styled.div`
-  background-color: rgb(254, 244, 157);
-  width: 500px;
+const AppGrid = styled.div`
   display: grid;
-  justify-content: center;
-  justify-items: center;
+  grid-template-rows: 55px auto 55px;
+  overflow-y: scroll;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
 `
+//
