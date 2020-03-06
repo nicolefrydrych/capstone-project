@@ -42,6 +42,7 @@ const CardStyled = styled.section`
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
   border: 4px solid green;
+  width: 220px;
 `
 
 const ImageStyled = styled.img`

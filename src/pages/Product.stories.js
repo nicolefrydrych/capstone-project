@@ -8,15 +8,23 @@ export default {
   component: Product,
 }
 
-const styles = {
+const styledProduct = {
   position: 'absolute',
   left: '45%',
   top: '40%',
   transform: 'translate("-50", "-50")',
 }
 
+const styledProductList = {
+  position: 'absolute',
+  left: '30%',
+  top: '8%',
+  transform: 'translate("-50", "-50")',
+  width: '300px',
+}
+
 export const standardProduct = () => (
-  <div style={styles}>
+  <div style={styledProduct}>
     <Product
       onClick={action('productToggle')}
       active="true"
@@ -26,7 +34,7 @@ export const standardProduct = () => (
 )
 
 export const standardProductList = () => (
-  <div>
+  <div style={styledProductList}>
     <ProductList
       onClick={action('productToggle')}
       active="true"

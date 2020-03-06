@@ -29,14 +29,15 @@ export default function ProductList() {
 
 const ProductContainer = styled.div`
   display: grid;
-  grid-template-columns: 65px 65px 65px;
-  grid-template-rows: 65px 65px 65px 65px;
-  gap: 20px;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px 60px;
+  gap: 23px;
   justify-content: center;
   justify-items: center;
   border: 5px solid orange;
   background-color: coral;
   border-radius: 10%;
-  padding: 20px 0;
+  padding: 20px 10px;
   box-shadow: 0 0 9px #0009;
+  width: 240px;
 `
