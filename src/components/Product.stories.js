@@ -28,7 +28,7 @@ export const standardProduct = () => (
     <Product
       onClick={action('productToggle')}
       active="true"
-      link="images/rice.png"
+      link="images/pappp.jpg"
     ></Product>
   </div>
 )
