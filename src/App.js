@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Cards from './pages/Cards'
-import Navigation from './Navigation'
-import Header from './Header'
+import Navigation from './common/Navigation'
+import Header from './components/Header'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const recipesData = [

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Card from './Card'
-import ProductList from './ProductList'
-import Header from '../Header'
+import Card from '../components/Card'
+import ProductList from '../components/ProductList'
+import Header from '../components/Header'
 
 export default function Cards({ recipes, onBookmarkClick }) {
   return (
