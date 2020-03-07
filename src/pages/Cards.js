@@ -2,21 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 import Card from './Card'
 import ProductList from './ProductList'
+import Header from '../Header'
 
 export default function Cards({ recipes, onBookmarkClick }) {
   return (
-    <Containerall>
-      <ProductList />
-      <Container>
-        {recipes.map(recipe => (
-          <Card
-            key={recipe.id}
-            {...recipe}
-            handleBookmarkClick={onBookmarkClick}
-          ></Card>
-        ))}
-      </Container>
-    </Containerall>
+    <>
+      <Header headerName="Choose a meal"></Header>
+      <Containerall>
+        <ProductList />
+        <Container>
+          {recipes.map(recipe => (
+            <Card
+              key={recipe.id}
+              {...recipe}
+              handleBookmarkClick={onBookmarkClick}
+            ></Card>
+          ))}
+        </Container>
+      </Containerall>
+    </>
   )
 }
 

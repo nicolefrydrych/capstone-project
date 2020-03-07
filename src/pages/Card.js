@@ -39,11 +39,11 @@ const CardStyled = styled.section`
   position: relative;
   display: grid;
   gap: 15px;
-  background-image: linear-gradient(60deg, #eda781, moccasin);
+  background-image: linear-gradient(60deg, #fff3f2, white);
   padding: 20px 20px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
-  width: 280px;
+  width: 290px;
 `
 
 const ImageStyled = styled.img`
