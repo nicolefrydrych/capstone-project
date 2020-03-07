@@ -7,12 +7,31 @@ const GlobalStyle = createGlobalStyle`
     padding:0;
   }
 
+
 body {
   margin: 0;
-  background-color: #f7f5e6;
-  font-family: sans-serif;
+  font-family: Creepy Font Style;
   font-size: 18px;
+
 }
+body::after {
+  content: "";
+  background: url("images/zitrone.jpg");
+  
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+
+
+
+
+
 `
 
 export default GlobalStyle

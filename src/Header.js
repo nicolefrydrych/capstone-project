@@ -10,12 +10,13 @@ export default function Header({ headerName }) {
 }
 
 const StyledHeader = styled.header`
-  background: #e6d97a;
-  color: #f7f5e6;
+  background: #869c90;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 65px;
+  border-bottom: 2px solid white;
   position: fixed;
   z-index: 1;
   width: 100%;

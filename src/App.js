@@ -67,7 +67,6 @@ export default function App() {
 
   return (
     <Router>
-      <Header headerName="Vegan Cuisine" />
       <AppGrid>
         <ContentCointainer>
           <Switch>
@@ -88,7 +87,6 @@ export default function App() {
 const AppGrid = styled.div`
   display: grid;
   grid-template-rows: auto 55px;
-
   height: 100vh;
 `
 const ContentCointainer = styled.div`

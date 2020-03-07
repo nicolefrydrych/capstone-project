@@ -4,18 +4,18 @@ import Product from './Product'
 
 export default function ProductList() {
   const products = [
-    'images/rice.png',
-    'images/potatoes.png',
-    'images/pasta.png',
-    'images/broccoli.png',
-    'images/mushrooms.png',
-    'images/spices.jpg',
-    'images/coconut.png',
-    'images/paprika.png',
-    'images/red_lentils.png',
-    'images/tomatoes.jpg',
-    'images/zucchini.png',
-    'images/carrots.png',
+    'images/rrr.jpg',
+    'images/kar.jpg',
+    'images/nn.jpg',
+    'images/bbb.jpg',
+    'images/cam.jpg',
+    'images/pepp.jpg',
+    'images/kk.jpg',
+    'images/pappp.jpg',
+    'images/lll.jpeg',
+    'images/tomat.jpg',
+    'images/zzz.jpg',
+    'images/mm.jpeg',
   ]
 
   return (
@@ -34,7 +34,7 @@ const ProductContainer = styled.div`
   gap: 17px;
   justify-content: center;
   justify-items: center;
-  background-color: #a2ba1c;
+  background-color: #afc7bb;
   border-radius: 10%;
   padding: 20px 10px;
   box-shadow: 0 0 9px #0009;
