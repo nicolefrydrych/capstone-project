@@ -2,13 +2,23 @@ import React from 'react'
 import styled from 'styled-components'
 import { useToggle } from 'react-hooks-lib'
 
-export default function Product({ link }) {
+export default function Product({ productImage, productName, onProductClick }) {
   const { on, toggle } = useToggle(false)
 
-  return <StyledImage src={link} onClick={toggle} active={on}></StyledImage>
+  return (
+    <ImageStyled
+      onClick={() => handleProductClick(productName)}
+      src={productImage}
+      active={on}
+    ></ImageStyled>
+  )
+  function handleProductClick(name) {
+    onProductClick(name)
+    toggle()
+  }
 }
 
-const StyledImage = styled.img`
+const ImageStyled = styled.img`
   width: 60px;
   height: 60px;
   border: ${props => (props.active ? '4px' : '2px')} solid

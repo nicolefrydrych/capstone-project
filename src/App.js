@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import Cards from './pages/Cards'
-import Navigation from './common/Navigation'
-import Header from './components/Header'
+import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import styled from 'styled-components'
+import Navigation from './common/Navigation'
+import Cardlist from './pages/CardList'
 
 const recipesData = [
   {
@@ -71,7 +70,10 @@ export default function App() {
         <ContentCointainer>
           <Switch>
             <Route exact path="/">
-              <Cards recipes={recipes} onBookmarkClick={handleBookmarkClick} />
+              <Cardlist
+                recipes={recipes}
+                onBookmarkClick={handleBookmarkClick}
+              />
             </Route>
             <Route path="/favourites">
               <section>Favourites</section>

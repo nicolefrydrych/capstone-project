@@ -2,26 +2,31 @@ import React from 'react'
 import styled from 'styled-components'
 import Product from './Product'
 
-export default function ProductList() {
+export default function ProductList({ onProductClick }) {
   const products = [
-    'images/rrr.jpg',
-    'images/kar.jpg',
-    'images/nn.jpg',
-    'images/bbb.jpg',
-    'images/cam.jpg',
-    'images/pepp.jpg',
-    'images/kk.jpg',
-    'images/pappp.jpg',
-    'images/lll.jpeg',
-    'images/tomat.jpg',
-    'images/zzz.jpg',
-    'images/mm.jpeg',
+    { name: 'rice', image: 'images/rice.jpg' },
+    { name: 'potatoes', image: 'images/potatoes.jpg' },
+    { name: 'pasta', image: 'images/pasta.jpg' },
+    { name: 'broccoli', image: 'images/broccoli.jpg' },
+    { name: 'mushrooms', image: 'images/mushrooms.jpg' },
+    { name: 'spices', image: 'images/spices.jpg' },
+    { name: 'coconut', image: 'images/coconut.jpg' },
+    { name: 'paprica', image: 'images/paprica.jpg' },
+    { name: 'lentils', image: 'images/lentils.jpeg' },
+    { name: 'tomatoes', image: 'images/tomatoes.jpg' },
+    { name: 'zucchini', image: 'images/zucchini.jpg' },
+    { name: 'carrots', image: 'images/carrots.jpeg' },
   ]
 
   return (
     <ProductContainer>
       {products.map((product, index) => (
-        <Product key={index} link={product}></Product>
+        <Product
+          onProductClick={onProductClick}
+          key={index}
+          productImage={product.image}
+          productName={product.name}
+        ></Product>
       ))}
     </ProductContainer>
   )
