@@ -22,11 +22,11 @@ export default function Card({
         isBookmarked={isBookmarked}
       />
       <h1>{name}</h1>
-      <ul>
+      <ProductListStyled>
         {products.map((product, index) => (
-          <ProductListStyled key={index}> {product} </ProductListStyled>
+          <ProductListItemStyled key={index}> {product} </ProductListItemStyled>
         ))}
-      </ul>
+      </ProductListStyled>
       <ImageStyled src={image} />
 
       <InstructionStyled onClick={toggle}> Instruction</InstructionStyled>
@@ -52,6 +52,10 @@ const ImageStyled = styled.img`
   border: 5px solid #f7f5e6;
 `
 const ProductListStyled = styled.ul`
+  list-style-type: none;
+`
+
+const ProductListItemStyled = styled.li`
   padding: 1px 13px;
 `
 const InstructionStyled = styled.h4`

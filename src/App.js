@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import Navigation from './common/Navigation'
-import Cardlist from './pages/CardList'
+import CardList from './pages/CardList'
+import Favorites from './pages/Favorites'
 
 const recipesData = [
   {
@@ -63,6 +64,30 @@ const recipesData = [
 
 export default function App() {
   const [recipes, setRecipes] = useState(getFromLocal('recipes') || recipesData)
+  useEffect(() => {
+    saveToLocal('recipes', recipes)
+  })
+
+  return (
+    <Router>
+      <AppGrid>
+        <ContentCointainer>
+          <Switch>
+            <Route exact path="/">
+              <CardList
+                recipes={recipes}
+                onBookmarkClick={handleBookmarkClick}
+              />
+            </Route>
+            <Route path="/favourites">
+              <Favorites recipes={recipes} />
+            </Route>
+          </Switch>
+        </ContentCointainer>
+        <Navigation />
+      </AppGrid>
+    </Router>
+  )
 
   function getFromLocal(key) {
     return JSON.parse(localStorage.getItem(key))
@@ -86,31 +111,6 @@ export default function App() {
       ...recipes.slice(index + 1),
     ])
   }
-
-  useEffect(() => {
-    saveToLocal('recipes', recipes)
-  })
-
-  return (
-    <Router>
-      <AppGrid>
-        <ContentCointainer>
-          <Switch>
-            <Route exact path="/">
-              <Cardlist
-                recipes={recipes}
-                onBookmarkClick={handleBookmarkClick}
-              />
-            </Route>
-            <Route path="/favourites">
-              <section>Favourites</section>
-            </Route>
-          </Switch>
-        </ContentCointainer>
-        <Navigation />
-      </AppGrid>
-    </Router>
-  )
 }
 
 const AppGrid = styled.div`
