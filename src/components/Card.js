@@ -23,14 +23,14 @@ export default function Card({
       />
       <h1>{name}</h1>
       <ul>
-        {products.map(product => (
-          <ListStyled> {product} </ListStyled>
+        {products.map((product, index) => (
+          <ProductListStyled key={index}> {product} </ProductListStyled>
         ))}
       </ul>
       <ImageStyled src={image} />
 
-      <h4 onClick={toggle}> Instruction</h4>
-      {on && <div>{instruction}</div>}
+      <InstructionStyled onClick={toggle}> Instruction</InstructionStyled>
+      {on && <DivStyled>{instruction}</DivStyled>}
     </CardStyled>
   )
 }
@@ -51,6 +51,15 @@ const ImageStyled = styled.img`
   width: 240px;
   border: 5px solid #f7f5e6;
 `
-const ListStyled = styled.ul`
+const ProductListStyled = styled.ul`
   padding: 1px 13px;
+`
+const InstructionStyled = styled.h4`
+  width: 90px;
+  height: 21px;
+  box-shadow: 0 6px 10px #0002;
+`
+
+const DivStyled = styled.div`
+  font-size: 16px;
 `

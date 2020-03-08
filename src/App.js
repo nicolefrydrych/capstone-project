@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import Cards from './pages/Cards'
-import Navigation from './common/Navigation'
-import Header from './components/Header'
+import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import styled from 'styled-components'
+import Navigation from './common/Navigation'
+import Cardlist from './pages/CardList'
 
 const recipesData = [
   {
@@ -28,6 +27,33 @@ const recipesData = [
     id: 3,
     name: 'Roasted potatoes ',
     products: ['potatoes'],
+    image: 'https://i.picsum.photos/id/1037/200/200.jpg',
+    instruction:
+      'Cut potatoes in slices. Add some spices and put them in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 4,
+    name: 'Roasted potatoes and mushrooms',
+    products: ['potatoes', 'mushrooms'],
+    image: 'https://i.picsum.photos/id/1037/200/200.jpg',
+    instruction:
+      'Cut potatoes in slices. Add some spices and put them in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 5,
+    name: 'Roasted potatoes, paprika and mushrooms',
+    products: ['potatoes', 'mushrooms', 'paprika'],
+    image: 'https://i.picsum.photos/id/1037/200/200.jpg',
+    instruction:
+      'Cut potatoes in slices. Add some spices and put them in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 6,
+    name: 'Roasted potatoes and paprika ',
+    products: ['potatoes', 'paprika'],
     image: 'https://i.picsum.photos/id/1037/200/200.jpg',
     instruction:
       'Cut potatoes in slices. Add some spices and put them in the oven at 180° for about 45 minutes.',
@@ -71,7 +97,10 @@ export default function App() {
         <ContentCointainer>
           <Switch>
             <Route exact path="/">
-              <Cards recipes={recipes} onBookmarkClick={handleBookmarkClick} />
+              <Cardlist
+                recipes={recipes}
+                onBookmarkClick={handleBookmarkClick}
+              />
             </Route>
             <Route path="/favourites">
               <section>Favourites</section>

@@ -3,13 +3,13 @@ import styled from 'styled-components/macro'
 
 export default function Header({ headerName }) {
   return (
-    <StyledHeader>
+    <HeaderStyled>
       <h1>{headerName}</h1>
-    </StyledHeader>
+    </HeaderStyled>
   )
 }
 
-const StyledHeader = styled.header`
+const HeaderStyled = styled.header`
   background: #869c90;
   color: white;
   display: flex;

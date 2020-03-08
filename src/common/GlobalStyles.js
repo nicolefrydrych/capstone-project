@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components/macro'
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +16,7 @@ body {
 }
 body::after {
   content: "";
-  background: url("images/zitrone.jpg");
+  background: url("images/lemon.jpg");
   
   opacity: 0.4;
   top: 0;
@@ -26,12 +26,6 @@ body::after {
   position: absolute;
   z-index: -1;   
 }
-
-
-
-
-
-
 `
 
-export default GlobalStyle
+export default GlobalStyles

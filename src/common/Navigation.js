@@ -2,11 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components/macro'
 
-const Button = styled(NavLink)`
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-`
 export default function Navigation() {
   return (
     <NavigationStyled>
