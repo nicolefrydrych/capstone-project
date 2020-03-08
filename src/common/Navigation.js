@@ -8,7 +8,7 @@ export default function Navigation() {
       <LinkStyled exact to="./">
         Choose a meal
       </LinkStyled>
-      <LinkStyled to="/fridge"> Fridge </LinkStyled>
+      <LinkStyled to="/food"> Food </LinkStyled>
       <LinkStyled to="/shoppinglist"> Shoppinglist </LinkStyled>
       <LinkStyled to="/favorites"> Favorites </LinkStyled>
     </NavigationStyled>

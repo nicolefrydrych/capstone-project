@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Navigation from './common/Navigation'
 import CardList from './pages/CardList'
 import Favorites from './pages/Favorites'
-import Fridge from './pages/Fridge'
+import Food from './pages/Food'
 import Shoppinglist from './pages/Shoppinglist'
 
 const recipesData = [
@@ -81,8 +81,8 @@ export default function App() {
                 onBookmarkClick={handleBookmarkClick}
               />
             </Route>
-            <Route path="/fridge">
-              <Fridge />
+            <Route path="/food">
+              <Food />
             </Route>
             <Route path="/shoppinglist">
               <Shoppinglist />
