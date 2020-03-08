@@ -11,7 +11,7 @@ export default function ProductList({ onProductClick }) {
     { name: 'mushrooms', image: 'images/mushrooms.jpg' },
     { name: 'spices', image: 'images/spices.jpg' },
     { name: 'coconut', image: 'images/coconut.jpg' },
-    { name: 'paprica', image: 'images/paprica.jpg' },
+    { name: 'paprika', image: 'images/paprika.jpg' },
     { name: 'lentils', image: 'images/lentils.jpeg' },
     { name: 'tomatoes', image: 'images/tomatoes.jpg' },
     { name: 'zucchini', image: 'images/zucchini.jpg' },

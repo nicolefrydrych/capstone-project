@@ -32,6 +32,33 @@ const recipesData = [
       'Cut potatoes in slices. Add some spices and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
+  {
+    id: 4,
+    name: 'Roasted potatoes and mushrooms',
+    products: ['potatoes', 'mushrooms'],
+    image: 'https://i.picsum.photos/id/1037/200/200.jpg',
+    instruction:
+      'Cut potatoes in slices. Add some spices and put them in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 5,
+    name: 'Roasted potatoes, paprika and mushrooms',
+    products: ['potatoes', 'mushrooms', 'paprika'],
+    image: 'https://i.picsum.photos/id/1037/200/200.jpg',
+    instruction:
+      'Cut potatoes in slices. Add some spices and put them in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 6,
+    name: 'Roasted potatoes and paprika ',
+    products: ['potatoes', 'paprika'],
+    image: 'https://i.picsum.photos/id/1037/200/200.jpg',
+    instruction:
+      'Cut potatoes in slices. Add some spices and put them in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
 ]
 
 export default function App() {

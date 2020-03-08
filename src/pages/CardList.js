@@ -6,20 +6,32 @@ import Header from '../components/Header'
 
 export default function Cardlist({ recipes, onBookmarkClick }) {
   const [selectedProducts, setselectedProducts] = useState([])
-  console.log(selectedProducts)
+
   return (
     <>
       <Header headerName="Choose a meal"></Header>
       <ScrollContainerAll>
         <ProductList onProductClick={handleProductClick} />
         <CardContainer>
-          {recipes.map(recipe => (
-            <Card
-              key={recipe.id}
-              {...recipe}
-              handleBookmarkClick={onBookmarkClick}
-            ></Card>
-          ))}
+          {selectedProducts.length > 0
+            ? recipes
+                .filter(recipe =>
+                  checkArrays(selectedProducts, recipe.products)
+                )
+                .map(recipe => (
+                  <Card
+                    key={recipe.id}
+                    {...recipe}
+                    handleBookmarkClick={onBookmarkClick}
+                  ></Card>
+                ))
+            : recipes.map(recipe => (
+                <Card
+                  key={recipe.id}
+                  {...recipe}
+                  handleBookmarkClick={onBookmarkClick}
+                ></Card>
+              ))}
         </CardContainer>
       </ScrollContainerAll>
     </>
@@ -35,6 +47,12 @@ export default function Cardlist({ recipes, onBookmarkClick }) {
           ...selectedProducts.slice(index + 1),
         ])
       : setselectedProducts([...selectedProducts, clickedProduct])
+  }
+
+  function checkArrays(firstArray, secondArray) {
+    if (firstArray.length === secondArray.length) {
+      return firstArray.every(product => secondArray.includes(product))
+    }
   }
 }
 
