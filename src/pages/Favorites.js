@@ -1,8 +1,7 @@
 import React from 'react'
-import Card from '../components/Card'
-import Header from '../components/Header'
 import { useToggle } from 'react-hooks-lib'
 import styled from 'styled-components'
+import Header from '../components/Header'
 
 export default function Favorites({ recipes }) {
   const { on, toggle } = useToggle(false)

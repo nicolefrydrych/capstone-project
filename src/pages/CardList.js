@@ -58,7 +58,7 @@ export default function Cardlist({ recipes, onBookmarkClick }) {
 
 const CardContainer = styled.div`
   display: grid;
-  gap: 35px;
+  gap: 40px;
   scroll-behavior: smooth;
   padding: 40px 60px;
 `
@@ -68,5 +68,5 @@ const ScrollContainerAll = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 110px;
 `
