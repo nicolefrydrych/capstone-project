@@ -20,4 +20,5 @@ const HeaderStyled = styled.header`
   position: fixed;
   z-index: 1;
   width: 100%;
+  margin-bottom: 20px;
 `
