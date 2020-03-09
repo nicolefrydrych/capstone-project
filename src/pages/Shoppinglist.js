@@ -24,6 +24,10 @@ export default function Shoppinglist() {
         {products.map(product => (
           <ImageStyled src={product.image}></ImageStyled>
         ))}
+        <FormStyled>
+          <InputStyled type="text" name="name" value="" />
+          <input type="submit" value="send" />
+        </FormStyled>
       </PageStyled>
     </>
   )
@@ -33,7 +37,7 @@ const PageStyled = styled.div`
   display: grid;
   gap: 15px;
   flex-direction: column;
-  margin-top: 110px;
+  margin: 110px 0 40px;
   margin-left: 40px;
 `
 
@@ -42,4 +46,14 @@ const ImageStyled = styled.img`
   height: 80px;
   border-radius: 10%;
   border: 5px solid #f7f5e6;
+`
+const FormStyled = styled.form`
+  text-align: center;
+`
+
+const InputStyled = styled.input`
+  width: 180px;
+  height: 40px;
+  border: 5px solid #f7f5e6;
+  margin-top: 20px;
 `
