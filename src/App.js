@@ -358,6 +358,15 @@ const recipesData = [
       'Cook rice until soft. Cut vegetables in small pieces, add spices and cook it for around 10 minutes. Serve ratatouille with rice.',
     isBookmarked: false,
   },
+  {
+    id: 30,
+    name: 'Carrot soup',
+    products: ['carrots', 'coconut milk', 'spices'],
+    image: 'https://i.picsum.photos/id/1037/200/200.jpg',
+    instruction:
+      'Mash carrots and add coconutmilk and spices. Cook it for around 10 minutes.',
+    isBookmarked: false,
+  },
 ]
 
 export default function App() {
