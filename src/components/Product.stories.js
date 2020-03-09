@@ -26,15 +26,15 @@ const styledProductList = {
 export const standardProduct = () => (
   <div style={styledProduct}>
     <Product
-      onClick={action('productToggle')}
-      active="true"
-      link="images/pappp.jpg"
+      onProductClick={action('onProductClick')}
+      productImage="images/potatoes.jpg"
+      productName="potatoes"
     ></Product>
   </div>
 )
 
 export const standardProductList = () => (
   <div style={styledProductList}>
-    <ProductList onClick={action('productToggle')} active="true"></ProductList>
+    <ProductList onProductClick={action('onProductClick')}></ProductList>
   </div>
 )

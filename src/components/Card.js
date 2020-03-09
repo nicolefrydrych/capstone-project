@@ -38,9 +38,9 @@ export default function Card({
 const CardStyled = styled.section`
   position: relative;
   display: grid;
-  gap: 15px;
+  gap: 10px;
   background-image: linear-gradient(60deg, #fff3f2, white);
-  padding: 20px 20px;
+  padding: 22px 20px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
   width: 290px;
@@ -62,8 +62,10 @@ const InstructionStyled = styled.h4`
   width: 90px;
   height: 21px;
   box-shadow: 0 6px 10px #0002;
+  margin-left: 5px;
 `
 
 const DivStyled = styled.div`
   font-size: 16px;
+  margin-left: 5px;
 `
