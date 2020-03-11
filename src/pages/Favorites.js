@@ -2,8 +2,9 @@ import React from 'react'
 import { useToggle } from 'react-hooks-lib'
 import styled from 'styled-components'
 import Header from '../components/Header'
+import Card from '../components/Card'
 
-export default function Favorites({ recipes }) {
+export default function Favorites({ recipes, onBookmarkClick }) {
   const { on, toggle } = useToggle(false)
 
   const filteredRecipes = recipes.filter(recipe => recipe.isBookmarked === true)
@@ -15,20 +16,11 @@ export default function Favorites({ recipes }) {
         <CardContainer>
           {filteredRecipes.length !== 0 ? (
             filteredRecipes.map(recipe => (
-              <CardStyled>
-                <h1>{recipe.name}</h1>
-
-                <ProductListStyled>
-                  {recipe.products.map(product => (
-                    <ProductListItemStyled>{product}</ProductListItemStyled>
-                  ))}
-                </ProductListStyled>
-                <ImageStyled src={recipe.image} />
-                <InstructionStyled onClick={toggle}>
-                  Instruction
-                </InstructionStyled>
-                {on && <DivStyled>{recipe.instruction}</DivStyled>}
-              </CardStyled>
+              <Card
+                key={recipe.id}
+                {...recipe}
+                handleBookmarkClick={onBookmarkClick}
+              ></Card>
             ))
           ) : (
             <TextStyled>Choose your favorites</TextStyled>
@@ -39,52 +31,70 @@ export default function Favorites({ recipes }) {
   )
 }
 
-const CardContainer = styled.div`
-  display: grid;
-  gap: 35px;
-  scroll-behavior: smooth;
-  padding: 12px 60px 40px;
-`
-
 const ScrollContainerAll = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 100px;
+`
+
+const CardContainer = styled.div`
+  display: grid;
+  gap: 50px;
+  scroll-behavior: smooth;
+  padding: 12px 60px 40px;
 `
 
 const CardStyled = styled.section`
   position: relative;
   display: grid;
-  gap: 15px;
+  gap: 8px;
   background-image: linear-gradient(60deg, #fff3f2, white);
-  padding: 20px 20px;
+  padding: 22px 20px 8px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
-  width: 290px;
+  width: 310px;
 `
 const TextStyled = styled.h1`
   text-align: center;
 `
 
 const ImageStyled = styled.img`
-  height: 100px;
-  width: 240px;
+  height: 140px;
+  width: 245px;
   border: 5px solid #f7f5e6;
 `
 const ProductListStyled = styled.ul`
   list-style-type: none;
+  margin-top: 7px;
 `
+
 const ProductListItemStyled = styled.li`
-  padding: 1px 13px;
+  font-size: 16px;
+  margin-left: 2px;
+  margin-top: 3px;
 `
-const InstructionStyled = styled.h4`
+
+const InstructionStyled = styled.h5`
   width: 90px;
   height: 21px;
-  box-shadow: 0 6px 10px #0002;
+  margin-left: 5px;
+  margin-top: 6px;
 `
 
 const DivStyled = styled.div`
-  font-size: 16px;
+  margin-left: 5px;
+`
+
+const SpanStyled = styled.span`
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  border: 2px solid lightgray;
+  color: lightgray;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
 `
