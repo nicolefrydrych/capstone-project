@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 
 body {
   margin: 0;
-  font-family: Creepy Font Style;
+
   font-size: 18px;
 
 }

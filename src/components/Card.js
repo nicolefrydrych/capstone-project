@@ -22,15 +22,23 @@ export default function Card({
         isBookmarked={isBookmarked}
       />
       <h1>{name}</h1>
-      <ProductListStyled>
-        {products.map((product, index) => (
-          <ProductListItemStyled key={index}> {product} </ProductListItemStyled>
-        ))}
-      </ProductListStyled>
+
       <ImageStyled src={image} />
 
-      <InstructionStyled onClick={toggle}> Instruction</InstructionStyled>
-      {on && <DivStyled>{instruction}</DivStyled>}
+      <InstructionStyled onClick={toggle}> show more</InstructionStyled>
+      {on && (
+        <DivStyled>
+          <p>{instruction}</p>
+          <ProductListStyled>
+            Ingredients:
+            {products.map((product, index) => (
+              <ProductListItemStyled key={index}>
+                {product}
+              </ProductListItemStyled>
+            ))}
+          </ProductListStyled>
+        </DivStyled>
+      )}
     </CardStyled>
   )
 }
@@ -38,34 +46,37 @@ export default function Card({
 const CardStyled = styled.section`
   position: relative;
   display: grid;
-  gap: 10px;
+  gap: 8px;
   background-image: linear-gradient(60deg, #fff3f2, white);
-  padding: 22px 20px;
+  padding: 22px 20px 8px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
-  width: 290px;
+  width: 310px;
 `
 
 const ImageStyled = styled.img`
-  height: 100px;
-  width: 240px;
+  height: 140px;
+  width: 245px;
   border: 5px solid #f7f5e6;
 `
 const ProductListStyled = styled.ul`
   list-style-type: none;
+  margin-top: 9px;
 `
 
 const ProductListItemStyled = styled.li`
-  padding: 1px 13px;
+  font-size: 16px;
+  margin-left: 2px;
+  margin-top: 3px;
 `
-const InstructionStyled = styled.h4`
+
+const InstructionStyled = styled.h5`
   width: 90px;
   height: 21px;
-  box-shadow: 0 6px 10px #0002;
   margin-left: 5px;
+  margin-top: 6px;
 `
 
 const DivStyled = styled.div`
-  font-size: 16px;
   margin-left: 5px;
 `

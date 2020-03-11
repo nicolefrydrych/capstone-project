@@ -10,7 +10,7 @@ export default function ProductList({ onProductClick }) {
     { name: 'broccoli', image: 'images/broccoli.jpg' },
     { name: 'mushrooms', image: 'images/mushrooms.jpg' },
     { name: 'spices', image: 'images/spices.jpg' },
-    { name: 'coconut', image: 'images/coconut.jpg' },
+    { name: 'coconutmilk', image: 'images/coconut.jpg' },
     { name: 'paprika', image: 'images/paprika.jpg' },
     { name: 'lentils', image: 'images/lentils.jpeg' },
     { name: 'tomatoes', image: 'images/tomatoes.jpg' },
