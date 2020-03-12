@@ -9,7 +9,7 @@ export default function Navigation() {
         Choose a meal
       </LinkStyled>
       <LinkStyled to="/food"> Food </LinkStyled>
-      <LinkStyled to="/shoppinglist"> Shoppinglist </LinkStyled>
+      <LinkStyled to="/shoppinglist"> Shopping list </LinkStyled>
       <LinkStyled to="/favorites"> Favorites </LinkStyled>
     </NavigationStyled>
   )

@@ -10,8 +10,8 @@ const GlobalStyles = createGlobalStyle`
 
 body {
   margin: 0;
-
   font-size: 18px;
+  font-family: monospace;
 
 }
 body::after {

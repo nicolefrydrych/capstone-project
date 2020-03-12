@@ -25,7 +25,11 @@ export default function Card({
 
       <ImageStyled src={image} />
 
-      <InstructionStyled onClick={toggle}> show more</InstructionStyled>
+      {on === false ? (
+        <InstructionStyled onClick={toggle}> show more</InstructionStyled>
+      ) : (
+        <InstructionStyled onClick={toggle}> show less</InstructionStyled>
+      )}
       {on && (
         <DivStyled>
           <p>{instruction}</p>

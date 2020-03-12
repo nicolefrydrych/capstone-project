@@ -77,7 +77,6 @@ export default function Shoppinglist() {
       isSelected: true,
     }
 
-    console.log(index)
     setProductToShoppinglist([
       ...productToShoppinglist.slice(0, index),
       updatedProduct,

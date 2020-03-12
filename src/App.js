@@ -5,7 +5,7 @@ import Navigation from './common/Navigation'
 import CardList from './pages/CardList'
 import Favorites from './pages/Favorites'
 import Food from './pages/Food'
-import Shoppinglist from './pages/Shoppinglist'
+import ShoppingList from './pages/ShoppingList'
 import recipesData from './recipes'
 
 export default function App() {
@@ -27,10 +27,10 @@ export default function App() {
               />
             </Route>
             <Route path="/food">
-              <Food />
+              <Food addRecipe={addRecipe} />
             </Route>
             <Route path="/shoppinglist">
-              <Shoppinglist />
+              <ShoppingList />
             </Route>
             <Route path="/favorites">
               <Favorites
@@ -66,6 +66,11 @@ export default function App() {
       updatedRecipe,
       ...recipes.slice(index + 1),
     ])
+  }
+  function addRecipe(recipe) {
+    console.log(recipe)
+    const newRecipe = [recipe, ...recipes]
+    setRecipes(newRecipe)
   }
 }
 
