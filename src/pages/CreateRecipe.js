@@ -7,11 +7,11 @@ export default function Fridge({ addRecipe }) {
   const { register, handleSubmit } = useForm({ mode: 'onChange' })
   return (
     <>
-      <Header headerName="Food"></Header>
+      <Header headerName="Create a recipe"></Header>
       <CardForm id="cardForm" onSubmit={handleSubmit(handleAdd)}>
-        <LabelStyled htmlFor="title">
+        <LabelStyled htmlFor="name">
           Recipe name
-          <LabelInput
+          <InputStyled
             ref={register()}
             autoFocus
             type="text"
@@ -20,19 +20,9 @@ export default function Fridge({ addRecipe }) {
           />
         </LabelStyled>
 
-        <LabelStyled htmlFor="borrower">
-          Image
-          <LabelInput
-            ref={register()}
-            img={'images/roastedVegetables.jpg'}
-            name="image"
-            id="image"
-          />
-        </LabelStyled>
-
-        <LabelStyled htmlFor="contact">
+        <LabelStyled htmlFor="instruction">
           Instruction
-          <LabelInput
+          <InputStyled
             ref={register()}
             height="100"
             type="text"
@@ -42,9 +32,9 @@ export default function Fridge({ addRecipe }) {
           />
         </LabelStyled>
 
-        <LabelStyled htmlFor="borrowdate">
+        <LabelStyled htmlFor="ingredients">
           Ingredients
-          <LabelInput
+          <InputStyled
             ref={register()}
             height="100"
             type="text"
@@ -54,21 +44,21 @@ export default function Fridge({ addRecipe }) {
           />
         </LabelStyled>
         <StyledDiv>
-          <StyledButton onClick={deleteInputFields}>Cancel</StyledButton>
-          <StyledButton type="submit" form="cardForm">
+          <ButtonStyled onClick={deleteInputFields}>Cancel</ButtonStyled>
+          <ButtonStyled type="submit" form="cardForm">
             Submit
-          </StyledButton>
+          </ButtonStyled>
         </StyledDiv>
       </CardForm>
     </>
   )
 
-  function deleteInputFields(event) {
-    event.preventDefault()
-  }
-
   function handleAdd(data) {
     addRecipe(data)
+  }
+
+  function deleteInputFields(event) {
+    event.preventDefault()
   }
 
   // function handleSubmit(event) {
@@ -95,17 +85,19 @@ const LabelStyled = styled.label`
   margin-top: 23px;
 `
 
-const LabelInput = styled.input`
+const InputStyled = styled.input`
   width: 100%;
   height: ${props => props.height || 40}px;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   box-sizing: border-box;
   resize: vertical;
   font-size: 18px;
+  background: #fffaf4;
+  box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.2);
 `
-const StyledButton = styled.button`
+const ButtonStyled = styled.button`
   width: 110px;
   height: 45px;
   border: none;
@@ -114,6 +106,7 @@ const StyledButton = styled.button`
   font-family: monospace;
   font-size: 18px;
   text-align: center;
+  color: white;
 `
 
 const StyledDiv = styled.div`

@@ -4,9 +4,10 @@ import styled from 'styled-components'
 import Navigation from './common/Navigation'
 import CardList from './pages/CardList'
 import Favorites from './pages/Favorites'
-import Food from './pages/Food'
+import Food from './pages/CreateRecipe'
 import ShoppingList from './pages/ShoppingList'
 import recipesData from './recipes'
+import { getFromLocal, saveToLocal } from './common/services'
 
 export default function App() {
   const [recipes, setRecipes] = useState(getFromLocal('recipes') || recipesData)
@@ -26,7 +27,7 @@ export default function App() {
                 onBookmarkClick={handleBookmarkClick}
               />
             </Route>
-            <Route path="/food">
+            <Route path="/createarecipe">
               <Food addRecipe={addRecipe} />
             </Route>
             <Route path="/shoppinglist">
@@ -45,14 +46,6 @@ export default function App() {
     </Router>
   )
 
-  function getFromLocal(key) {
-    return JSON.parse(localStorage.getItem(key))
-  }
-
-  function saveToLocal(key, data) {
-    localStorage.setItem(key, JSON.stringify(data))
-  }
-
   function handleBookmarkClick(id) {
     const index = recipes.findIndex(recipe => recipe.id === id)
 
@@ -68,7 +61,6 @@ export default function App() {
     ])
   }
   function addRecipe(recipe) {
-    console.log(recipe)
     const newRecipe = [recipe, ...recipes]
     setRecipes(newRecipe)
   }
