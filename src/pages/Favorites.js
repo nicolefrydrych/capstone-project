@@ -1,12 +1,9 @@
 import React from 'react'
-import { useToggle } from 'react-hooks-lib'
 import styled from 'styled-components'
 import Header from '../components/Header'
 import Card from '../components/Card'
 
 export default function Favorites({ recipes, onBookmarkClick }) {
-  const { on, toggle } = useToggle(false)
-
   const filteredRecipes = recipes.filter(recipe => recipe.isBookmarked === true)
 
   return (

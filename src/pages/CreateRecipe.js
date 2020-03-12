@@ -5,49 +5,48 @@ import styled from 'styled-components'
 
 export default function Fridge({ addRecipe }) {
   const { register, handleSubmit } = useForm({ mode: 'onChange' })
+
   return (
     <>
       <Header headerName="Create a recipe"></Header>
       <CardForm id="cardForm" onSubmit={handleSubmit(handleAdd)}>
         <LabelStyled htmlFor="name">
-          Recipe name
           <InputStyled
+            maxLength="25"
             ref={register()}
             autoFocus
             type="text"
             name="name"
             id="name"
+            placeholder="Recipe name"
           />
         </LabelStyled>
 
         <LabelStyled htmlFor="instruction">
-          Instruction
           <InputStyled
+            maxLength="120"
             ref={register()}
-            height="100"
+            height="70"
             type="text"
             name="instruction"
             id="instruction"
-            placeholder=""
+            placeholder="Instruction"
           />
         </LabelStyled>
 
-        <LabelStyled htmlFor="ingredients">
-          Ingredients
+        <LabelStyled htmlFor="products">
           <InputStyled
             ref={register()}
-            height="100"
+            height="70"
             type="text"
-            name="ingredients"
-            id="ingredients"
-            placeholder=""
+            name="products"
+            id="products"
+            placeholder="Products"
           />
         </LabelStyled>
         <StyledDiv>
+          <ButtonStyled type="submit">Submit</ButtonStyled>
           <ButtonStyled onClick={deleteInputFields}>Cancel</ButtonStyled>
-          <ButtonStyled type="submit" form="cardForm">
-            Submit
-          </ButtonStyled>
         </StyledDiv>
       </CardForm>
     </>
@@ -55,10 +54,13 @@ export default function Fridge({ addRecipe }) {
 
   function handleAdd(data) {
     addRecipe(data)
+    deleteInputFields()
   }
 
-  function deleteInputFields(event) {
-    event.preventDefault()
+  function deleteInputFields() {
+    document.querySelector('[name=name]').value = ''
+    document.querySelector('[name=instruction]').value = ''
+    document.querySelector('[name=products]').value = ''
   }
 
   // function handleSubmit(event) {
@@ -85,20 +87,20 @@ const LabelStyled = styled.label`
   margin-top: 23px;
 `
 
-const InputStyled = styled.input`
+const InputStyled = styled.textarea`
   width: 100%;
   height: ${props => props.height || 40}px;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
   box-sizing: border-box;
-  resize: vertical;
   font-size: 18px;
   background: #fffaf4;
   box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.2);
+  resize: none;
 `
 const ButtonStyled = styled.button`
-  width: 110px;
+  width: 270px;
   height: 45px;
   border: none;
   border-radius: 12px;
@@ -110,8 +112,8 @@ const ButtonStyled = styled.button`
 `
 
 const StyledDiv = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 260px;
+  display: grid;
+  gap: 15px;
+  flex-direction: column;
   margin-top: 40px;
 `

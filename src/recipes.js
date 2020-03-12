@@ -232,7 +232,7 @@ const recipesData = [
   },
   {
     id: 25,
-    name: 'Rice-vegetables-mix',
+    name: 'Rice vegetables mix',
     products: [
       'rice',
       'carrots',
@@ -248,7 +248,7 @@ const recipesData = [
   },
   {
     id: 26,
-    name: 'Rice-vegetables-mix',
+    name: 'Rice vegetables mix',
     products: ['rice', 'carrots', 'paprika', 'mushrooms', 'tomatoes', 'spices'],
     image: 'images/riceVegetable.jpg',
     instruction:
@@ -257,7 +257,7 @@ const recipesData = [
   },
   {
     id: 27,
-    name: 'Rice-vegetables-mix',
+    name: 'Rice vegetables mix',
     products: ['rice', 'paprika', 'mushrooms', 'tomatoes', 'spices'],
     image: 'images/riceVegetable.jpg',
     instruction:
@@ -266,7 +266,7 @@ const recipesData = [
   },
   {
     id: 28,
-    name: 'Rice-vegetables-mix',
+    name: 'Rice vegetables mix',
     products: ['rice', 'mushrooms', 'tomatoes', 'broccoli', 'spices'],
     image: 'images/riceVegetable.jpg',
     instruction:
@@ -275,7 +275,7 @@ const recipesData = [
   },
   {
     id: 29,
-    name: 'Rice-vegetables-mix',
+    name: 'Rice vegetables mix',
     products: ['rice', 'carrots', 'lentils', 'coconutmilk', 'spices'],
     image: 'images/riceVegetable.jpg',
     instruction:

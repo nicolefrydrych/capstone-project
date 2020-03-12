@@ -26,6 +26,7 @@ const LinkStyled = styled(NavLink)`
   background: #93b5a1;
   color: white;
   border: 0.5px solid white;
+  font-family: 'times';
 
   &.active {
     background: #b8a6b3;

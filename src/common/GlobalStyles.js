@@ -26,6 +26,9 @@ body::after {
   position: absolute;
   z-index: -1;   
 }
+
+
+*:focus {outline:none}
 `
 
 export default GlobalStyles

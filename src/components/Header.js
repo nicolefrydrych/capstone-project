@@ -21,4 +21,5 @@ const HeaderStyled = styled.header`
   z-index: 1;
   width: 100%;
   margin-bottom: 20px;
+  font-family: 'times';
 `

@@ -21,20 +21,24 @@ export default function Card({
         onBookmarkClick={handleBookmarkClick}
         isBookmarked={isBookmarked}
       />
-      <h1>{name}</h1>
+      <h2>{name}</h2>
 
-      <ImageStyled src={image} />
+      <ImageStyled src={image || 'images/defaultImage.jpg'} />
 
       {on === false ? (
-        <InstructionStyled onClick={toggle}> show more</InstructionStyled>
+        <InstructionTextStyled onClick={toggle}>
+          show more
+        </InstructionTextStyled>
       ) : (
-        <InstructionStyled onClick={toggle}> show less</InstructionStyled>
+        <InstructionTextStyled onClick={toggle}>
+          show less
+        </InstructionTextStyled>
       )}
       {on && (
         <DivStyled>
           <p>{instruction}</p>
           <ProductListStyled>
-            Ingredients:
+            <InstructionStyled>Ingredients:</InstructionStyled>
             {products.map((product, index) => (
               <ProductListItemStyled key={index}>
                 {product}
@@ -51,8 +55,8 @@ const CardStyled = styled.section`
   position: relative;
   display: grid;
   gap: 8px;
-  background-image: linear-gradient(60deg, #fff3f2, white);
-  padding: 22px 20px 8px;
+  background-image: linear-gradient(60deg, #faf5ef, white);
+  padding: 22px 20px 16px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
   width: 310px;
@@ -60,7 +64,7 @@ const CardStyled = styled.section`
 
 const ImageStyled = styled.img`
   height: 140px;
-  width: 245px;
+  width: 260px;
   border: 5px solid #f7f5e6;
 `
 const ProductListStyled = styled.ul`
@@ -74,7 +78,7 @@ const ProductListItemStyled = styled.li`
   margin-top: 3px;
 `
 
-const InstructionStyled = styled.h5`
+const InstructionTextStyled = styled.h5`
   width: 90px;
   height: 21px;
   margin-left: 5px;
@@ -83,4 +87,8 @@ const InstructionStyled = styled.h5`
 
 const DivStyled = styled.div`
   margin-left: 5px;
+`
+const InstructionStyled = styled.div`
+  font-weight: bold;
+  margin-top: 10px;
 `

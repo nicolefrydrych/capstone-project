@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Navigation from './common/Navigation'
 import CardList from './pages/CardList'
 import Favorites from './pages/Favorites'
-import Food from './pages/CreateRecipe'
+import CreateRecipe from './pages/CreateRecipe'
 import ShoppingList from './pages/ShoppingList'
 import recipesData from './recipes'
 import { getFromLocal, saveToLocal } from './common/services'
@@ -28,7 +28,7 @@ export default function App() {
               />
             </Route>
             <Route path="/createarecipe">
-              <Food addRecipe={addRecipe} />
+              <CreateRecipe addRecipe={addRecipe} />
             </Route>
             <Route path="/shoppinglist">
               <ShoppingList />
@@ -60,8 +60,21 @@ export default function App() {
       ...recipes.slice(index + 1),
     ])
   }
+
   function addRecipe(recipe) {
-    const newRecipe = [recipe, ...recipes]
+    const productsArray = recipe.products.split(', ')
+
+    const fullRecipe = {
+      ...recipe,
+      image: '',
+      isBookmarked: false,
+      id: Math.floor(Math.random() * 10000 + 55),
+      products: productsArray,
+    }
+
+    console.log(fullRecipe)
+
+    const newRecipe = [fullRecipe, ...recipes]
     setRecipes(newRecipe)
   }
 }
