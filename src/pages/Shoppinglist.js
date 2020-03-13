@@ -91,8 +91,7 @@ const PageStyled = styled.div`
   display: grid;
   gap: 15px;
   flex-direction: column;
-  margin: 110px 0 40px;
-  margin-left: 50px;
+  margin: 110px 50px 40px;
 `
 const ImageStyled = styled.img`
   width: 80px;
@@ -113,13 +112,13 @@ const DivStyled = styled.div`
 `
 
 const SelectStyled = styled.select`
-  width: 315px;
+  width: 100%;
   box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
   font-size: 16px;
   color: gray;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   background: #fffaf4;
 `
 

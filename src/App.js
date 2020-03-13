@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import Navigation from './common/Navigation'
+import StartPage from './pages/StartPage'
 import CardList from './pages/CardList'
 import Favorites from './pages/Favorites'
 import CreateRecipe from './pages/CreateRecipe'
@@ -22,6 +23,9 @@ export default function App() {
         <ContentCointainer>
           <Switch>
             <Route exact path="/">
+              <StartPage />
+            </Route>
+            <Route path="/chooseameal">
               <CardList
                 recipes={recipes}
                 onBookmarkClick={handleBookmarkClick}
