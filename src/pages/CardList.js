@@ -4,7 +4,7 @@ import Card from '../components/Card'
 import ProductList from '../components/ProductList'
 import Header from '../components/Header'
 
-export default function Cardlist({ recipes, onBookmarkClick }) {
+export default function Cardlist({ recipes, onBookmarkClick, onDeleteCard }) {
   const [selectedProducts, setselectedProducts] = useState([])
 
   return (
@@ -23,6 +23,7 @@ export default function Cardlist({ recipes, onBookmarkClick }) {
                     key={recipe.id}
                     {...recipe}
                     handleBookmarkClick={onBookmarkClick}
+                    handleDeleteRecipe={onDeleteCard}
                   ></Card>
                 ))
             : recipes.map(recipe => (
@@ -30,6 +31,7 @@ export default function Cardlist({ recipes, onBookmarkClick }) {
                   key={recipe.id}
                   {...recipe}
                   handleBookmarkClick={onBookmarkClick}
+                  handleDeleteRecipe={onDeleteCard}
                 ></Card>
               ))}
         </CardContainer>

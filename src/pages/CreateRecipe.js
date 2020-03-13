@@ -89,7 +89,7 @@ const LabelStyled = styled.label`
 
 const InputStyled = styled.textarea`
   width: 100%;
-  height: ${props => props.height || 40}px;
+  height: ${props => props.height || 45}px;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;

@@ -25,6 +25,7 @@ export default function App() {
               <CardList
                 recipes={recipes}
                 onBookmarkClick={handleBookmarkClick}
+                onDeleteCard={onDelete}
               />
             </Route>
             <Route path="/createarecipe">
@@ -45,6 +46,12 @@ export default function App() {
       </AppGrid>
     </Router>
   )
+
+  function onDelete(name) {
+    const index = recipes.findIndex(product => product.name === name)
+
+    setRecipes([...recipes.slice(0, index), ...recipes.slice(index + 1)])
+  }
 
   function handleBookmarkClick(id) {
     const index = recipes.findIndex(recipe => recipe.id === id)
@@ -68,11 +75,9 @@ export default function App() {
       ...recipe,
       image: '',
       isBookmarked: false,
-      id: Math.floor(Math.random() * 10000 + 55),
+      id: Math.floor(Math.random() * 10000000000 + 55),
       products: productsArray,
     }
-
-    console.log(fullRecipe)
 
     const newRecipe = [fullRecipe, ...recipes]
     setRecipes(newRecipe)

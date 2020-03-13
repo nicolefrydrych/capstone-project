@@ -28,7 +28,7 @@ body::after {
 }
 
 
-*:focus {outline:none}
+button:focus {outline:none}
 `
 
 export default GlobalStyles

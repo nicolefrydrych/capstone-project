@@ -4,6 +4,7 @@ import { useToggle } from 'react-hooks-lib'
 import Bookmark from './Bookmark'
 
 export default function Card({
+  handleDeleteRecipe,
   id,
   name,
   instruction,
@@ -21,6 +22,8 @@ export default function Card({
         onBookmarkClick={handleBookmarkClick}
         isBookmarked={isBookmarked}
       />
+
+      <SpanStyled onClick={() => handleDeleteRecipe(name)}>x</SpanStyled>
       <h2>{name}</h2>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
@@ -50,6 +53,13 @@ export default function Card({
     </CardStyled>
   )
 }
+
+const SpanStyled = styled.span`
+  position: absolute;
+  left: -10px;
+  top: -14px;
+  color: gray;
+`
 
 const CardStyled = styled.section`
   position: relative;
