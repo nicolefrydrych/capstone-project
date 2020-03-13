@@ -8,8 +8,8 @@ export default function Navigation() {
       <LinkStyled exact to="./">
         Choose a meal
       </LinkStyled>
-      <LinkStyled to="/food"> Food </LinkStyled>
-      <LinkStyled to="/shoppinglist"> Shoppinglist </LinkStyled>
+      <LinkStyled to="/createarecipe"> Create a recipe </LinkStyled>
+      <LinkStyled to="/shoppinglist"> Shopping list </LinkStyled>
       <LinkStyled to="/favorites"> Favorites </LinkStyled>
     </NavigationStyled>
   )
@@ -26,6 +26,7 @@ const LinkStyled = styled(NavLink)`
   background: #93b5a1;
   color: white;
   border: 0.5px solid white;
+  font-family: 'times';
 
   &.active {
     background: #b8a6b3;

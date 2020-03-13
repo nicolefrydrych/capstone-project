@@ -4,9 +4,10 @@ import styled from 'styled-components'
 import Navigation from './common/Navigation'
 import CardList from './pages/CardList'
 import Favorites from './pages/Favorites'
-import Food from './pages/Food'
-import Shoppinglist from './pages/Shoppinglist'
+import CreateRecipe from './pages/CreateRecipe'
+import ShoppingList from './pages/ShoppingList'
 import recipesData from './recipes'
+import { getFromLocal, saveToLocal } from './common/services'
 
 export default function App() {
   const [recipes, setRecipes] = useState(getFromLocal('recipes') || recipesData)
@@ -24,13 +25,14 @@ export default function App() {
               <CardList
                 recipes={recipes}
                 onBookmarkClick={handleBookmarkClick}
+                onDeleteCard={onDelete}
               />
             </Route>
-            <Route path="/food">
-              <Food />
+            <Route path="/createarecipe">
+              <CreateRecipe addRecipe={addRecipe} />
             </Route>
             <Route path="/shoppinglist">
-              <Shoppinglist />
+              <ShoppingList />
             </Route>
             <Route path="/favorites">
               <Favorites
@@ -45,12 +47,10 @@ export default function App() {
     </Router>
   )
 
-  function getFromLocal(key) {
-    return JSON.parse(localStorage.getItem(key))
-  }
+  function onDelete(name) {
+    const index = recipes.findIndex(product => product.name === name)
 
-  function saveToLocal(key, data) {
-    localStorage.setItem(key, JSON.stringify(data))
+    setRecipes([...recipes.slice(0, index), ...recipes.slice(index + 1)])
   }
 
   function handleBookmarkClick(id) {
@@ -66,6 +66,21 @@ export default function App() {
       updatedRecipe,
       ...recipes.slice(index + 1),
     ])
+  }
+
+  function addRecipe(recipe) {
+    const productsArray = recipe.products.split(', ')
+
+    const fullRecipe = {
+      ...recipe,
+      image: '',
+      isBookmarked: false,
+      id: Math.floor(Math.random() * 10000000000 + 55),
+      products: productsArray,
+    }
+
+    const newRecipe = [fullRecipe, ...recipes]
+    setRecipes(newRecipe)
   }
 }
 

@@ -10,8 +10,8 @@ const GlobalStyles = createGlobalStyle`
 
 body {
   margin: 0;
-
   font-size: 18px;
+  font-family: monospace;
 
 }
 body::after {
@@ -26,6 +26,9 @@ body::after {
   position: absolute;
   z-index: -1;   
 }
+
+
+button:focus {outline:none}
 `
 
 export default GlobalStyles

@@ -4,6 +4,7 @@ import { useToggle } from 'react-hooks-lib'
 import Bookmark from './Bookmark'
 
 export default function Card({
+  handleDeleteRecipe,
   id,
   name,
   instruction,
@@ -21,16 +22,28 @@ export default function Card({
         onBookmarkClick={handleBookmarkClick}
         isBookmarked={isBookmarked}
       />
-      <h1>{name}</h1>
 
-      <ImageStyled src={image} />
+      <ButtonStyled onClick={() => handleDeleteRecipe(name)}>
+        Delete
+      </ButtonStyled>
+      <h2>{name}</h2>
 
-      <InstructionStyled onClick={toggle}> show more</InstructionStyled>
+      <ImageStyled src={image || 'images/defaultImage.jpg'} />
+
+      {on === false ? (
+        <InstructionTextStyled onClick={toggle}>
+          show more
+        </InstructionTextStyled>
+      ) : (
+        <InstructionTextStyled onClick={toggle}>
+          show less
+        </InstructionTextStyled>
+      )}
       {on && (
         <DivStyled>
           <p>{instruction}</p>
           <ProductListStyled>
-            Ingredients:
+            <InstructionStyled>Ingredients:</InstructionStyled>
             {products.map((product, index) => (
               <ProductListItemStyled key={index}>
                 {product}
@@ -43,12 +56,24 @@ export default function Card({
   )
 }
 
+const ButtonStyled = styled.button`
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  color: gray;
+  font-size: 12px;
+  border: 1px solid grey;
+  border-radius: 20%;
+  background: white;
+  font-family: monospace;
+`
+
 const CardStyled = styled.section`
   position: relative;
   display: grid;
   gap: 8px;
-  background-image: linear-gradient(60deg, #fff3f2, white);
-  padding: 22px 20px 8px;
+  background-image: linear-gradient(60deg, #faf5ef, white);
+  padding: 22px 20px 16px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
   width: 310px;
@@ -56,7 +81,7 @@ const CardStyled = styled.section`
 
 const ImageStyled = styled.img`
   height: 140px;
-  width: 245px;
+  width: 260px;
   border: 5px solid #f7f5e6;
 `
 const ProductListStyled = styled.ul`
@@ -70,7 +95,7 @@ const ProductListItemStyled = styled.li`
   margin-top: 3px;
 `
 
-const InstructionStyled = styled.h5`
+const InstructionTextStyled = styled.h5`
   width: 90px;
   height: 21px;
   margin-left: 5px;
@@ -79,4 +104,8 @@ const InstructionStyled = styled.h5`
 
 const DivStyled = styled.div`
   margin-left: 5px;
+`
+const InstructionStyled = styled.div`
+  font-weight: bold;
+  margin-top: 10px;
 `

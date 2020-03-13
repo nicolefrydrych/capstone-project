@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import styled from 'styled-components'
+import { getFromLocal, saveToLocal } from '../common/services'
 
 const products = [
   { name: 'rice', image: 'images/rice.jpg', isSelected: false },
@@ -77,20 +78,12 @@ export default function Shoppinglist() {
       isSelected: true,
     }
 
-    console.log(index)
     setProductToShoppinglist([
       ...productToShoppinglist.slice(0, index),
       updatedProduct,
       ...productToShoppinglist.slice(index + 1),
     ])
     event.target.value = ''
-  }
-  function getFromLocal(key) {
-    return JSON.parse(localStorage.getItem(key))
-  }
-
-  function saveToLocal(key, data) {
-    localStorage.setItem(key, JSON.stringify(data))
   }
 }
 
@@ -120,7 +113,6 @@ const DivStyled = styled.div`
 `
 
 const SelectStyled = styled.select`
-  background-color: #f9f9f9;
   width: 315px;
   box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
@@ -128,6 +120,7 @@ const SelectStyled = styled.select`
   font-size: 16px;
   color: gray;
   margin-bottom: 15px;
+  background: #fffaf4;
 `
 
 {
