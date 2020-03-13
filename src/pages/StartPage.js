@@ -7,12 +7,14 @@ export default function StartPage() {
     <StartPageContainer>
       <FirstDivStyled>
         <DivStyled>
-          <NavLink to="/chooseameal"> Are you hungry? Let's cook! </NavLink>
+          <LinkStyled to="/chooseameal">
+            Are you hungry? Let's cook!{' '}
+          </LinkStyled>
         </DivStyled>
       </FirstDivStyled>
       <SecondDivStyled>
         <DivStyled>
-          <NavLink to="/shoppinglist">Let's go shopping!</NavLink>
+          <LinkStyled to="/shoppinglist">Let's go shopping!</LinkStyled>
         </DivStyled>
       </SecondDivStyled>
     </StartPageContainer>
@@ -46,4 +48,9 @@ const DivStyled = styled.div`
   text-align: center;
   color: white;
   font-size: 22px;
+`
+
+const LinkStyled = styled(NavLink)`
+  text-decoration: none;
+  color: white;
 `
