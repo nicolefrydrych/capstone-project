@@ -58,8 +58,8 @@ export default function Card({
 
 const ButtonStyled = styled.button`
   position: absolute;
-  left: 3px;
-  top: -8px;
+  left: 0px;
+  top: -20px;
   color: gray;
   font-size: 12px;
   border: 1px solid grey;
