@@ -119,7 +119,7 @@ const SelectStyled = styled.select`
   font-size: 16px;
   color: gray;
   margin-bottom: 20px;
-  background: #fffaf4;
+  background: white;
 `
 
 {

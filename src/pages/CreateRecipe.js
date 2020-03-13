@@ -10,44 +10,10 @@ export default function Fridge({ addRecipe }) {
     <>
       <Header headerName="Create a recipe"></Header>
       <CardForm id="cardForm" onSubmit={handleSubmit(handleAdd)}>
-        <LabelStyled htmlFor="name">
-          <InputStyled
-            maxLength="25"
-            ref={register()}
-            autoFocus
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Recipe name"
-          />
-        </LabelStyled>
-
-        <LabelStyled htmlFor="instruction">
-          <InputStyled
-            maxLength="120"
-            ref={register()}
-            height="70"
-            type="text"
-            name="instruction"
-            id="instruction"
-            placeholder="Instruction"
-          />
-        </LabelStyled>
-
-        <LabelStyled htmlFor="products">
-          <InputStyled
-            ref={register()}
-            height="70"
-            type="text"
-            name="products"
-            id="products"
-            placeholder="Products"
-          />
-        </LabelStyled>
         <UlStyled>
           <LiStyled>
-            <LabStyled htmlFor="name">Recipe name</LabStyled>
-            <InputtStyled
+            <LabelStyled htmlFor="name">Recipe name</LabelStyled>
+            <InputStyled
               maxLength="25"
               ref={register()}
               autoFocus
@@ -55,30 +21,31 @@ export default function Fridge({ addRecipe }) {
               name="name"
               id="name"
             />
+            <SpanStyled>Enter recipe name</SpanStyled>
           </LiStyled>
           <LiStyled>
-            <LabStyled htmlFor="instruction">Instruction</LabStyled>
-            <InputtStyled
+            <LabelStyled htmlFor="instruction">Instruction</LabelStyled>
+            <InputStyled
               maxLength="120"
               ref={register()}
-              height="70"
+              height="50"
               type="text"
               name="instruction"
               id="instruction"
             />
-            <SpannStyled>Enter the instruction</SpannStyled>
+            <SpanStyled>Enter the instruction</SpanStyled>
           </LiStyled>
           <LiStyled>
-            <LabStyled htmlFor="products">Products</LabStyled>
-            <InputtStyled
+            <LabelStyled htmlFor="products">Products</LabelStyled>
+            <InputStyled
               maxLength="120"
               ref={register()}
-              height="70"
+              height="50"
               type="text"
-              name="instruction"
+              name="products"
               id="instruction"
             />
-            <SpannStyled>Enter the products you need</SpannStyled>
+            <SpanStyled>Enter the products you need</SpanStyled>
           </LiStyled>
         </UlStyled>
         <StyledDiv>
@@ -113,7 +80,7 @@ export default function Fridge({ addRecipe }) {
   // }
 }
 
-const InputtStyled = styled.input`
+const InputStyled = styled.input`
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -124,31 +91,35 @@ const InputtStyled = styled.input`
   height: 25px;
   line-height: 25px;
   font-size: 16px;
-  padding: 0;
+  padding: 0 0 0 5px;
   background: white;
+  color: gray;
   font-family: Georgia, 'Times New Roman', Times, serif;
   height: ${props => props.height || 35}px;
 `
 
-const SpannStyled = styled.span`
-  background: #ebe6e8;
+const SpanStyled = styled.span`
+  background: #f2f2f2;
   display: block;
-  padding: 3px;
-  width: 280px;
+  padding: 7px;
+  width: 100%;
   text-align: center;
   color: gray;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 `
 
-const LabStyled = styled.label`
+const LabelStyled = styled.label`
   display: block;
   float: left;
+  box-shadow: 0px -1px 26px -3px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dddddd;
+  border-radius: 4px;
   margin-top: -27px;
-  margin-bottom: 17px;
+  margin-left: 17px;
   background: #ffffff;
-  height: 22px;
-  padding: 2px 5px 2px 5px;
+  height: 26px;
+  padding: 3px 5px;
   color: #b9b9b9;
   font-size: 14px;
   overflow: hidden;
@@ -161,13 +132,12 @@ const UlStyled = styled.ul`
   margin: 0;
 `
 const LiStyled = styled.li`
-  margin-top: 30px;
+  margin: 40px 0 5px;
   display: block;
-  background: #f5f5f5;
-  padding: 15px 15px 25px;
+  background: white;
+  padding: 10px 0 0;
   border: 1px solid #dddddd;
-  margin-bottom: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
 `
 
 const CardForm = styled.form`
@@ -176,23 +146,7 @@ const CardForm = styled.form`
   flex-direction: column;
   align-items: center;
 `
-const LabelStyled = styled.label`
-  width: 300px;
-  margin-top: 23px;
-`
 
-const InputStyled = styled.textarea`
-  width: 100%;
-  height: ${props => props.height || 45}px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box;
-  font-size: 18px;
-  background: #fffaf4;
-  box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.2);
-  resize: none;
-`
 const ButtonStyled = styled.button`
   width: 270px;
   height: 45px;
@@ -207,7 +161,7 @@ const ButtonStyled = styled.button`
 
 const StyledDiv = styled.div`
   display: grid;
-  gap: 15px;
+  gap: 20px;
   flex-direction: column;
   margin-top: 40px;
 `
