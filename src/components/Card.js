@@ -23,7 +23,9 @@ export default function Card({
         isBookmarked={isBookmarked}
       />
 
-      <SpanStyled onClick={() => handleDeleteRecipe(name)}>x</SpanStyled>
+      <ButtonStyled onClick={() => handleDeleteRecipe(name)}>
+        Delete
+      </ButtonStyled>
       <h2>{name}</h2>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
@@ -54,11 +56,16 @@ export default function Card({
   )
 }
 
-const SpanStyled = styled.span`
+const ButtonStyled = styled.button`
   position: absolute;
-  left: -10px;
-  top: -14px;
+  left: 3px;
+  top: -8px;
   color: gray;
+  font-size: 12px;
+  border: 1px solid grey;
+  border-radius: 20%;
+  background: white;
+  font-family: monospace;
 `
 
 const CardStyled = styled.section`
