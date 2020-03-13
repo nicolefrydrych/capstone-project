@@ -28,7 +28,7 @@ export default function Shoppinglist() {
 
   return (
     <>
-      <Header headerName="Shoppinglist"></Header>
+      <Header headerName="Shopping list"></Header>
       <PageStyled>
         <SelectStyled onChange={handleChange}>
           <option value="">select a product</option>
