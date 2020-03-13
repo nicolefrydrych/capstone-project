@@ -5,41 +5,40 @@ import { NavLink } from 'react-router-dom'
 export default function StartPage() {
   return (
     <StartPageContainer>
-      <FirstDivStyled>
-        <DivStyled>
-          <LinkStyled to="/chooseameal">
-            Are you hungry? Let's cook!{' '}
-          </LinkStyled>
-        </DivStyled>
-      </FirstDivStyled>
-      <SecondDivStyled>
-        <DivStyled>
-          <LinkStyled to="/shoppinglist">Let's go shopping!</LinkStyled>
-        </DivStyled>
-      </SecondDivStyled>
+      <LinkStyled to="/chooseameal">
+        <FirstDivStyled>
+          <DivStyled>Are you hungry? Let's cook! </DivStyled>
+        </FirstDivStyled>
+      </LinkStyled>
+      <LinkStyled to="/shoppinglist">
+        <SecondDivStyled>
+          <DivStyled>Let's go shopping!</DivStyled>
+        </SecondDivStyled>
+      </LinkStyled>
     </StartPageContainer>
   )
 }
 
 const StartPageContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  background: #fcf4e9;
 `
 
 const FirstDivStyled = styled.section`
-  width: 200px;
+  width: auto;
   height: 660px;
-  background-color: #b8a6b3;
+  background-color: #bda8b2;
   margin-right: 5px;
   display: flex;
   align-items: center;
 `
 
 const SecondDivStyled = styled.section`
-  width: 200px;
+  width: auto;
   height: 660px;
-  background-color: #93b5a1;
+  background-color: #a7bdaf;
   display: flex;
   align-items: center;
 `
