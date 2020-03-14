@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function Bookmark({ id, onBookmarkClick, isBookmarked }) {
+export default function Bookmark({ id, onBookmarkClick, statusOfBookmark }) {
   return (
-    <BookmarkStyled onClick={() => onBookmarkClick(id)} active={isBookmarked} />
+    <BookmarkStyled
+      onClick={() => onBookmarkClick(id)}
+      active={statusOfBookmark}
+    />
   )
 }
 

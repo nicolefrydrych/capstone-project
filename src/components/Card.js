@@ -4,14 +4,14 @@ import { useToggle } from 'react-hooks-lib'
 import Bookmark from './Bookmark'
 
 export default function Card({
-  handleDeleteRecipe,
   id,
   name,
   instruction,
   image,
   products,
-  handleBookmarkClick,
   isBookmarked,
+  handleDeleteRecipe,
+  handleBookmarkClick,
 }) {
   const { on, toggle } = useToggle(false)
 
@@ -20,12 +20,9 @@ export default function Card({
       <Bookmark
         id={id}
         onBookmarkClick={handleBookmarkClick}
-        isBookmarked={isBookmarked}
+        statusOfBookmark={isBookmarked}
       />
 
-      <ButtonStyled onClick={() => handleDeleteRecipe(name)}>
-        Delete
-      </ButtonStyled>
       <h2>{name}</h2>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
@@ -52,20 +49,31 @@ export default function Card({
           </ProductListStyled>
         </DivStyled>
       )}
+      {on === false ? (
+        <ImageBinStyled
+          onClick={() => handleDeleteRecipe(name)}
+          src="images/bin.svg"
+        />
+      ) : (
+        ''
+      )}
     </CardStyled>
   )
 }
 
 const ButtonStyled = styled.button`
   position: absolute;
-  left: 0px;
-  top: -20px;
+  right: 5px;
+  bottom: 5px;
   color: gray;
-  font-size: 12px;
-  border: 1px solid grey;
+  font-size: 16px;
+  border: none;
   border-radius: 20%;
-  background: white;
+
   font-family: monospace;
+  color: white;
+  background: lightgray;
+  width: 17px;
 `
 
 const CardStyled = styled.section`
@@ -77,6 +85,14 @@ const CardStyled = styled.section`
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
   width: 310px;
+`
+const ImageBinStyled = styled.img`
+  position: absolute;
+  height: 26px;
+  width: 30px;
+  opacity: 0.4;
+  bottom: 9px;
+  right: 5px;
 `
 
 const ImageStyled = styled.img`

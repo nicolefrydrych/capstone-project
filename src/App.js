@@ -41,7 +41,7 @@ export default function App() {
             <Route path="/favorites">
               <Favorites
                 recipes={recipes}
-                onBookmarkClick={handleBookmarkClick}
+                handleBookmarkClick={handleBookmarkClick}
               />
             </Route>
           </Switch>
