@@ -78,18 +78,6 @@ const TextStyled = styled.h1`
   text-align: center;
 `
 
-const ButtonStyled = styled.button`
-  position: absolute;
-  left: 0px;
-  top: -20px;
-  color: gray;
-  font-size: 12px;
-  border: 1px solid grey;
-  border-radius: 20%;
-  background: white;
-  font-family: monospace;
-`
-
 const CardStyled = styled.section`
   position: relative;
   display: grid;

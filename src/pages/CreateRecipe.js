@@ -48,10 +48,12 @@ export default function Fridge({ addRecipe }) {
             <SpanStyled>Enter the products you need</SpanStyled>
           </LiStyled>
         </UlStyled>
-        <StyledDiv>
+        <StyledButtonDiv>
           <ButtonStyled type="submit">Submit</ButtonStyled>
-          <ButtonStyled onClick={deleteInputFields}>Cancel</ButtonStyled>
-        </StyledDiv>
+          <ButtonStyled type="button" onClick={deleteInputFields}>
+            Cancel
+          </ButtonStyled>
+        </StyledButtonDiv>
       </CardForm>
     </>
   )
@@ -66,35 +68,18 @@ export default function Fridge({ addRecipe }) {
     document.querySelector('[name=instruction]').value = ''
     document.querySelector('[name=products]').value = ''
   }
-
-  // function handleSubmit(event) {
-  //   event.preventDefault()
-  //   onSubmit(recipeState)
-  // }
-
-  // function handleRecipeChange(event) {
-  //   setRecipeState({
-  //     ...recipeState,
-  //     [event.target.name]: event.target.value,
-  //   })
-  // }
 }
 
 const InputStyled = styled.input`
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   width: 100%;
   display: block;
   outline: none;
-  border: none;
-  height: 25px;
-  line-height: 25px;
   font-size: 16px;
   padding: 0 0 0 5px;
   background: white;
   color: gray;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial;
   height: ${props => props.height || 35}px;
 `
 
@@ -105,14 +90,13 @@ const SpanStyled = styled.span`
   width: 100%;
   text-align: center;
   color: gray;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
   font-size: 16px;
 `
 
 const LabelStyled = styled.label`
-  display: block;
   float: left;
-  box-shadow: 0px -1px 26px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px -1px 26px -8px rgba(0, 0, 0, 0.2);
   border: 1px solid #dddddd;
   border-radius: 4px;
   margin-top: -27px;
@@ -122,8 +106,7 @@ const LabelStyled = styled.label`
   padding: 3px 5px;
   color: #b9b9b9;
   font-size: 14px;
-  overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
 `
 
 const UlStyled = styled.ul`
@@ -133,7 +116,6 @@ const UlStyled = styled.ul`
 `
 const LiStyled = styled.li`
   margin: 40px 0 5px;
-  display: block;
   background: white;
   padding: 10px 0 0;
   border: 1px solid #dddddd;
@@ -159,7 +141,7 @@ const ButtonStyled = styled.button`
   color: white;
 `
 
-const StyledDiv = styled.div`
+const StyledButtonDiv = styled.div`
   display: grid;
   gap: 20px;
   flex-direction: column;

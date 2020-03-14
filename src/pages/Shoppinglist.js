@@ -121,10 +121,3 @@ const SelectStyled = styled.select`
   margin-bottom: 20px;
   background: white;
 `
-
-{
-  /* <FormStyled onSubmit={handleSubmit}>
-<InputStyled type="text" name="name" />
-<button>send</button>
-</FormStyled> */
-}

@@ -61,21 +61,6 @@ export default function Card({
   )
 }
 
-const ButtonStyled = styled.button`
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  color: gray;
-  font-size: 16px;
-  border: none;
-  border-radius: 20%;
-
-  font-family: monospace;
-  color: white;
-  background: lightgray;
-  width: 17px;
-`
-
 const CardStyled = styled.section`
   position: relative;
   display: grid;
@@ -85,14 +70,6 @@ const CardStyled = styled.section`
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
   width: 310px;
-`
-const ImageBinStyled = styled.img`
-  position: absolute;
-  height: 26px;
-  width: 30px;
-  opacity: 0.4;
-  bottom: 9px;
-  right: 5px;
 `
 
 const ImageStyled = styled.img`
@@ -124,4 +101,12 @@ const DivStyled = styled.div`
 const InstructionStyled = styled.div`
   font-weight: bold;
   margin-top: 10px;
+`
+const ImageBinStyled = styled.img`
+  position: absolute;
+  height: 26px;
+  width: 30px;
+  opacity: 0.4;
+  bottom: 9px;
+  right: 5px;
 `
