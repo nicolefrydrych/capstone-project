@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import Header from '../components/Header'
+import Button from '../components/Button'
 import styled from 'styled-components'
 
 export default function Fridge({ addRecipe }) {
@@ -43,16 +44,16 @@ export default function Fridge({ addRecipe }) {
               height="50"
               type="text"
               name="products"
-              id="instruction"
+              id="products"
             />
             <SpanStyled>Enter the products you need</SpanStyled>
           </LiStyled>
         </UlStyled>
         <StyledButtonDiv>
-          <ButtonStyled type="submit">Submit</ButtonStyled>
-          <ButtonStyled type="button" onClick={deleteInputFields}>
+          <Button type="submit" buttonName="submit"></Button>
+          <Button type="button" buttonName="cancel" onClick={deleteInputFields}>
             Cancel
-          </ButtonStyled>
+          </Button>
         </StyledButtonDiv>
       </CardForm>
     </>
@@ -127,17 +128,6 @@ const CardForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
-
-const ButtonStyled = styled.button`
-  padding: 15px 100px;
-  border: none;
-  border-radius: 12px;
-  background: #b8a6b3;
-  font-family: monospace;
-  font-size: 18px;
-  text-align: center;
-  color: white;
 `
 
 const StyledButtonDiv = styled.div`
