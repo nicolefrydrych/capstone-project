@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-export default function Header({ buttonName }) {
-  return <ButtonStyled>{buttonName}</ButtonStyled>
+export default function Header({ buttonName, ...props }) {
+  return <ButtonStyled {...props}>{buttonName}</ButtonStyled>
 }
 
 const ButtonStyled = styled.button`
