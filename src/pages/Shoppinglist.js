@@ -28,7 +28,7 @@ export default function Shoppinglist() {
 
   return (
     <>
-      <Header headerName="Shoppinglist"></Header>
+      <Header headerName="Shopping list"></Header>
       <PageStyled>
         <SelectStyled onChange={handleChange}>
           <option value="">select a product</option>
@@ -119,12 +119,5 @@ const SelectStyled = styled.select`
   font-size: 16px;
   color: gray;
   margin-bottom: 20px;
-  background: #fffaf4;
+  background: white;
 `
-
-{
-  /* <FormStyled onSubmit={handleSubmit}>
-<InputStyled type="text" name="name" />
-<button>send</button>
-</FormStyled> */
-}

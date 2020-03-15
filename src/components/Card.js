@@ -4,14 +4,14 @@ import { useToggle } from 'react-hooks-lib'
 import Bookmark from './Bookmark'
 
 export default function Card({
-  handleDeleteRecipe,
   id,
   name,
   instruction,
   image,
   products,
-  handleBookmarkClick,
   isBookmarked,
+  handleDeleteRecipe,
+  handleBookmarkClick,
 }) {
   const { on, toggle } = useToggle(false)
 
@@ -20,12 +20,9 @@ export default function Card({
       <Bookmark
         id={id}
         onBookmarkClick={handleBookmarkClick}
-        isBookmarked={isBookmarked}
+        statusOfBookmark={isBookmarked}
       />
 
-      <ButtonStyled onClick={() => handleDeleteRecipe(name)}>
-        Delete
-      </ButtonStyled>
       <h2>{name}</h2>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
@@ -52,21 +49,17 @@ export default function Card({
           </ProductListStyled>
         </DivStyled>
       )}
+      {on === false ? (
+        <ImageBinStyled
+          onClick={() => handleDeleteRecipe(name)}
+          src="images/bin.svg"
+        />
+      ) : (
+        ''
+      )}
     </CardStyled>
   )
 }
-
-const ButtonStyled = styled.button`
-  position: absolute;
-  left: 0px;
-  top: -20px;
-  color: gray;
-  font-size: 12px;
-  border: 1px solid grey;
-  border-radius: 20%;
-  background: white;
-  font-family: monospace;
-`
 
 const CardStyled = styled.section`
   position: relative;
@@ -108,4 +101,11 @@ const DivStyled = styled.div`
 const InstructionStyled = styled.div`
   font-weight: bold;
   margin-top: 10px;
+`
+const ImageBinStyled = styled.img`
+  position: absolute;
+  width: 30px;
+  opacity: 0.4;
+  bottom: 10px;
+  right: 5px;
 `
