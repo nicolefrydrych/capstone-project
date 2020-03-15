@@ -104,9 +104,8 @@ const InstructionStyled = styled.div`
 `
 const ImageBinStyled = styled.img`
   position: absolute;
-  height: 26px;
   width: 30px;
   opacity: 0.4;
-  bottom: 9px;
+  bottom: 10px;
   right: 5px;
 `

@@ -130,8 +130,7 @@ const CardForm = styled.form`
 `
 
 const ButtonStyled = styled.button`
-  width: 270px;
-  height: 45px;
+  padding: 15px 100px;
   border: none;
   border-radius: 12px;
   background: #b8a6b3;
@@ -143,7 +142,7 @@ const ButtonStyled = styled.button`
 
 const StyledButtonDiv = styled.div`
   display: grid;
-  gap: 20px;
+  gap: 25px;
   flex-direction: column;
   margin-top: 40px;
 `
