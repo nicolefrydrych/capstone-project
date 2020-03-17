@@ -23,7 +23,7 @@ export default function Card({
         statusOfBookmark={isBookmarked}
       />
 
-      <h2>{name}</h2>
+      <h3>{name}</h3>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
 
@@ -51,7 +51,7 @@ export default function Card({
       )}
       {on === false ? (
         <ImageBinStyled
-          onClick={() => handleDeleteRecipe(name)}
+          onClick={() => handleDeleteRecipe(id)}
           src="images/bin.svg"
         />
       ) : (
@@ -66,7 +66,7 @@ const CardStyled = styled.section`
   display: grid;
   gap: 8px;
   background-image: linear-gradient(60deg, #faf5ef, white);
-  padding: 22px 20px 16px;
+  padding: 24px 20px 16px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
   width: 310px;
@@ -75,7 +75,7 @@ const CardStyled = styled.section`
 const ImageStyled = styled.img`
   height: 140px;
   width: 260px;
-  border: 5px solid #f7f5e6;
+  border: 3px solid #f7f5e6;
 `
 const ProductListStyled = styled.ul`
   list-style-type: none;
@@ -92,7 +92,7 @@ const InstructionTextStyled = styled.h5`
   width: 90px;
   height: 21px;
   margin-left: 5px;
-  margin-top: 6px;
+  margin-top: 12px;
 `
 
 const DivStyled = styled.div`
@@ -105,7 +105,8 @@ const InstructionStyled = styled.div`
 const ImageBinStyled = styled.img`
   position: absolute;
   width: 30px;
+  height: 26px;
   opacity: 0.4;
-  bottom: 10px;
-  right: 5px;
+  bottom: 16px;
+  right: 12px;
 `

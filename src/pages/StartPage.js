@@ -24,11 +24,12 @@ const StartPageContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   padding: 10px;
   background: #fcf4e9;
+  height: 100%;
 `
 
 const FirstDivStyled = styled.section`
   width: auto;
-  height: 660px;
+  height: 100%;
   background-color: #bda8b2;
   margin-right: 5px;
   display: flex;
@@ -37,13 +38,14 @@ const FirstDivStyled = styled.section`
 
 const SecondDivStyled = styled.section`
   width: auto;
-  height: 660px;
+  height: 100%;
   background-color: #a7bdaf;
   display: flex;
   align-items: center;
 `
 
 const DivStyled = styled.div`
+  margin: 0 auto;
   text-align: center;
   color: white;
   font-size: 22px;

@@ -77,7 +77,7 @@ const InputStyled = styled.input`
   display: block;
   outline: none;
   font-size: 16px;
-  padding: 0 0 0 5px;
+  padding-left: 5px;
   background: white;
   color: gray;
   font-family: Arial;
@@ -88,7 +88,6 @@ const SpanStyled = styled.span`
   background: #f2f2f2;
   display: block;
   padding: 7px;
-  width: 100%;
   text-align: center;
   color: gray;
   font-family: Arial;
@@ -104,7 +103,7 @@ const LabelStyled = styled.label`
   margin-left: 17px;
   background: #ffffff;
   height: 26px;
-  padding: 3px 5px;
+  padding: 3px 12px;
   color: #b9b9b9;
   font-size: 14px;
   font-family: Arial;
@@ -116,7 +115,7 @@ const UlStyled = styled.ul`
   margin: 0;
 `
 const LiStyled = styled.li`
-  margin: 40px 0 5px;
+  margin-top: 40px;
   background: white;
   padding: 10px 0 0;
   border: 1px solid #dddddd;

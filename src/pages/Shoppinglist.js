@@ -33,13 +33,15 @@ export default function Shoppinglist() {
         <SelectStyled onChange={handleChange}>
           <option value="">select a product</option>
           {productToShoppinglist.map(product => (
-            <option value={product.name}>{product.name}</option>
+            <option key={product.name} value={product.name}>
+              {product.name}
+            </option>
           ))}
         </SelectStyled>
         {productToShoppinglist
           .filter(product => product.isSelected === true)
           .map(product => (
-            <DivStyled>
+            <DivStyled key={product.name}>
               <SpanStyled onClick={() => onDelete(product.name)}>x</SpanStyled>
               <ImageStyled src={product.image}></ImageStyled>
             </DivStyled>
@@ -112,10 +114,9 @@ const DivStyled = styled.div`
 `
 
 const SelectStyled = styled.select`
-  width: 100%;
+  height: 50px;
   box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
-  z-index: 1;
   font-size: 16px;
   color: gray;
   margin-bottom: 20px;

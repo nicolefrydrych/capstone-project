@@ -10,12 +10,12 @@ export default function Favorites({ recipes, handleBookmarkClick }) {
 
   return (
     <>
-      <Header headerName="Favorites"></Header>
+      <Header headerName="Favorite recipes"></Header>
       <ScrollContainerAll>
         <CardContainer>
           {filteredRecipes.length !== 0 ? (
             filteredRecipes.map(recipe => (
-              <CardStyled>
+              <CardStyled key={recipe.id}>
                 <Bookmark
                   id={recipe.id}
                   onBookmarkClick={handleBookmarkClick}

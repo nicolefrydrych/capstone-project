@@ -8,7 +8,7 @@ export default function Navigation() {
       <LinkStyled to="/chooseameal"> Choose a meal </LinkStyled>
       <LinkStyled to="/createarecipe"> Create a recipe </LinkStyled>
       <LinkStyled to="/shoppinglist"> Shopping list </LinkStyled>
-      <LinkStyled to="/favorites"> Favorites </LinkStyled>
+      <LinkStyled to="/favorites"> Favorite recipes </LinkStyled>
     </NavigationStyled>
   )
 }
@@ -21,10 +21,11 @@ const LinkStyled = styled(NavLink)`
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #93b5a1;
+  padding: 0 10px;
+  background: #9fb5a9;
   color: white;
   border: 0.5px solid white;
-  font-family: 'times';
+  font-family: Times;
 
   &.active {
     background: #b8a6b3;
