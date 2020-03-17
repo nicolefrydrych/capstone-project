@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
 body {
   font-size: 18px;
   font-family: 'Arial';
-  max-width: 480px;
+  max-width: 460px;
   margin: 0 auto;
   
 
@@ -19,7 +19,7 @@ body {
 body::after {
   content: "";
   background: url("images/lemon.jpg");
-  max-width: 480px;
+  max-width: 460px;
   margin: 0 auto;
   opacity: 0.4;
   top: 0;

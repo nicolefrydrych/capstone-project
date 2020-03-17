@@ -66,7 +66,7 @@ const CardStyled = styled.section`
   display: grid;
   gap: 8px;
   background-image: linear-gradient(60deg, #faf5ef, white);
-  padding: 22px 20px 16px;
+  padding: 24px 20px 16px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
   width: 310px;
@@ -92,7 +92,7 @@ const InstructionTextStyled = styled.h5`
   width: 90px;
   height: 21px;
   margin-left: 5px;
-  margin-top: 6px;
+  margin-top: 12px;
 `
 
 const DivStyled = styled.div`
@@ -107,6 +107,6 @@ const ImageBinStyled = styled.img`
   width: 30px;
   height: 26px;
   opacity: 0.4;
-  bottom: 10px;
-  right: 10px;
+  bottom: 16px;
+  right: 12px;
 `

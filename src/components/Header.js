@@ -22,6 +22,6 @@ const HeaderStyled = styled.header`
   width: 100%;
   margin-bottom: 20px;
   font-family: Times;
-  max-width: 480px;
+  max-width: 460px;
   margin: 0 auto;
 `
