@@ -51,8 +51,8 @@ export default function App() {
     </Router>
   )
 
-  function onDelete(name) {
-    const index = recipes.findIndex(product => product.name === name)
+  function onDelete(id) {
+    const index = recipes.findIndex(recipe => recipe.id === id)
 
     setRecipes([...recipes.slice(0, index), ...recipes.slice(index + 1)])
   }

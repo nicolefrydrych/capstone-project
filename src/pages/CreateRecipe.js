@@ -88,7 +88,6 @@ const SpanStyled = styled.span`
   background: #f2f2f2;
   display: block;
   padding: 7px;
-  width: 100%;
   text-align: center;
   color: gray;
   font-family: Arial;
@@ -116,7 +115,7 @@ const UlStyled = styled.ul`
   margin: 0;
 `
 const LiStyled = styled.li`
-  margin: 40px 0 5px;
+  margin-top: 40px;
   background: white;
   padding: 10px 0 0;
   border: 1px solid #dddddd;

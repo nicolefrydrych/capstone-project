@@ -23,7 +23,7 @@ export default function Card({
         statusOfBookmark={isBookmarked}
       />
 
-      <h2>{name}</h2>
+      <h3>{name}</h3>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
 
@@ -51,7 +51,7 @@ export default function Card({
       )}
       {on === false ? (
         <ImageBinStyled
-          onClick={() => handleDeleteRecipe(name)}
+          onClick={() => handleDeleteRecipe(id)}
           src="images/bin.svg"
         />
       ) : (
@@ -75,7 +75,7 @@ const CardStyled = styled.section`
 const ImageStyled = styled.img`
   height: 140px;
   width: 260px;
-  border: 5px solid #f7f5e6;
+  border: 3px solid #f7f5e6;
 `
 const ProductListStyled = styled.ul`
   list-style-type: none;
@@ -105,7 +105,8 @@ const InstructionStyled = styled.div`
 const ImageBinStyled = styled.img`
   position: absolute;
   width: 30px;
+  height: 26px;
   opacity: 0.4;
   bottom: 10px;
-  right: 5px;
+  right: 10px;
 `

@@ -21,10 +21,11 @@ const LinkStyled = styled(NavLink)`
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 10px;
   background: #93b5a1;
   color: white;
   border: 0.5px solid white;
-  font-family: 'times';
+  font-family: Times;
 
   &.active {
     background: #b8a6b3;

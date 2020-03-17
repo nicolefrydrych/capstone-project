@@ -10,7 +10,6 @@ const ButtonStyled = styled.button`
   border: none;
   border-radius: 12px;
   background: #b8a6b3;
-  font-family: monospace;
   font-size: 18px;
   text-align: center;
   color: white;

@@ -9,15 +9,18 @@ const GlobalStyles = createGlobalStyle`
 
 
 body {
-  margin: 0;
   font-size: 18px;
-  font-family: monospace;
+  font-family: 'Arial';
+  max-width: 480px;
+  margin: 0 auto;
+  
 
 }
 body::after {
   content: "";
   background: url("images/lemon.jpg");
-  
+  max-width: 480px;
+  margin: 0 auto;
   opacity: 0.4;
   top: 0;
   left: 0;
@@ -27,8 +30,7 @@ body::after {
   z-index: -1;   
 }
 
-
-button:focus {outline:none}
+*:focus {outline:none}
 `
 
 export default GlobalStyles
