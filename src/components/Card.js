@@ -49,7 +49,7 @@ export default function Card({
           </ProductListStyled>
         </DivStyled>
       )}
-      {on === false ? (
+      {on === true ? (
         <ImageBinStyled
           onClick={() => handleDeleteRecipe(id)}
           src="images/bin.svg"
@@ -106,7 +106,7 @@ const ImageBinStyled = styled.img`
   position: absolute;
   width: 30px;
   height: 26px;
-  opacity: 0.4;
+  opacity: 0.3;
   bottom: 16px;
   right: 12px;
 `

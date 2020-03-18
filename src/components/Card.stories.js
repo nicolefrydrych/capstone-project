@@ -19,7 +19,7 @@ export const standardCard = () => (
     <Card
       id="Test"
       name="Title"
-      image="https://i.picsum.photos/id/1037/200/200.jpg"
+      image="images/defaultImage.jpg"
       instruction="Test Instruction"
       products={['Product1', 'Product2']}
       isBookmarked="true"
