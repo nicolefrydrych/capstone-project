@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 
 body {
   font-size: 18px;
-  font-family: 'Arial';
+  font-family: 'Gill Sans';
   max-width: 460px;
   margin: 0 auto;
   

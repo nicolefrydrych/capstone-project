@@ -7,14 +7,17 @@ import CardList from './pages/CardList'
 import Favorites from './pages/Favorites'
 import CreateRecipe from './pages/CreateRecipe'
 import ShoppingList from './pages/ShoppingList'
-import recipesData from './recipes'
-import { getFromLocal, saveToLocal } from './common/services'
+import { getFromLocal, saveToLocal, getRecipes } from './common/services'
 
 export default function App() {
-  const [recipes, setRecipes] = useState(getFromLocal('recipes') || recipesData)
+  const [recipes, setRecipes] = useState(getFromLocal('recipes'))
 
   useEffect(() => {
     saveToLocal('recipes', recipes)
+  })
+
+  useEffect(() => {
+    recipes === null && getRecipes().then(res => setRecipes(res))
   })
 
   return (
@@ -51,14 +54,14 @@ export default function App() {
     </Router>
   )
 
-  function onDelete(id) {
-    const index = recipes.findIndex(recipe => recipe.id === id)
+  function onDelete(_id) {
+    const index = recipes.findIndex(recipe => recipe._id === _id)
 
     setRecipes([...recipes.slice(0, index), ...recipes.slice(index + 1)])
   }
 
-  function handleBookmarkClick(id) {
-    const index = recipes.findIndex(recipe => recipe.id === id)
+  function handleBookmarkClick(_id) {
+    const index = recipes.findIndex(recipe => recipe._id === _id)
 
     const updatedRecipe = {
       ...recipes[index],
@@ -79,7 +82,7 @@ export default function App() {
       ...recipe,
       image: '',
       isBookmarked: false,
-      id: Math.floor(Math.random() * 10000000000 + 55),
+      _id: Math.floor(Math.random() * 10000000000 + 55),
       products: productsArray,
     }
 

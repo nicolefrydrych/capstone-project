@@ -36,12 +36,12 @@ const ProductContainer = styled.div`
   display: grid;
   grid-template-columns: 60px 60px 60px 60px;
   grid-template-rows: 60px 60px 60px;
-  gap: 17px;
+  gap: 14px;
   justify-content: center;
   justify-items: center;
   background-color: #afc7bb;
   border-radius: 10%;
-  padding: 20px 10px;
-  box-shadow: 0 0 9px #0009;
-  width: 330px;
+  padding: 16px 16px;
+  box-shadow: 0 0 6px #0002;
+
 `

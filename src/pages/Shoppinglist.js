@@ -31,7 +31,7 @@ export default function Shoppinglist() {
       <Header headerName="Shopping list"></Header>
       <PageStyled>
         <SelectStyled onChange={handleChange}>
-          <option value="">select a product</option>
+          <option value="">Select a product</option>
           {productToShoppinglist.map(product => (
             <option key={product.name} value={product.name}>
               {product.name}
@@ -121,4 +121,5 @@ const SelectStyled = styled.select`
   color: gray;
   margin-bottom: 20px;
   background: white;
+  font-family: 'Gill Sans';
 `

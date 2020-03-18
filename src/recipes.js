@@ -32,7 +32,7 @@ const recipesData = [
     products: ['potatoes', 'mushrooms', 'spices'],
     image: 'images/roastedVegetables.jpg',
     instruction:
-      'Cut vegetables in slices. Add spices and put them in the oven at 180° for about 45 minutes.',
+      'Cut potatoes and mushrooms in slices. Add spices and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -59,7 +59,7 @@ const recipesData = [
     products: ['rice', 'paprika', 'carrots', 'tomatoes', 'spices'],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft, cut carrots in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice until soft, cut carrots in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -68,7 +68,7 @@ const recipesData = [
     products: ['rice', 'lentils', 'paprika', 'coconutmilk', 'spices'],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft, cut carrots in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -77,7 +77,7 @@ const recipesData = [
     products: ['rice', 'paprika', 'mushrooms', 'tomatoes', 'spices'],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft, cut mushrooms in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice until soft, cut mushrooms in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -86,7 +86,7 @@ const recipesData = [
     products: ['rice', 'lentils', 'zucchini', 'tomatoes', 'spices'],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut zucchini in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -95,7 +95,7 @@ const recipesData = [
     products: ['rice', 'lentils', 'zucchini', 'broccoli', 'tomatoes', 'spices'],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut zucchini and broccoli in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -111,7 +111,7 @@ const recipesData = [
     ],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut mushrooms and broccoli in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -120,30 +120,30 @@ const recipesData = [
     products: ['rice', 'lentils', 'mushrooms', 'carrots', 'tomatoes', 'spices'],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut mushrooms and carrots in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
     id: 14,
-    name: 'Stuffed peppers with paprika and carrots',
+    name: 'Stuffed peppers with tomatoes and carrots',
     products: ['rice', 'lentils', 'paprika', 'carrots', 'tomatoes', 'spices'],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut carrots in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
     id: 15,
-    name: 'Stuffed peppers with paprika and zucchini',
+    name: 'Stuffed peppers with tomatoes and zucchini',
     products: ['rice', 'lentils', 'paprika', 'zucchini', 'tomatoes', 'spices'],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut zucchini in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
     id: 16,
-    name: 'Stuffed peppers with paprika, broccoli and zucchini',
+    name: 'Stuffed peppers with tomatoes, broccoli and zucchini',
     products: [
       'rice',
       'lentils',
@@ -155,12 +155,12 @@ const recipesData = [
     ],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut zucchini and broccoli in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
     id: 17,
-    name: 'Stuffed peppers with paprika, carrots and zucchini',
+    name: 'Stuffed peppers with tomatoes, carrots and zucchini',
     products: [
       'rice',
       'lentils',
@@ -172,7 +172,7 @@ const recipesData = [
     ],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut zucchini and carrots in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -189,7 +189,7 @@ const recipesData = [
     ],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut zucchini, carrots and broccoli in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -207,7 +207,7 @@ const recipesData = [
     ],
     image: 'images/stuffedPeppers.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut zucchini, mushrooms, carrots and broccoli in small pieces. Mix everything and add tomatoes. Fill paprika with mixture and put them in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -216,12 +216,12 @@ const recipesData = [
     products: ['rice', 'mushrooms', 'zucchini', 'coconutmilk', 'spices'],
     image: 'images/stuffedZucchini.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix them with coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
+      'Cook rice until soft, cut mushrooms in small pieces. Mix them with coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
     id: 21,
-    name: 'Stuffed zucchini with lentils',
+    name: 'Stuffed zucchini with paprika and lentils',
     products: [
       'rice',
       'zucchini',
@@ -232,7 +232,7 @@ const recipesData = [
     ],
     image: 'images/stuffedZucchini.jpg',
     instruction:
-      'Cook rice and lentils until soft. Mix everything with coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft, cut paprika in small pieces Mix everything with coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -255,18 +255,18 @@ const recipesData = [
   },
   {
     id: 24,
-    name: 'Stuffed zucchini with paprika and lentils',
+    name: 'Stuffed zucchini with paprika and mushrooms',
     products: [
       'rice',
       'paprika',
       'zucchini',
-      'lentils',
+      'mushrooms',
       'coconutmilk',
       'spices',
     ],
     image: 'images/stuffedZucchini.jpg',
     instruction:
-      'Cook rice until soft. Mix it with paprika and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
+      'Cook rice until soft. Mix it with paprika, mushrooms and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -282,7 +282,7 @@ const recipesData = [
     ],
     image: 'images/stuffedZucchini.jpg',
     instruction:
-      'Cook rice until soft. Mix it with paprika and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft. Mix it with broccoli and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -298,7 +298,7 @@ const recipesData = [
     ],
     image: 'images/stuffedZucchini.jpg',
     instruction:
-      'Cook rice until soft. Mix it with paprika and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
+      'Cook rice until soft. Mix it with broccoli, mushrooms and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -314,7 +314,7 @@ const recipesData = [
     ],
     image: 'images/stuffedZucchini.jpg',
     instruction:
-      'Cook rice until soft. Mix it with paprika and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
+      'Cook rice until soft. Mix it with broccoli, carrots and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -330,7 +330,7 @@ const recipesData = [
     ],
     image: 'images/stuffedZucchini.jpg',
     instruction:
-      'Cook rice until soft. Mix it with paprika and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
+      'Cook rice until soft. Mix it with paprika, carrots and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -347,7 +347,7 @@ const recipesData = [
     ],
     image: 'images/stuffedZucchini.jpg',
     instruction:
-      'Cook rice until soft. Mix it with paprika and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
+      'Cook rice until soft. Mix it with paprika, mushrooms, carrots and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -364,7 +364,7 @@ const recipesData = [
     ],
     image: 'images/stuffedZucchini.jpg',
     instruction:
-      'Cook rice until soft. Mix it with paprika and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
+      'Cook rice until soft. Mix it with lentils, mushrooms, carrots and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -382,7 +382,7 @@ const recipesData = [
     ],
     image: 'images/stuffedZucchini.jpg',
     instruction:
-      'Cook rice until soft. Mix it with paprika and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
+      'Cook rice and lentils until soft. Mix it with mushrooms, broccoli, carrots and coconut milk and put zucchini with the mixture in the oven at 180° for about 45 minutes.',
     isBookmarked: false,
   },
   {
@@ -400,7 +400,7 @@ const recipesData = [
     products: ['pasta', 'mushrooms', 'carrots', 'coconutmilk', 'spices'],
     image: 'images/pastaMushrooms.jpg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut mushrooms and carrots in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -452,7 +452,7 @@ const recipesData = [
     ],
     image: 'images/pastaMushrooms.jpg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and zucchini in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut mushrooms, paprika and zucchini in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -468,7 +468,7 @@ const recipesData = [
     ],
     image: 'images/pastaMushrooms.jpg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and zucchini in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut mushrooms, paprika and carrots in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -484,7 +484,7 @@ const recipesData = [
     ],
     image: 'images/pastaMushrooms.jpg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and zucchini in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut mushrooms, paprika and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -500,7 +500,7 @@ const recipesData = [
     ],
     image: 'images/pastaMushrooms.jpg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and zucchini in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta and lentils until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -517,7 +517,7 @@ const recipesData = [
     ],
     image: 'images/pastaMushrooms.jpg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and zucchini in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta and lentils until soft, cut mushrooms, tomatoes and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -534,7 +534,7 @@ const recipesData = [
     ],
     image: 'images/pastaMushrooms.jpg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and zucchini in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut mushrooms, carrots, tomatoes and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -551,7 +551,7 @@ const recipesData = [
     ],
     image: 'images/pastaMushrooms.jpg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and zucchini in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut mushrooms, carrots, tomatoes and paprika in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -569,7 +569,7 @@ const recipesData = [
     ],
     image: 'images/pastaMushrooms.jpg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and zucchini in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut mushrooms, carrots, tomatoes, broccoli and paprika in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -784,7 +784,7 @@ const recipesData = [
   },
   {
     id: 60,
-    name: 'Potatoe-carrot pancakes with mixed vegetables',
+    name: 'Potato and carrot pancakes with mixed vegetables',
     products: [
       'potatoes',
       'carrots',
@@ -806,16 +806,16 @@ const recipesData = [
     products: ['potatoes', 'carrots', 'paprika', 'spices', 'tomatoes'],
     image: 'images/potatoePancakes.jpg',
     instruction:
-      'Cook rice, potatoes and lentils until soft. Mix rice, lentils and add spices and form burger patties. Roast them in a pan. Serve patties wtih potatoes and vegetables.',
+      'Cook potatoes and carrots until soft. Mix them and add spices and form small pancakes. Roast them in a pan. Serve pancakes wtih potatoes and vegetables.',
     isBookmarked: false,
   },
   {
     id: 62,
-    name: 'Potatoe-carrot pancakes with lentils',
+    name: 'Potatoe-carrot pancakes with paprika and lentils',
     products: ['potatoes', 'carrots', 'paprika', 'lentils', 'spices'],
     image: 'images/potatoePancakes.jpg',
     instruction:
-      'Cook rice, potatoes and lentils until soft. Mix rice, lentils and add spices and form burger patties. Roast them in a pan. Serve patties wtih potatoes and vegetables.',
+    'Cook potatoes and carrots until soft. Mix them and add spices and form small pancakes. Roast them in a pan. Serve pancakes wtih potatoes and vegetables.',
     isBookmarked: false,
   },
   {
@@ -824,7 +824,7 @@ const recipesData = [
     products: ['potatoes', 'carrots', 'broccoli', 'spices', 'coconutmilk'],
     image: 'images/potatoePancakes.jpg',
     instruction:
-      'Cook rice, potatoes and lentils until soft. Mix rice, lentils and add spices and form burger patties. Roast them in a pan. Serve patties wtih potatoes and vegetables.',
+    'Cook potatoes and carrots until soft. Mix them and add spices and form small pancakes. Roast them in a pan. Serve pancakes wtih potatoes and vegetables.',
     isBookmarked: false,
   },
   {
@@ -833,7 +833,7 @@ const recipesData = [
     products: ['potatoes', 'carrots', 'zucchini', 'spices', 'coconutmilk'],
     image: 'images/potatoePancakes.jpg',
     instruction:
-      'Cook rice, potatoes and lentils until soft. Mix rice, lentils and add spices and form burger patties. Roast them in a pan. Serve patties wtih potatoes and vegetables.',
+    'Cook potatoes and carrots until soft. Mix them and add spices and form small pancakes. Roast them in a pan. Serve pancakes wtih potatoes and vegetables.',
     isBookmarked: false,
   },
   {
@@ -842,7 +842,7 @@ const recipesData = [
     products: ['rice', 'carrots', 'broccoli', 'coconutmilk', 'spices'],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice until soft. Cook lentils and carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice, broccoli and carrots until soft and mix them in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -851,7 +851,7 @@ const recipesData = [
     products: ['rice', 'carrots', 'paprika', 'broccoli', 'tomatoes', 'spices'],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice until soft. Cook lentils and carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice carrots until soft and mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -860,7 +860,7 @@ const recipesData = [
     products: ['rice', 'paprika', 'mushrooms', 'tomatoes', 'spices'],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice until soft. Cook carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice until soft and mix it with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -869,7 +869,7 @@ const recipesData = [
     products: ['rice', 'mushrooms', 'tomatoes', 'broccoli', 'spices'],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice until soft. Cook carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice until soft and mix it with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -878,7 +878,7 @@ const recipesData = [
     products: ['rice', 'broccoli', 'lentils', 'coconutmilk', 'spices'],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice until soft. Cook lentils, broccoli and carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice and lentils until soft and mix them with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -887,7 +887,7 @@ const recipesData = [
     products: ['rice', 'carrots', 'lentils', 'coconutmilk', 'spices'],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice until soft. Cook lentils, broccoli and carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice and lentils until soft and mix them with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -903,7 +903,7 @@ const recipesData = [
     ],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice and lentils until soft. Cook lentils, broccoli and carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice and lentils until soft and mix them with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -920,7 +920,7 @@ const recipesData = [
     ],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice and lentils until soft. Cook lentils, broccoli and carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice and lentils until soft and mix them with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -937,7 +937,7 @@ const recipesData = [
     ],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice and lentils until soft. Cook lentils, broccoli and carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice and lentils until soft and mix them with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -954,7 +954,7 @@ const recipesData = [
     ],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice and lentils until soft. Cook lentils, broccoli and carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice and lentils until soft and mix them with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -971,7 +971,7 @@ const recipesData = [
     ],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice and lentils until soft. Cook lentils, broccoli and carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice until soft and mix it with vegetables in a panCix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -988,7 +988,7 @@ const recipesData = [
     ],
     image: 'images/riceVegetable.jpg',
     instruction:
-      'Cook rice and lentils until soft. Cook lentils, broccoli and carrots until soft an mix rice with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook rice and lentils until soft and mix them with vegetables in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1157,7 +1157,7 @@ const recipesData = [
     ],
     image: 'images/potatoVegetable.jpeg',
     instruction:
-      'Cook potatoes until soft. Mix potatoes with vegetables in a pan and add coconutmilk and spices. Cook it for around 10 minutes.',
+      'Cook potatoes until soft. Mix potatoes with vegetables in a pan and add tomatoes and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1209,7 +1209,7 @@ const recipesData = [
     ],
     image: 'images/potatoVegetable.jpeg',
     instruction:
-      'Cook potatoes until soft. Mix potatoes with vegetables in a pan and add coconutmilk and spices. Cook it for around 10 minutes.',
+      'Cook potatoes until soft. Mix potatoes with vegetables in a pan and add tomatoes and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1236,12 +1236,12 @@ const recipesData = [
     products: ['potatoes', 'spices', 'coconutmilk'],
     image: 'images/potatoeSoup.jpg',
     instruction:
-      'Cook potatoes until soft. Mash potatoes, add coconutmilk and lentils. Cook it for around 10 minutes.',
+      'Cook potatoes until soft. Mash potatoes and add coconutmilk. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 99,
-    name: 'Potatoe-mushroom soup',
+    name: 'Potatoe and mushroom soup',
     products: ['potatoes', 'mushrooms', 'spices', 'coconutmilk'],
     image: 'images/potatoeMushroomSoup.jpg',
     instruction:
@@ -1250,11 +1250,11 @@ const recipesData = [
   },
   {
     id: 100,
-    name: 'Potatoe-mushroom soup with carrots',
+    name: 'Potatoe and mushroom soup with carrots',
     products: ['potatoes', 'mushrooms', 'carrots', 'spices', 'coconutmilk'],
     image: 'images/potatoeMushroomSoup.jpg',
     instruction:
-      'Cook potatoes until soft. Mash potatoes and more than half of the mushrooms, add coconutmilk and mushrooms. Cook it for around 10 minutes.',
+      'Cook potatoes and carrots until soft. Mash them and more than half of the mushrooms, add coconutmilk and mushrooms. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1268,7 +1268,7 @@ const recipesData = [
   },
   {
     id: 102,
-    name: 'Carrot-lentil soup',
+    name: 'Carrot and lentil soup',
     products: ['carrots', 'lentils', 'coconutmilk', 'spices'],
     image: 'images/carrotLentilSoup.jpg',
     instruction:
@@ -1400,29 +1400,29 @@ const recipesData = [
   },
   {
     id: 115,
-    name: 'Tomatoe soup',
+    name: 'Tomato soup',
     products: ['tomatoes', 'coconutmilk', 'spices'],
     image: 'images/tomatoeSoup.jpeg',
     instruction:
-      'Mash carrots and add coconutmilk and spices. Cook it for around 10 minutes.',
+      'Mash tomatoes and add coconutmilk and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 116,
-    name: 'Tomatoe soup with lentils',
+    name: 'Tomato soup with lentils',
     products: ['tomatoes', 'lentils', 'coconutmilk', 'spices'],
     image: 'images/tomatoeSoup.jpeg',
     instruction:
-      'Mash carrots and add coconutmilk and spices. Cook it for around 10 minutes.',
+      'Mash tomatoes and add coconutmilk, lentils and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 117,
-    name: 'Tomatoe soup with paprika',
+    name: 'Tomato soup with paprika',
     products: ['tomatoes', 'paprika', 'coconutmilk', 'spices'],
     image: 'images/tomatoeSoup.jpeg',
     instruction:
-      'Mash carrots and add coconutmilk and spices. Cook it for around 10 minutes.',
+      'Mash tomatoes and add coconutmilk, paprika and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1438,7 +1438,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add tomatoes and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1454,7 +1454,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut mushrooms, carrots and broccoli in pieces and put everything in a pan. Add tomatoes and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1470,7 +1470,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut zucchini, carrots and broccoli in pieces and put everything in a pan. Add tomatoes and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1482,11 +1482,12 @@ const recipesData = [
       'broccoli',
       'carrots',
       'paprika',
+      'tomatoes',
       'spices',
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut paprika, carrots, mushrooms and broccoli in pieces and put everything in a pan. Add tomatoes and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1503,7 +1504,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut paprika, carrots, tomatoes, mushrooms and broccoli in pieces and put everything in a pan. Add tomatoes and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1520,7 +1521,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut paprika, lentils, tomatoes, mushrooms and broccoli in pieces and put everything in a pan. Add tomatoes and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1536,7 +1537,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut paprika, zucchini and carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1553,7 +1554,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut paprika, zucchini, lentils and carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1570,7 +1571,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut paprika, mushrooms, lentils and carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1587,7 +1588,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut paprika, tomatoes, mushrooms and carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1604,7 +1605,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut paprika, tomatoes, mushrooms and carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1620,7 +1621,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut zucchini, tomatoes and carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1637,7 +1638,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut zucchini, paprika, tomatoes and carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1655,7 +1656,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut zucchini, paprika, tomatoes, mushrooms and carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1671,7 +1672,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta and lentils until soft, cut zucchini and  mushrooms in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1687,7 +1688,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut zucchini, paprika and tomatoes in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1696,7 +1697,7 @@ const recipesData = [
     products: ['pasta', 'carrots', 'paprika', 'tomatoes', 'spices'],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut carrots, paprika and tomatoes in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1712,7 +1713,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut carrots, paprika and broccoli in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1729,7 +1730,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut carrots, paprika, zucchini and broccoli in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1745,7 +1746,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta and lentils until soft, cut mushrooms and tomatoes in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1762,7 +1763,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta and lentils until soft, cut mushrooms, carrots and tomatoes in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1778,7 +1779,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta and lentils until soft, cut paprika and carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1795,7 +1796,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta and lentils until soft, cut paprika, carrots and broccoli in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1804,7 +1805,7 @@ const recipesData = [
     products: ['pasta', 'lentils', 'carrots', 'coconutmilk', 'spices'],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta and lentils until soft, cut carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1813,7 +1814,7 @@ const recipesData = [
     products: ['pasta', 'tomatoes', 'zucchini', 'coconutmilk', 'spices'],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut  tomatoes and zucchini in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1822,7 +1823,7 @@ const recipesData = [
     products: ['pasta', 'tomatoes', 'broccoli', 'carrots', 'paprika', 'spices'],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut carrots, paprika and broccoli in pieces and put everything in a pan. Add tomatoes and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1831,7 +1832,7 @@ const recipesData = [
     products: ['pasta', 'zucchini', 'carrots', 'coconutmilk', 'spices'],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut zucchini and carrots in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1847,7 +1848,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut broccoli, paprika and tomatoes in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1856,7 +1857,7 @@ const recipesData = [
     products: ['pasta', 'broccoli', 'tomatoes', 'coconutmilk', 'spices'],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut broccoli and tomatoes in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1872,7 +1873,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut broccoli, tomatoes and zucchini in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1889,7 +1890,7 @@ const recipesData = [
     ],
     image: 'images/pastaInPan.jpeg',
     instruction:
-      'Cook pasta until soft, cut mushrooms and broccoli in pieces and put everything in a pan. Add coconut milk and spices and cook it for around 10 minutes.',
+      'Cook pasta until soft, cut broccoli, tomatoes, paprika and zucchini in pieces and put everything in a pan. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1898,7 +1899,7 @@ const recipesData = [
     products: ['broccoli', 'coconutmilk', 'spices'],
     image: 'images/broccoliSoup.jpeg',
     instruction:
-      'Cook broccoli until soft. Mash broccoli and add coconutmilk. Cook it for around 10 minutes.',
+      'Cook broccoli until soft. Mash broccoli and add coconutmilk and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1907,7 +1908,7 @@ const recipesData = [
     products: ['broccoli', 'carrots', 'coconutmilk', 'spices'],
     image: 'images/broccoliSoup.jpeg',
     instruction:
-      'Cook broccoli and carrots until soft. Mash vegetables and add coconutmilk. Cook it for around 10 minutes.',
+      'Cook broccoli and carrots until soft. Mash vegetables and add coconutmilk and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1916,7 +1917,7 @@ const recipesData = [
     products: ['broccoli', 'lentils', 'coconutmilk', 'spices'],
     image: 'images/broccoliSoup.jpeg',
     instruction:
-      'Cook broccoli and lentils until soft. Mash vegetables and add coconutmilk. Cook it for around 10 minutes.',
+      'Cook broccoli and lentils until soft. Mash vegetables and add coconutmilk and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1925,7 +1926,7 @@ const recipesData = [
     products: ['broccoli', 'potatoes', 'coconutmilk', 'spices'],
     image: 'images/broccoliSoup.jpeg',
     instruction:
-      'Cook broccoli and potatoes until soft. Mash vegetables and add coconutmilk. Cook it for around 10 minutes.',
+      'Cook broccoli and potatoes until soft. Mash vegetables and add coconutmilk and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1934,7 +1935,7 @@ const recipesData = [
     products: ['broccoli', 'potatoes', 'lentils', 'coconutmilk', 'spices'],
     image: 'images/broccoliSoup.jpeg',
     instruction:
-      'Cook broccoli, lentils and potatoes until soft. Mash vegetables and add coconutmilk. Cook it for around 10 minutes.',
+      'Cook broccoli, lentils and potatoes until soft. Mash vegetables and add coconutmilk and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1943,7 +1944,7 @@ const recipesData = [
     products: ['broccoli', 'potatoes', 'carrots', 'coconutmilk', 'spices'],
     image: 'images/broccoliSoup.jpeg',
     instruction:
-      'Cook broccoli, carrots and potatoes until soft. Mash vegetables and add coconutmilk. Cook it for around 10 minutes.',
+      'Cook broccoli, carrots and potatoes until soft. Mash vegetables and add coconutmilk and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1959,7 +1960,7 @@ const recipesData = [
     ],
     image: 'images/broccoliSoup.jpeg',
     instruction:
-      'Cook broccoli, carrots and potatoes until soft. Mash vegetables and add coconutmilk. Cook it for around 10 minutes.',
+      'Cook broccoli, lentils, carrots and potatoes until soft. Mash vegetables and add coconutmilk and spices. Cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1968,7 +1969,7 @@ const recipesData = [
     products: ['potatoes', 'zucchini', 'carrots', 'tomatoes', 'spices'],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes, carrots and broccoli until soft. Add tomatoes and spices and cook it for around 10 minutes.',
+      'Cook potatoes, carrots and zucchini until soft. Add tomatoes and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1984,7 +1985,7 @@ const recipesData = [
     ],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes and carrots until soft. Add tomatoes, zucchini, mushrooms and spices and cook it for around 10 minutes.',
+      'Cook potatoes, zucchini and carrots until soft. Add tomatoes and mushrooms and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -1993,7 +1994,7 @@ const recipesData = [
     products: ['potatoes', 'zucchini', 'mushrooms', 'tomatoes', 'spices'],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, mushrooms and spices and cook it for around 10 minutes.',
+      'Cook potatoes and zucchini until soft. Add tomatoes, mushrooms and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2009,7 +2010,7 @@ const recipesData = [
     ],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes and zucchini until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2018,7 +2019,7 @@ const recipesData = [
     products: ['potatoes', 'zucchini', 'paprika', 'tomatoes', 'spices'],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes and zucchini until soft. Add tomatoes, paprika and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2035,7 +2036,7 @@ const recipesData = [
     ],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes and carrots until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes, zucchini and carrots until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2060,7 +2061,7 @@ const recipesData = [
     ],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes and lentils until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2076,7 +2077,7 @@ const recipesData = [
     ],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes, zucchini and carrots until soft. Add coconutmilk and paprika and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2093,7 +2094,7 @@ const recipesData = [
     ],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes, zucchini and carrots until soft. Add tomatoes, coconutmilk, paprika and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2111,7 +2112,7 @@ const recipesData = [
     ],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes, zucchini, lentils and carrots until soft. Add tomatoes, coconutmilk, paprika and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2127,7 +2128,7 @@ const recipesData = [
     ],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes,  zucchini and carrots until soft. Add tomatoes, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2143,7 +2144,7 @@ const recipesData = [
     ],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes and zucchini until soft. Add tomatoes, mushrooms, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2160,7 +2161,7 @@ const recipesData = [
     ],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes and zucchini until soft. Add tomatoes, mushrooms, paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2169,7 +2170,7 @@ const recipesData = [
     products: ['potatoes', 'mushrooms', 'tomatoes', 'coconutmilk', 'spices'],
     image: 'images/potatoesWithVegetables.jpeg',
     instruction:
-      'Cook potatoes until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook potatoes until soft. Add tomatoes, mushrooms, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2185,7 +2186,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils, zucchini and broccoli until soft. Add tomatoes and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2202,7 +2203,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils, zucchini, carrots and broccoli until soft. Add tomatoes, mushrooms and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2219,7 +2220,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils, zucchini and broccoli until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2228,7 +2229,7 @@ const recipesData = [
     products: ['rice', 'mushrooms', 'lentils', 'paprika', 'tomatoes', 'spices'],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice lentils and broccoli until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2237,7 +2238,7 @@ const recipesData = [
     products: ['rice', 'mushrooms', 'paprika', 'tomatoes', 'spices'],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice and broccoli until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2253,7 +2254,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, zucchini and lentils until soft. Add tomatoes, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2270,7 +2271,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice lentils and zucchini until soft. Add tomatoes, mushrooms, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2287,7 +2288,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils and zucchini until soft. Add tomatoes, paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2304,7 +2305,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice and lentils until soft. Add tomatoes, mushrooms, paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2322,7 +2323,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils and carrots, until soft. Add tomatoes, mushrooms, paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2338,7 +2339,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice and lentils until soft. Add tomatoes, mushrooms, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2347,7 +2348,7 @@ const recipesData = [
     products: ['rice', 'lentils', 'tomatoes', 'coconutmilk', 'spices'],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice and lentils until soft. Add tomatoes, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2363,7 +2364,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils and carrots until soft. Add paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2380,7 +2381,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils, zucchini and carrots until soft. Add paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2397,7 +2398,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils and carrots until soft. Add mushrooms, paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2414,12 +2415,12 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils, carrots and broccoli until soft. Add mushrooms, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 187,
-    name: 'Rice with lentils, mushrooms and broccoli ',
+    name: 'Rice with lentils, mushrooms and broccoli',
     products: [
       'rice',
       'lentils',
@@ -2430,21 +2431,21 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils and broccoli until soft. Add mushrooms, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 188,
-    name: 'Rice with mushrooms and broccoli ',
+    name: 'Rice with mushrooms and broccoli',
     products: ['rice', 'mushrooms', 'broccoli', 'coconutmilk', 'spices'],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice and broccoli until soft. Add mushrooms, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 189,
-    name: 'Rice with mushrooms, tomatoes and broccoli ',
+    name: 'Rice with mushrooms, tomatoes and broccoli',
     products: [
       'rice',
       'mushrooms',
@@ -2455,12 +2456,12 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice and broccoli until soft. Add tomatoes, mushrooms, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 190,
-    name: 'Rice with paprika, carrots, tomatoes and broccoli ',
+    name: 'Rice with paprika, carrots, tomatoes and broccoli',
     products: [
       'rice',
       'carrots',
@@ -2472,12 +2473,12 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, carrots and broccoli until soft. Add tomatoes, paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 191,
-    name: 'Rice with paprika, tomatoes and broccoli ',
+    name: 'Rice with paprika, tomatoes and broccoli',
     products: [
       'rice',
       'tomatoes',
@@ -2488,12 +2489,12 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice and broccoli until soft. Add tomatoes, paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 192,
-    name: 'Rice with paprika, lentils, tomatoes and broccoli ',
+    name: 'Rice with paprika, lentils, tomatoes and broccoli',
     products: [
       'rice',
       'tomatoes',
@@ -2505,12 +2506,12 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils and broccoli until soft. Add tomatoes, paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 193,
-    name: 'Rice with paprika, lentils and broccoli ',
+    name: 'Rice with paprika, lentils and broccoli',
     products: [
       'rice',
       'paprika',
@@ -2521,12 +2522,12 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils and broccoli until soft. Add paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 194,
-    name: 'Rice with carrots, lentils and broccoli ',
+    name: 'Rice with carrots, lentils and broccoli',
     products: [
       'rice',
       'carrots',
@@ -2537,21 +2538,21 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, carrots, lentils and broccoli until soft. Add coconutmilkand spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 195,
-    name: 'Rice with paprika and broccoli ',
+    name: 'Rice with paprika and broccoli',
     products: ['rice', 'paprika', 'broccoli', 'coconutmilk', 'spices'],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice and broccoli until soft. Add paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 196,
-    name: 'Rice with paprika, zucchini and broccoli ',
+    name: 'Rice with paprika, zucchini and broccoli',
     products: [
       'rice',
       'paprika',
@@ -2562,12 +2563,12 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, zucchini and broccoli until soft. Add paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
     id: 197,
-    name: 'Rice with paprika, lentils, zucchini and broccoli ',
+    name: 'Rice with paprika, lentils, zucchini and broccoli',
     products: [
       'rice',
       'paprika',
@@ -2579,7 +2580,7 @@ const recipesData = [
     ],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils, zucchini and broccoli until soft. Add paprika, coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
   {
@@ -2588,7 +2589,7 @@ const recipesData = [
     products: ['rice', 'lentils', 'zucchini', 'coconutmilk', 'spices'],
     image: 'images/riceWithVegetables.jpeg',
     instruction:
-      'Cook rice until soft. Add tomatoes, mushrooms, paprika and spices and cook it for around 10 minutes.',
+      'Cook rice, lentils and zucchini until soft. Add coconutmilk and spices and cook it for around 10 minutes.',
     isBookmarked: false,
   },
 ]

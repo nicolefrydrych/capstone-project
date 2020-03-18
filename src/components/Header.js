@@ -2,11 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 export default function Header({ headerName }) {
-  return (
-    <HeaderStyled>
-      <h1>{headerName}</h1>
-    </HeaderStyled>
-  )
+  return <HeaderStyled>{headerName}</HeaderStyled>
 }
 
 const HeaderStyled = styled.header`
@@ -20,8 +16,8 @@ const HeaderStyled = styled.header`
   position: fixed;
   z-index: 1;
   width: 100%;
-  margin-bottom: 20px;
-  font-family: Times;
   max-width: 460px;
   margin: 0 auto;
+  font-size: 40px;
+  font-family: 'Century Gothic';
 `
