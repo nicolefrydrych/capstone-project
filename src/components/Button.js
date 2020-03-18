@@ -13,4 +13,5 @@ const ButtonStyled = styled.button`
   font-size: 18px;
   text-align: center;
   color: white;
+  font-family: 'Gill Sans';
 `

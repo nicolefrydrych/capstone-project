@@ -13,22 +13,24 @@ export default function Cardlist({ recipes, onBookmarkClick, onDeleteCard }) {
       <ScrollContainerAll>
         <ProductList onProductClick={handleProductClick} />
         <CardContainer>
-          {selectedProducts.length > 0
-            ? recipes
+          {recipes && selectedProducts.length > 0
+            ? recipes &&
+              recipes
                 .filter(recipe =>
                   checkArrays(selectedProducts, recipe.products)
                 )
                 .map(recipe => (
                   <Card
-                    key={recipe.id}
+                    key={recipe._id}
                     {...recipe}
                     handleBookmarkClick={onBookmarkClick}
                     handleDeleteRecipe={onDeleteCard}
                   ></Card>
                 ))
-            : recipes.map(recipe => (
+            : recipes &&
+              recipes.map(recipe => (
                 <Card
-                  key={recipe.id}
+                  key={recipe._id}
                   {...recipe}
                   handleBookmarkClick={onBookmarkClick}
                   handleDeleteRecipe={onDeleteCard}
@@ -58,6 +60,15 @@ export default function Cardlist({ recipes, onBookmarkClick, onDeleteCard }) {
   }
 }
 
+const ScrollContainerAll = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 115px;
+  overflow: hidden;
+`
+
 const CardContainer = styled.div`
   display: grid;
   gap: 50px;
@@ -65,11 +76,4 @@ const CardContainer = styled.div`
   padding: 50px 60px;
 `
 
-const ScrollContainerAll = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 110px;
-  overflow: hidden;
-`
+

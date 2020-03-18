@@ -71,6 +71,13 @@ export default function Fridge({ addRecipe }) {
   }
 }
 
+const CardForm = styled.form`
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 const InputStyled = styled.input`
   box-sizing: border-box;
   width: 100%;
@@ -80,7 +87,6 @@ const InputStyled = styled.input`
   padding-left: 5px;
   background: white;
   color: gray;
-  font-family: Arial;
   height: ${props => props.height || 35}px;
 `
 
@@ -90,7 +96,6 @@ const SpanStyled = styled.span`
   padding: 7px;
   text-align: center;
   color: gray;
-  font-family: Arial;
   font-size: 16px;
 `
 
@@ -106,7 +111,6 @@ const LabelStyled = styled.label`
   padding: 3px 12px;
   color: #b9b9b9;
   font-size: 14px;
-  font-family: Arial;
 `
 
 const UlStyled = styled.ul`
@@ -122,12 +126,7 @@ const LiStyled = styled.li`
   border-radius: 5px;
 `
 
-const CardForm = styled.form`
-  margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
+
 
 const StyledButtonDiv = styled.div`
   display: grid;

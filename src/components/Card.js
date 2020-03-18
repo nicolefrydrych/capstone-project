@@ -4,7 +4,7 @@ import { useToggle } from 'react-hooks-lib'
 import Bookmark from './Bookmark'
 
 export default function Card({
-  id,
+  _id,
   name,
   instruction,
   image,
@@ -18,12 +18,12 @@ export default function Card({
   return (
     <CardStyled>
       <Bookmark
-        id={id}
+        _id={_id}
         onBookmarkClick={handleBookmarkClick}
         statusOfBookmark={isBookmarked}
       />
 
-      <h3>{name}</h3>
+      <NameTextStyled>{name}</NameTextStyled>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
 
@@ -51,7 +51,7 @@ export default function Card({
       )}
       {on === true ? (
         <ImageBinStyled
-          onClick={() => handleDeleteRecipe(id)}
+          onClick={() => handleDeleteRecipe(_id)}
           src="images/bin.svg"
         />
       ) : (
@@ -61,12 +61,14 @@ export default function Card({
   )
 }
 
+
+
 const CardStyled = styled.section`
   position: relative;
   display: grid;
   gap: 8px;
   background-image: linear-gradient(60deg, #faf5ef, white);
-  padding: 24px 20px 16px;
+  padding: 24px 20px 12px;
   border-radius: 15px;
   box-shadow: 0 10px 10px #0002;
   width: 310px;
@@ -86,27 +88,34 @@ const ProductListItemStyled = styled.li`
   font-size: 16px;
   margin-left: 2px;
   margin-top: 3px;
+  color: #737271
+`
+const NameTextStyled = styled.h3`
+  color: #737271;
 `
 
 const InstructionTextStyled = styled.h5`
   width: 90px;
   height: 21px;
   margin-left: 5px;
-  margin-top: 12px;
+  margin-top: 6px;
+  color: #737271;
 `
 
 const DivStyled = styled.div`
   margin-left: 5px;
+  color: #6b6967
 `
 const InstructionStyled = styled.div`
   font-weight: bold;
   margin-top: 10px;
+  color: #6b6967;
 `
 const ImageBinStyled = styled.img`
   position: absolute;
   width: 30px;
   height: 26px;
   opacity: 0.3;
-  bottom: 16px;
-  right: 12px;
+  bottom: 10px;
+  right: 8px;
 `
