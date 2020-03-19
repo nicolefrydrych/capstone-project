@@ -6,7 +6,7 @@ import StartPage from './pages/StartPage'
 import CardList from './pages/CardList'
 import Favorites from './pages/Favorites'
 import CreateRecipe from './pages/CreateRecipe'
-import ShoppingList from './pages/ShoppingList'
+import Shoppinglist from './pages/Shoppinglist'
 import { getFromLocal, saveToLocal, getRecipes } from './common/services'
 
 export default function App() {
@@ -39,7 +39,7 @@ export default function App() {
               <CreateRecipe addRecipe={addRecipe} />
             </Route>
             <Route path="/shoppinglist">
-              <ShoppingList />
+              <Shoppinglist />
             </Route>
             <Route path="/favorites">
               <Favorites
