@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export default function Bookmark({ _id, onBookmarkClick, statusOfBookmark }) {
   return (
     <BookmarkStyled
+      data-cy="bookmark"
       onClick={() => onBookmarkClick(_id)}
       active={statusOfBookmark}
     />

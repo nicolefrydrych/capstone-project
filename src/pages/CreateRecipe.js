@@ -21,6 +21,7 @@ export default function Fridge({ addRecipe }) {
               type="text"
               name="name"
               id="name"
+              value="name"
             />
             <SpanStyled>Enter recipe name</SpanStyled>
           </LiStyled>
@@ -125,8 +126,6 @@ const LiStyled = styled.li`
   border: 1px solid #dddddd;
   border-radius: 5px;
 `
-
-
 
 const StyledButtonDiv = styled.div`
   display: grid;

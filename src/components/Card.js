@@ -38,7 +38,7 @@ export default function Card({
       )}
       {on && (
         <DivStyled>
-          <p>{instruction}</p>
+          <p data-cy="name">{instruction}</p>
           <ProductListStyled>
             <InstructionStyled>Ingredients:</InstructionStyled>
             {products.map((product, index) => (
@@ -60,8 +60,6 @@ export default function Card({
     </CardStyled>
   )
 }
-
-
 
 const CardStyled = styled.section`
   position: relative;
@@ -88,7 +86,7 @@ const ProductListItemStyled = styled.li`
   font-size: 16px;
   margin-left: 2px;
   margin-top: 3px;
-  color: #737271
+  color: #737271;
 `
 const NameTextStyled = styled.h3`
   color: #737271;
@@ -104,7 +102,7 @@ const InstructionTextStyled = styled.h5`
 
 const DivStyled = styled.div`
   margin-left: 5px;
-  color: #6b6967
+  color: #6b6967;
 `
 const InstructionStyled = styled.div`
   font-weight: bold;
