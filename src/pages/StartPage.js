@@ -30,6 +30,19 @@ export default function StartPage() {
   )
 }
 
+const StartPageContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  background: #fcf4e9;
+  height: 100%;
+`
+
+const LinkStyled = styled(NavLink)`
+  text-decoration: none;
+  color: white;
+`
+
 const HintStyledRight = styled.p`
   position: absolute;
   top: 16px;
@@ -56,14 +69,6 @@ const HintStyledLeft = styled.p`
   color: #9e9393;
 `
 
-const StartPageContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 10px;
-  background: #fcf4e9;
-  height: 100%;
-`
-
 const FirstDivStyled = styled.section`
   position: relative;
   width: auto;
@@ -88,9 +93,4 @@ const DivStyled = styled.div`
   text-align: center;
   color: white;
   font-size: 22px;
-`
-
-const LinkStyled = styled(NavLink)`
-  text-decoration: none;
-  color: white;
 `
