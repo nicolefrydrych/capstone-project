@@ -38,7 +38,7 @@ export default function Card({
       )}
       {on && (
         <DivStyled>
-          <p data-cy="name">{instruction}</p>
+          <p>{instruction}</p>
           <ProductListStyled>
             <InstructionStyled>Ingredients:</InstructionStyled>
             {products.map((product, index) => (

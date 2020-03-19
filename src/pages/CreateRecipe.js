@@ -21,7 +21,6 @@ export default function Fridge({ addRecipe }) {
               type="text"
               name="name"
               id="name"
-              value="name"
             />
             <SpanStyled>Enter recipe name</SpanStyled>
           </LiStyled>
