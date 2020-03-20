@@ -4,15 +4,15 @@ import Header from '../components/Header'
 import Button from '../components/Button'
 import styled from 'styled-components'
 
-export default function Fridge({ addRecipe }) {
+export default function CreateRecipe({ addNewRecipe }) {
   const { register, handleSubmit } = useForm({ mode: 'onChange' })
 
   return (
     <>
       <Header headerName="Create a recipe"></Header>
-      <CardForm id="cardForm" onSubmit={handleSubmit(handleAdd)}>
-        <UlStyled>
-          <LiStyled>
+      <CardForm id="cardForm" onSubmit={handleSubmit(addRecipe)}>
+        <UnorderedListStyled>
+          <ListItemStyled>
             <LabelStyled htmlFor="name">Recipe name</LabelStyled>
             <InputStyled
               maxLength="25"
@@ -23,8 +23,8 @@ export default function Fridge({ addRecipe }) {
               id="name"
             />
             <SpanStyled>Enter recipe name</SpanStyled>
-          </LiStyled>
-          <LiStyled>
+          </ListItemStyled>
+          <ListItemStyled>
             <LabelStyled htmlFor="instruction">Instruction</LabelStyled>
             <InputStyled
               maxLength="120"
@@ -35,8 +35,8 @@ export default function Fridge({ addRecipe }) {
               id="instruction"
             />
             <SpanStyled>Enter the instruction</SpanStyled>
-          </LiStyled>
-          <LiStyled>
+          </ListItemStyled>
+          <ListItemStyled>
             <LabelStyled htmlFor="products">Products</LabelStyled>
             <InputStyled
               maxLength="120"
@@ -47,20 +47,20 @@ export default function Fridge({ addRecipe }) {
               id="products"
             />
             <SpanStyled>Enter the products you need</SpanStyled>
-          </LiStyled>
-        </UlStyled>
-        <StyledButtonDiv>
+          </ListItemStyled>
+        </UnorderedListStyled>
+        <ButtonContainer>
           <Button type="submit" buttonName="submit"></Button>
           <Button type="button" buttonName="cancel" onClick={deleteInputFields}>
             Cancel
           </Button>
-        </StyledButtonDiv>
+        </ButtonContainer>
       </CardForm>
     </>
   )
 
-  function handleAdd(data) {
-    addRecipe(data)
+  function addRecipe(data) {
+    addNewRecipe(data)
     deleteInputFields()
   }
 
@@ -113,12 +113,12 @@ const LabelStyled = styled.label`
   font-size: 14px;
 `
 
-const UlStyled = styled.ul`
+const UnorderedListStyled = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
 `
-const LiStyled = styled.li`
+const ListItemStyled = styled.li`
   margin-top: 40px;
   background: white;
   padding: 10px 0 0;
@@ -126,7 +126,7 @@ const LiStyled = styled.li`
   border-radius: 5px;
 `
 
-const StyledButtonDiv = styled.div`
+const ButtonContainer = styled.section`
   display: grid;
   gap: 25px;
   flex-direction: column;

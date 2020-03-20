@@ -3,14 +3,14 @@ import styled from 'styled-components'
 import { useToggle } from 'react-hooks-lib'
 import Bookmark from './Bookmark'
 
-export default function CardFavorites({
+export default function CardFavorite({
   id,
   name,
   instruction,
   image,
   products,
   isBookmarked,
-  handleBookmarkClick,
+  onBookmarkClick,
 }) {
   const { on, toggle } = useToggle(false)
 
@@ -18,34 +18,32 @@ export default function CardFavorites({
     <CardStyled>
       <Bookmark
         id={id}
-        onBookmarkClick={handleBookmarkClick}
+        onBookmarkClick={onBookmarkClick}
         statusOfBookmark={isBookmarked}
       />
-      <NameTextStyled data-cy="bookmarkedRecipeName">{name}</NameTextStyled>
+      <RecipeNameStyled data-cy="bookmarkedRecipeName">{name}</RecipeNameStyled>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
 
       {on === false ? (
-        <InstructionTextStyled onClick={toggle}>
+        <ToggleInstructionStyled onClick={toggle}>
           show more
-        </InstructionTextStyled>
+        </ToggleInstructionStyled>
       ) : (
-        <InstructionTextStyled onClick={toggle}>
+        <ToggleInstructionStyled onClick={toggle}>
           show less
-        </InstructionTextStyled>
+        </ToggleInstructionStyled>
       )}
       {on && (
-        <DivStyled>
+        <InstructionContainer>
           <p>{instruction}</p>
-          <ProductListStyled>
-            <InstructionStyled>Ingredients:</InstructionStyled>
+          <UnorderedListStyled>
+            <IngredientsTextStyled>Ingredients:</IngredientsTextStyled>
             {products.map((product, index) => (
-              <ProductListItemStyled key={index}>
-                {product}
-              </ProductListItemStyled>
+              <ListItemStyled key={index}>{product}</ListItemStyled>
             ))}
-          </ProductListStyled>
-        </DivStyled>
+          </UnorderedListStyled>
+        </InstructionContainer>
       )}
     </CardStyled>
   )
@@ -62,7 +60,7 @@ const CardStyled = styled.section`
   width: 310px;
 `
 
-const NameTextStyled = styled.h3`
+const RecipeNameStyled = styled.h3`
   color: #737271;
 `
 
@@ -72,19 +70,19 @@ const ImageStyled = styled.img`
   border: 3px solid #f7f5e6;
 `
 
-const ProductListStyled = styled.ul`
+const UnorderedListStyled = styled.ul`
   list-style-type: none;
   margin-top: 9px;
 `
 
-const ProductListItemStyled = styled.li`
+const ListItemStyled = styled.li`
   font-size: 16px;
   margin-left: 2px;
   margin-top: 3px;
   color: #737271;
 `
 
-const InstructionTextStyled = styled.h5`
+const ToggleInstructionStyled = styled.h5`
   width: 90px;
   height: 21px;
   margin-left: 5px;
@@ -92,12 +90,12 @@ const InstructionTextStyled = styled.h5`
   color: #737271;
 `
 
-const DivStyled = styled.div`
+const InstructionContainer = styled.section`
   margin-left: 5px;
   color: #6b6967;
 `
 
-const InstructionStyled = styled.div`
+const IngredientsTextStyled = styled.div`
   font-weight: bold;
   margin-top: 10px;
   color: #6b6967;

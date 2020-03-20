@@ -23,7 +23,7 @@ export default function Cardlist({ recipes, onBookmarkClick, onDeleteCard }) {
                   <Card
                     key={recipe.id}
                     {...recipe}
-                    handleBookmarkClick={onBookmarkClick}
+                    onBookmarkClick={onBookmarkClick}
                     handleDeleteRecipe={onDeleteCard}
                   ></Card>
                 ))
@@ -32,7 +32,7 @@ export default function Cardlist({ recipes, onBookmarkClick, onDeleteCard }) {
                 <Card
                   key={recipe.id}
                   {...recipe}
-                  handleBookmarkClick={onBookmarkClick}
+                  onBookmarkClick={onBookmarkClick}
                   handleDeleteRecipe={onDeleteCard}
                 ></Card>
               ))}
@@ -69,7 +69,7 @@ const ScrollContainerAll = styled.div`
   overflow: hidden;
 `
 
-const CardContainer = styled.div`
+const CardContainer = styled.section`
   display: grid;
   gap: 50px;
   scroll-behavior: smooth;

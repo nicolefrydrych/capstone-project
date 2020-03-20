@@ -11,7 +11,7 @@ export default function Card({
   products,
   isBookmarked,
   handleDeleteRecipe,
-  handleBookmarkClick,
+  onBookmarkClick,
 }) {
   const { on, toggle } = useToggle(false)
 
@@ -19,7 +19,7 @@ export default function Card({
     <CardStyled>
       <Bookmark
         id={id}
-        onBookmarkClick={handleBookmarkClick}
+        onBookmarkClick={onBookmarkClick}
         statusOfBookmark={isBookmarked}
       />
 
@@ -28,26 +28,26 @@ export default function Card({
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
 
       {on === false ? (
-        <InstructionTextStyled onClick={toggle}>
+        <ToggleInstructionStyled onClick={toggle}>
           show more
-        </InstructionTextStyled>
+        </ToggleInstructionStyled>
       ) : (
-        <InstructionTextStyled onClick={toggle}>
+        <ToggleInstructionStyled onClick={toggle}>
           show less
-        </InstructionTextStyled>
+        </ToggleInstructionStyled>
       )}
       {on && (
-        <DivStyled>
+        <InstructionContainer>
           <p>{instruction}</p>
           <ProductListStyled>
-            <InstructionStyled>Ingredients:</InstructionStyled>
+            <IngredientsTextStyled>Ingredients:</IngredientsTextStyled>
             {products.map((product, index) => (
               <ProductListItemStyled key={index}>
                 {product}
               </ProductListItemStyled>
             ))}
           </ProductListStyled>
-        </DivStyled>
+        </InstructionContainer>
       )}
       {on === true ? (
         <ImageBinStyled
@@ -92,7 +92,7 @@ const NameTextStyled = styled.h3`
   color: #737271;
 `
 
-const InstructionTextStyled = styled.h5`
+const ToggleInstructionStyled = styled.h5`
   width: 90px;
   height: 21px;
   margin-left: 5px;
@@ -100,11 +100,11 @@ const InstructionTextStyled = styled.h5`
   color: #737271;
 `
 
-const DivStyled = styled.div`
+const InstructionContainer = styled.section`
   margin-left: 5px;
   color: #6b6967;
 `
-const InstructionStyled = styled.div`
+const IngredientsTextStyled = styled.div`
   font-weight: bold;
   margin-top: 10px;
   color: #6b6967;

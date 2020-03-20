@@ -1,30 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
 import Header from '../components/Header'
-import { useToggle } from 'react-hooks-lib'
 import CardFavorite from '../components/CardFavorite'
 
-export default function Favorites({ recipes, handleBookmarkClick }) {
-  const { on, toggle } = useToggle(false)
+export default function Favorites({ recipes, onBookmarkClick }) {
   const filteredRecipes = recipes.filter(recipe => recipe.isBookmarked === true)
 
   return (
     <>
       <Header headerName="Favorite recipes"></Header>
       <ScrollContainerAll>
-        <CardContainer>
+        <FavoriteList>
           {filteredRecipes.length !== 0 ? (
             filteredRecipes.map(recipe => (
               <CardFavorite
                 key={recipe.id}
                 {...recipe}
-                handleBookmarkClick={handleBookmarkClick}
+                onBookmarkClick={onBookmarkClick}
               />
             ))
           ) : (
             <TextStyled>Choose your favorites</TextStyled>
           )}
-        </CardContainer>
+        </FavoriteList>
       </ScrollContainerAll>
     </>
   )
@@ -37,7 +35,7 @@ const ScrollContainerAll = styled.div`
   align-items: center;
   margin-top: 100px;
 `
-const CardContainer = styled.section`
+const FavoriteList = styled.section`
   display: grid;
   gap: 50px;
   scroll-behavior: smooth;

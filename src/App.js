@@ -32,11 +32,11 @@ export default function App() {
               <CardList
                 recipes={recipes}
                 onBookmarkClick={handleBookmarkClick}
-                onDeleteCard={onDelete}
+                onDeleteCard={deleteCard}
               />
             </Route>
             <Route path="/createarecipe">
-              <CreateRecipe addRecipe={addRecipe} />
+              <CreateRecipe addNewRecipe={addRecipe} />
             </Route>
             <Route path="/shoppinglist">
               <Shoppinglist />
@@ -44,7 +44,7 @@ export default function App() {
             <Route path="/favorites">
               <Favorites
                 recipes={recipes}
-                handleBookmarkClick={handleBookmarkClick}
+                onBookmarkClick={handleBookmarkClick}
               />
             </Route>
           </Switch>
@@ -54,7 +54,7 @@ export default function App() {
     </Router>
   )
 
-  function onDelete(id) {
+  function deleteCard(id) {
     const index = recipes.findIndex(recipe => recipe.id === id)
 
     setRecipes([...recipes.slice(0, index), ...recipes.slice(index + 1)])
