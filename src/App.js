@@ -54,14 +54,14 @@ export default function App() {
     </Router>
   )
 
-  function onDelete(_id) {
-    const index = recipes.findIndex(recipe => recipe._id === _id)
+  function onDelete(id) {
+    const index = recipes.findIndex(recipe => recipe.id === id)
 
     setRecipes([...recipes.slice(0, index), ...recipes.slice(index + 1)])
   }
 
-  function handleBookmarkClick(_id) {
-    const index = recipes.findIndex(recipe => recipe._id === _id)
+  function handleBookmarkClick(id) {
+    const index = recipes.findIndex(recipe => recipe.id === id)
 
     const updatedRecipe = {
       ...recipes[index],
@@ -82,7 +82,7 @@ export default function App() {
       ...recipe,
       image: '',
       isBookmarked: false,
-      _id: Math.floor(Math.random() * 10000000000 + 55),
+      id: Math.floor(Math.random() * 10000000000 + 55),
       products: productsArray,
     }
 

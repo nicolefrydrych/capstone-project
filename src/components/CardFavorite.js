@@ -3,14 +3,13 @@ import styled from 'styled-components'
 import { useToggle } from 'react-hooks-lib'
 import Bookmark from './Bookmark'
 
-export default function Card({
+export default function CardFavorites({
   id,
   name,
   instruction,
   image,
   products,
   isBookmarked,
-  handleDeleteRecipe,
   handleBookmarkClick,
 }) {
   const { on, toggle } = useToggle(false)
@@ -22,8 +21,7 @@ export default function Card({
         onBookmarkClick={handleBookmarkClick}
         statusOfBookmark={isBookmarked}
       />
-
-      <NameTextStyled data-cy="createdRecipeName">{name}</NameTextStyled>
+      <NameTextStyled data-cy="bookmarkedRecipeName">{name}</NameTextStyled>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
 
@@ -49,14 +47,6 @@ export default function Card({
           </ProductListStyled>
         </DivStyled>
       )}
-      {on === true ? (
-        <ImageBinStyled
-          onClick={() => handleDeleteRecipe(id)}
-          src="images/bin.svg"
-        />
-      ) : (
-        ''
-      )}
     </CardStyled>
   )
 }
@@ -72,11 +62,16 @@ const CardStyled = styled.section`
   width: 310px;
 `
 
+const NameTextStyled = styled.h3`
+  color: #737271;
+`
+
 const ImageStyled = styled.img`
   height: 140px;
   width: 260px;
   border: 3px solid #f7f5e6;
 `
+
 const ProductListStyled = styled.ul`
   list-style-type: none;
   margin-top: 9px;
@@ -86,9 +81,6 @@ const ProductListItemStyled = styled.li`
   font-size: 16px;
   margin-left: 2px;
   margin-top: 3px;
-  color: #737271;
-`
-const NameTextStyled = styled.h3`
   color: #737271;
 `
 
@@ -104,16 +96,9 @@ const DivStyled = styled.div`
   margin-left: 5px;
   color: #6b6967;
 `
+
 const InstructionStyled = styled.div`
   font-weight: bold;
   margin-top: 10px;
   color: #6b6967;
-`
-const ImageBinStyled = styled.img`
-  position: absolute;
-  width: 30px;
-  height: 26px;
-  opacity: 0.3;
-  bottom: 10px;
-  right: 8px;
 `

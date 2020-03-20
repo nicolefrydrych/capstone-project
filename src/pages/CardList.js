@@ -21,7 +21,7 @@ export default function Cardlist({ recipes, onBookmarkClick, onDeleteCard }) {
                 )
                 .map(recipe => (
                   <Card
-                    key={recipe._id}
+                    key={recipe.id}
                     {...recipe}
                     handleBookmarkClick={onBookmarkClick}
                     handleDeleteRecipe={onDeleteCard}
@@ -30,7 +30,7 @@ export default function Cardlist({ recipes, onBookmarkClick, onDeleteCard }) {
             : recipes &&
               recipes.map(recipe => (
                 <Card
-                  key={recipe._id}
+                  key={recipe.id}
                   {...recipe}
                   handleBookmarkClick={onBookmarkClick}
                   handleDeleteRecipe={onDeleteCard}
@@ -75,5 +75,3 @@ const CardContainer = styled.div`
   scroll-behavior: smooth;
   padding: 50px 60px;
 `
-
-
