@@ -126,8 +126,6 @@ const LiStyled = styled.li`
   border-radius: 5px;
 `
 
-
-
 const StyledButtonDiv = styled.div`
   display: grid;
   gap: 25px;

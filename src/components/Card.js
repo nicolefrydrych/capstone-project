@@ -23,7 +23,7 @@ export default function Card({
         statusOfBookmark={isBookmarked}
       />
 
-      <NameTextStyled>{name}</NameTextStyled>
+      <NameTextStyled data-cy="createdRecipeName">{name}</NameTextStyled>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
 
@@ -61,8 +61,6 @@ export default function Card({
   )
 }
 
-
-
 const CardStyled = styled.section`
   position: relative;
   display: grid;
@@ -88,7 +86,7 @@ const ProductListItemStyled = styled.li`
   font-size: 16px;
   margin-left: 2px;
   margin-top: 3px;
-  color: #737271
+  color: #737271;
 `
 const NameTextStyled = styled.h3`
   color: #737271;
@@ -104,7 +102,7 @@ const InstructionTextStyled = styled.h5`
 
 const DivStyled = styled.div`
   margin-left: 5px;
-  color: #6b6967
+  color: #6b6967;
 `
 const InstructionStyled = styled.div`
   font-weight: bold;

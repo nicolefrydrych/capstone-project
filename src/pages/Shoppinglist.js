@@ -29,7 +29,7 @@ export default function Shoppinglist() {
   return (
     <>
       <Header headerName="Shopping list"></Header>
-      <PageStyled>
+      <PageStyled data-cy="selectedProduct">
         <SelectStyled onChange={handleChange}>
           <option value="">Select a product</option>
           {productToShoppinglist.map(product => (
