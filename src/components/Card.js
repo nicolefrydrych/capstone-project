@@ -23,7 +23,7 @@ export default function Card({
         statusOfBookmark={isBookmarked}
       />
 
-      <NameTextStyled>{name}</NameTextStyled>
+      <NameTextStyled data-cy="createdRecipeName">{name}</NameTextStyled>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
 

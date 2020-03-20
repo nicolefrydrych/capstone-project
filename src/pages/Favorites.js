@@ -22,7 +22,9 @@ export default function Favorites({ recipes, handleBookmarkClick }) {
                   statusOfBookmark={recipe.isBookmarked}
                 />
 
-                <NameTextStyled>{recipe.name}</NameTextStyled>
+                <NameTextStyled data-cy="bookmarkedRecipeName">
+                  {recipe.name}
+                </NameTextStyled>
 
                 <ImageStyled src={recipe.image || 'images/defaultImage.jpg'} />
 
@@ -66,7 +68,7 @@ const ScrollContainerAll = styled.div`
   align-items: center;
   margin-top: 100px;
 `
-const CardContainer = styled.div`
+const CardContainer = styled.section`
   display: grid;
   gap: 50px;
   scroll-behavior: smooth;
@@ -109,12 +111,12 @@ const InstructionTextStyled = styled.h5`
 `
 const DivStyled = styled.div`
   margin-left: 5px;
-  color: #6b6967
+  color: #6b6967;
 `
 const InstructionStyled = styled.div`
   font-weight: bold;
   margin-top: 10px;
-  color: #6b6967
+  color: #6b6967;
 `
 const TextStyled = styled.h1`
   text-align: center;
