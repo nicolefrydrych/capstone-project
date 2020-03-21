@@ -815,7 +815,7 @@ const recipesData = [
     products: ['potatoes', 'carrots', 'paprika', 'lentils', 'spices'],
     image: 'images/potatoePancakes.jpg',
     instruction:
-    'Cook potatoes and carrots until soft. Mix them and add spices and form small pancakes. Roast them in a pan. Serve pancakes wtih potatoes and vegetables.',
+      'Cook potatoes and carrots until soft. Mix them and add spices and form small pancakes. Roast them in a pan. Serve pancakes wtih potatoes and vegetables.',
     isBookmarked: false,
   },
   {
@@ -824,7 +824,7 @@ const recipesData = [
     products: ['potatoes', 'carrots', 'broccoli', 'spices', 'coconutmilk'],
     image: 'images/potatoePancakes.jpg',
     instruction:
-    'Cook potatoes and carrots until soft. Mix them and add spices and form small pancakes. Roast them in a pan. Serve pancakes wtih potatoes and vegetables.',
+      'Cook potatoes and carrots until soft. Mix them and add spices and form small pancakes. Roast them in a pan. Serve pancakes wtih potatoes and vegetables.',
     isBookmarked: false,
   },
   {
@@ -833,7 +833,7 @@ const recipesData = [
     products: ['potatoes', 'carrots', 'zucchini', 'spices', 'coconutmilk'],
     image: 'images/potatoePancakes.jpg',
     instruction:
-    'Cook potatoes and carrots until soft. Mix them and add spices and form small pancakes. Roast them in a pan. Serve pancakes wtih potatoes and vegetables.',
+      'Cook potatoes and carrots until soft. Mix them and add spices and form small pancakes. Roast them in a pan. Serve pancakes wtih potatoes and vegetables.',
     isBookmarked: false,
   },
   {
@@ -2590,6 +2590,1494 @@ const recipesData = [
     image: 'images/riceWithVegetables.jpeg',
     instruction:
       'Cook rice, lentils and zucchini until soft. Add coconutmilk and spices and cook it for around 10 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 199,
+    name: 'Mediterranean pasta with paprika and carrots',
+    products: ['pasta', 'paprika', 'carrots', 'coconutmilk', 'spices'],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut paprika and carrots in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 200,
+    name: 'Mediterranean pasta with mushrooms, lentils, zucchini and tomatoes',
+    products: [
+      'pasta',
+      'mushrooms',
+      'lentils',
+      'zucchini',
+      'tomatoes',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut mushrooms, zucchini and tomatoes in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 201,
+    name: 'Mediterranean pasta with mushrooms and tomatoes',
+    products: ['pasta', 'mushrooms', 'tomatoes', 'coconutmilk', 'spices'],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut mushrooms and tomatoes in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 202,
+    name: 'Mediterranean pasta with mushrooms, broccoli and tomatoes',
+    products: [
+      'pasta',
+      'mushrooms',
+      'tomatoes',
+      'broccoli',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut mushrooms, broccoli and tomatoes in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 203,
+    name: 'Mediterranean pasta with mushrooms, paprika, broccoli and tomatoes',
+    products: [
+      'pasta',
+      'mushrooms',
+      'tomatoes',
+      'broccoli',
+      'paprika',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut mushrooms, paprika, broccoli and tomatoes in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 204,
+    name: 'Mediterranean pasta with lentils, zucchini and broccoli',
+    products: [
+      'pasta',
+      'lentils',
+      'zucchini',
+      'broccoli',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut zucchini and broccoli in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 205,
+    name: 'Mediterranean pasta with lentils and zucchini',
+    products: ['pasta', 'lentils', 'zucchini', 'coconutmilk', 'spices'],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut zucchini in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 206,
+    name: 'Mediterranean pasta with carrots, mushrooms and tomatoes',
+    products: ['pasta', 'carrots', 'mushrooms', 'tomatoes', 'spices'],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut carrots, mushrooms and tomatoes in small pieces and add spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 207,
+    name: 'Mediterranean pasta with lentils and tomatoes',
+    products: ['pasta', 'lentils', 'tomatoes', 'spices'],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut tomatoes in small pieces and add spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 208,
+    name: 'Mediterranean pasta with broccoli, lentils and tomatoes',
+    products: ['pasta', 'lentils', 'broccoli', 'tomatoes', 'spices'],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut tomatoes and broccoli in small pieces and add spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 209,
+    name: 'Mediterranean pasta with mushrooms, broccoli, lentils and tomatoes',
+    products: [
+      'pasta',
+      'lentils',
+      'mushrooms',
+      'broccoli',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut tomatoes, mushrooms and broccoli in small pieces and add spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 210,
+    name: 'Mediterranean pasta with mushrooms, broccoli, zucchini and tomatoes',
+    products: [
+      'pasta',
+      'zucchini',
+      'mushrooms',
+      'broccoli',
+      'tomatoes',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut tomatoes, mushrooms, zucchini and broccoli in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 211,
+    name: 'Mediterranean pasta with lentils, paprika, zucchini and tomatoes',
+    products: [
+      'pasta',
+      'zucchini',
+      'lentils',
+      'paprika',
+      'tomatoes',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut tomatoes, mushrooms, zucchini and paprika in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 212,
+    name: 'Mediterranean pasta with lentils, carrots, broccoli and mushrooms',
+    products: [
+      'pasta',
+      'lentils',
+      'carrots',
+      'broccoli',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut carrots, broccoli and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 213,
+    name:
+      'Mediterranean pasta with lentils, tomatoes, carrots, broccoli and mushrooms',
+    products: [
+      'pasta',
+      'lentils',
+      'carrots',
+      'tomatoes',
+      'broccoli',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut tomatoes, carrots, broccoli and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 214,
+    name:
+      'Mediterranean pasta with zucchini, lentils, tomatoes, carrots, broccoli and mushrooms',
+    products: [
+      'pasta',
+      'lentils',
+      'carrots',
+      'zucchini',
+      'tomatoes',
+      'broccoli',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut zucchini, tomatoes, carrots, broccoli and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 215,
+    name:
+      'Mediterranean pasta with zucchini, lentils, tomatoes, broccoli and mushrooms',
+    products: [
+      'pasta',
+      'lentils',
+      'zucchini',
+      'tomatoes',
+      'broccoli',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut zucchini, tomatoes, broccoli and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 216,
+    name:
+      'Mediterranean pasta with zucchini, carrots, tomatoes, broccoli and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'zucchini',
+      'tomatoes',
+      'broccoli',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut carrots, zucchini, tomatoes, broccoli and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 217,
+    name: 'Mediterranean pasta with zucchini, carrots, tomatoes and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'zucchini',
+      'tomatoes',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut carrots, zucchini, tomatoes and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 218,
+    name: 'Mediterranean pasta with zucchini, carrots and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'zucchini',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut carrots, zucchini and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 219,
+    name: 'Mediterranean pasta with zucchini, broccoli, carrots and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'zucchini',
+      'broccoli',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut broccoli, carrots, zucchini and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 220,
+    name: 'Mediterranean pasta with paprika, broccoli, carrots and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'paprika',
+      'broccoli',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut broccoli, carrots, paprika and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 221,
+    name:
+      'Mediterranean pasta with paprika, tomatoes, zucchini, broccoli, carrots and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'paprika',
+      'broccoli',
+      'zucchini',
+      'mushrooms',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut broccoli, carrots, paprika, zucchini, tomatoes and mushrooms in small pieces and add spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 222,
+    name:
+      'Mediterranean pasta with paprika, zucchini, carrots, lentils and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'paprika',
+      'lentils',
+      'zucchini',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut paprika, zucchini, carrots and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 223,
+    name:
+      'Mediterranean pasta with paprika, broccoli, zucchini, carrots, lentils and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'paprika',
+      'lentils',
+      'broccoli',
+      'zucchini',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut broccoli, paprika, zucchini, carrots and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 224,
+    name:
+      'Mediterranean pasta with paprika, broccoli, tomatoes, carrots, lentils and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'paprika',
+      'lentils',
+      'broccoli',
+      'tomatoes',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut broccoli, paprika, tomatoes, carrots and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 225,
+    name:
+      'Mediterranean pasta with zucchini, tomatoes, carrots, lentils and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'zucchini',
+      'lentils',
+      'tomatoes',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut zucchini, tomatoes, carrots and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 226,
+    name: 'Mediterranean pasta with zucchini, carrots, lentils and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'zucchini',
+      'lentils',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut zucchini, carrots and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 227,
+    name:
+      'Mediterranean pasta with zucchini, broccoli, carrots, lentils and mushrooms',
+    products: [
+      'pasta',
+      'carrots',
+      'zucchini',
+      'broccoli',
+      'lentils',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut broccoli, zucchini, carrots and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 228,
+    name: 'Mediterranean pasta with zucchini, broccoli, lentils and mushrooms',
+    products: [
+      'pasta',
+      'zucchini',
+      'broccoli',
+      'lentils',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta and lentils until soft. Cut broccoli, zucchini and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 229,
+    name: 'Mediterranean pasta with zucchini, broccoli and mushrooms',
+    products: [
+      'pasta',
+      'zucchini',
+      'broccoli',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut broccoli, zucchini and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 230,
+    name: 'Mediterranean pasta with zucchini, broccoli, paprika and mushrooms',
+    products: [
+      'pasta',
+      'zucchini',
+      'broccoli',
+      'mushrooms',
+      'paprika',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut broccoli, paprika, zucchini and mushrooms in small pieces and add coconutmilk and spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 231,
+    name:
+      'Mediterranean pasta with zucchini, broccoli, carrots, tomatoes and mushrooms',
+    products: [
+      'pasta',
+      'zucchini',
+      'broccoli',
+      'mushrooms',
+      'carrots',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/mediterraneanPasta.jpg',
+    instruction:
+      'Cook pasta until soft. Cut zucchini, broccoli, carrots, tomatoes and mushrooms in small pieces and add spices. Put it in the oven at 180° for about 45 minutes.',
+    isBookmarked: false,
+  },
+  {
+    id: 232,
+    name: 'Mashed potatoes with broccoli and tomatoes',
+    products: ['potatoes', 'broccoli', 'tomatoes', 'coconutmilk', 'spices'],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut tomatoes and broccoli in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 233,
+    name: 'Mashed potatoes with broccoli, paprika and tomatoes',
+    products: [
+      'potatoes',
+      'broccoli',
+      'tomatoes',
+      'paprika',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut tomatoes, paprika and broccoli in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 234,
+    name: 'Mashed potatoes with broccoli, lentils, paprika and tomatoes',
+    products: [
+      'potatoes',
+      'broccoli',
+      'tomatoes',
+      'lentils',
+      'paprika',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut tomatoes, paprika and broccoli in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 235,
+    name:
+      'Mashed potatoes with broccoli, carrots, lentils, paprika and tomatoes',
+    products: [
+      'potatoes',
+      'broccoli',
+      'tomatoes',
+      'carrots',
+      'lentils',
+      'paprika',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut broccoli, carrots, paprika and tomatoes in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 236,
+    name:
+      'Mashed potatoes with broccoli, zucchini, carrots, lentils, paprika and tomatoes',
+    products: [
+      'potatoes',
+      'broccoli',
+      'tomatoes',
+      'zucchini',
+      'carrots',
+      'lentils',
+      'paprika',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut broccoli, zucchini, carrots, paprika and tomatoes in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 237,
+    name: 'Mashed potatoes with broccoli, zucchini, lentils and tomatoes',
+    products: [
+      'potatoes',
+      'broccoli',
+      'tomatoes',
+      'zucchini',
+      'lentils',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut tomatoes, zucchini and broccoli in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 238,
+    name:
+      'Mashed potatoes with broccoli, carrots, zucchini, lentils and tomatoes',
+    products: [
+      'potatoes',
+      'broccoli',
+      'carrots',
+      'tomatoes',
+      'zucchini',
+      'lentils',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut tomatoes, zucchini, carrots and broccoli in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 239,
+    name:
+      'Mashed potatoes with broccoli, carrots, zucchini, paprika and tomatoes',
+    products: [
+      'potatoes',
+      'broccoli',
+      'carrots',
+      'tomatoes',
+      'zucchini',
+      'paprika',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut broccoli, carrots, zucchini, paprika and tomatoes in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 240,
+    name: 'Mashed potatoes with mushrooms and tomatoes',
+    products: ['potatoes', 'mushrooms', 'tomatoes', 'spices'],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut mushrooms and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 241,
+    name: 'Mashed potatoes with carrots, mushrooms and tomatoes',
+    products: ['potatoes', 'mushrooms', 'carrots', 'tomatoes', 'spices'],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut mushrooms, carrots and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 242,
+    name: 'Mashed potatoes with carrots, paprika, mushrooms and tomatoes',
+    products: [
+      'potatoes',
+      'mushrooms',
+      'paprika',
+      'carrots',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut mushrooms, paprika, carrots and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 243,
+    name:
+      'Mashed potatoes with carrots, lentils, paprika, mushrooms and tomatoes',
+    products: [
+      'potatoes',
+      'mushrooms',
+      'lentils',
+      'paprika',
+      'carrots',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut mushrooms, paprika, carrots and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 244,
+    name:
+      'Mashed potatoes with carrots, zucchini, lentils, paprika, mushrooms and tomatoes',
+    products: [
+      'potatoes',
+      'mushrooms',
+      'lentils',
+      'zucchini',
+      'paprika',
+      'carrots',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut zucchini, mushrooms, paprika, carrots and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 245,
+    name: 'Mashed potatoes with carrots, paprika, mushrooms and tomatoes',
+    products: [
+      'potatoes',
+      'mushrooms',
+      'paprika',
+      'carrots',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut mushrooms, paprika, carrots and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 246,
+    name:
+      'Mashed potatoes with carrots, broccoli, paprika, mushrooms and tomatoes',
+    products: [
+      'potatoes',
+      'mushrooms',
+      'paprika',
+      'carrots',
+      'broccoli',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut broccoli, mushrooms, paprika, carrots and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 247,
+    name: 'Mashed potatoes with carrots and paprika',
+    products: ['potatoes', 'paprika', 'carrots', 'coconutmilk', 'spices'],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut paprika and carrots in small pieces and coconutmilk and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 248,
+    name: 'Mashed potatoes with tomatoes, carrots and paprika',
+    products: [
+      'potatoes',
+      'paprika',
+      'tomatoes',
+      'carrots',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut tomatoes, paprika and carrots in small pieces and coconutmilk and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 249,
+    name: 'Mashed potatoes with lentils, tomatoes, carrots and paprika',
+    products: [
+      'potatoes',
+      'paprika',
+      'tomatoes',
+      'lentils',
+      'carrots',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut tomatoes, paprika and carrots in small pieces and coconutmilk and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 250,
+    name: 'Mashed potatoes with broccoli, tomatoes and zucchini',
+    products: ['potatoes', 'broccoli', 'tomatoes', 'zucchini', 'spices'],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut tomatoes, broccoli and zucchini in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 251,
+    name: 'Mashed potatoes with broccoli, mushrooms, tomatoes and zucchini',
+    products: [
+      'potatoes',
+      'broccoli',
+      'mushrooms',
+      'tomatoes',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut mushrooms, tomatoes, broccoli and zucchini in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 252,
+    name:
+      'Mashed potatoes with broccoli, carrots, mushrooms, tomatoes and zucchini',
+    products: [
+      'potatoes',
+      'broccoli',
+      'mushrooms',
+      'carrots',
+      'tomatoes',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut carrots, mushrooms, tomatoes, broccoli and zucchini in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 253,
+    name:
+      'Mashed potatoes with paprika, broccoli, carrots, mushrooms, tomatoes and zucchini',
+    products: [
+      'potatoes',
+      'broccoli',
+      'mushrooms',
+      'paprika',
+      'carrots',
+      'tomatoes',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut paprika, carrots, mushrooms, tomatoes, broccoli and zucchini in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 254,
+    name: 'Mashed potatoes with broccoli, carrots, mushrooms and tomatoes',
+    products: [
+      'potatoes',
+      'broccoli',
+      'mushrooms',
+      'carrots',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut carrots, mushrooms, tomatoes and broccoli in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 255,
+    name:
+      'Mashed potatoes with mushrooms, lentils, paprika, carrots and tomatoes',
+    products: [
+      'potatoes',
+      'mushrooms',
+      'lentils',
+      'carrots',
+      'paprika',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut mushrooms, paprika, carrots and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 256,
+    name:
+      'Mashed potatoes with mushrooms, zucchini, lentils, paprika, carrots and tomatoes',
+    products: [
+      'potatoes',
+      'mushrooms',
+      'lentils',
+      'carrots',
+      'zucchini',
+      'paprika',
+      'tomatoes',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut zucchini, mushrooms, paprika, carrots and tomatoes in small pieces and add spices and coconutmilk. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 257,
+    name: 'Mashed potatoes with mushrooms, zucchini, paprika and carrots',
+    products: [
+      'potatoes',
+      'mushrooms',
+      'carrots',
+      'zucchini',
+      'paprika',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut mushrooms, zucchini, paprika and carrots in small pieces and add spices and coconutmilk. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 258,
+    name: 'Mashed potatoes with zucchini, paprika and tomatoes',
+    products: [
+      'potatoes',
+      'tomatoes',
+      'zucchini',
+      'paprika',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut zucchini, paprika and tomatoes in small pieces and add spices and coconutmilk. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 259,
+    name: 'Mashed potatoes with zucchini and tomatoes',
+    products: ['potatoes', 'tomatoes', 'zucchini', 'coconutmilk', 'spices'],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut zucchini and tomatoes in small pieces and add spices and coconutmilk. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 260,
+    name: 'Mashed potatoes with lentils, zucchini and tomatoes',
+    products: [
+      'potatoes',
+      'tomatoes',
+      'zucchini',
+      'lentils',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut zucchini and tomatoes in small pieces and add spices and coconutmilk. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 261,
+    name:
+      'Mashed potatoes with lentils, zucchini, broccoli, mushrooms and tomatoes',
+    products: [
+      'potatoes',
+      'tomatoes',
+      'mushrooms',
+      'broccoli',
+      'zucchini',
+      'lentils',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut zucchini, broccoli, mushrooms and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 262,
+    name:
+      'Mashed potatoes with carrots, lentils, zucchini, broccoli, mushrooms and tomatoes',
+    products: [
+      'potatoes',
+      'tomatoes',
+      'mushrooms',
+      'carrots',
+      'broccoli',
+      'zucchini',
+      'lentils',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut carrots, zucchini, broccoli, mushrooms and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 263,
+    name:
+      'Mashed potatoes with paprika, lentils, zucchini, broccoli, mushrooms and tomatoes',
+    products: [
+      'potatoes',
+      'tomatoes',
+      'mushrooms',
+      'paprika',
+      'broccoli',
+      'zucchini',
+      'lentils',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut paprika, zucchini, broccoli, mushrooms and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 264,
+    name:
+      'Mashed potatoes with paprika, zucchini, broccoli, mushrooms and tomatoes',
+    products: [
+      'potatoes',
+      'tomatoes',
+      'mushrooms',
+      'paprika',
+      'broccoli',
+      'zucchini',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut paprika, zucchini, broccoli, mushrooms and tomatoes in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 265,
+    name: 'Mashed potatoes with paprika, zucchini, broccoli and tomatoes',
+    products: [
+      'potatoes',
+      'tomatoes',
+      'paprika',
+      'broccoli',
+      'zucchini',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes until soft and mash them. Cut paprika, zucchini, broccoli and tomatoes in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 266,
+    name:
+      'Mashed potatoes with paprika, zucchini, carrots, lentils and mushrooms',
+    products: [
+      'potatoes',
+      'paprika',
+      'carrots',
+      'zucchini',
+      'lentils',
+      'mushrooms',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut paprika, zucchini, carrots and mushrooms in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 267,
+    name: 'Mashed potatoes with paprika, zucchini, carrots and lentils',
+    products: [
+      'potatoes',
+      'paprika',
+      'carrots',
+      'zucchini',
+      'lentils',
+      'coconutmilk',
+      'spices',
+    ],
+    image: 'images/mashedPotatoes.jpg',
+    instruction:
+      'Cook potatoes and lentils until soft and mash them. Cut paprika, zucchini and carrots in small pieces and add coconutmilk and spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+    isBookmarked: false,
+  },
+  {
+    id: 268,
+    name: 'Rice bowl with broccoli, tomatoes and zucchini',
+    products: ['rice', 'broccoli', 'tomatoes', 'zucchini', 'spices'],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice until soft. Cut broccoli, tomatoes and zucchini in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 269,
+    name: 'Rice bowl with broccoli, carrots, tomatoes and zucchini',
+    products: ['rice', 'broccoli', 'tomatoes', 'carrots', 'zucchini', 'spices'],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice until soft. Cut carrots, broccoli, tomatoes and zucchini in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 270,
+    name: 'Rice bowl with broccoli, carrots, mushrooms, tomatoes and zucchini',
+    products: [
+      'rice',
+      'broccoli',
+      'mushrooms',
+      'tomatoes',
+      'carrots',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice until soft. Cut mushrooms, carrots, broccoli, tomatoes and zucchini in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 271,
+    name:
+      'Rice bowl with broccoli, paprika, carrots, mushrooms, tomatoes and zucchini',
+    products: [
+      'rice',
+      'broccoli',
+      'paprika',
+      'mushrooms',
+      'tomatoes',
+      'carrots',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice until soft. Cut paprika, mushrooms, carrots, broccoli, tomatoes and zucchini in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 272,
+    name: 'Rice bowl with broccoli, mushrooms, tomatoes and zucchini',
+    products: [
+      'rice',
+      'broccoli',
+      'mushrooms',
+      'tomatoes',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice until soft. Cut mushrooms, broccoli, tomatoes and zucchini in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 273,
+    name: 'Rice bowl with broccoli, lentils, mushrooms, tomatoes and zucchini',
+    products: [
+      'rice',
+      'broccoli',
+      'lentils',
+      'mushrooms',
+      'tomatoes',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut mushrooms, broccoli, tomatoes and zucchini in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 274,
+    name:
+      'Rice bowl with broccoli, paprika, lentils, mushrooms, tomatoes and zucchini',
+    products: [
+      'rice',
+      'broccoli',
+      'lentils',
+      'paprika',
+      'mushrooms',
+      'tomatoes',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut paprika, mushrooms, broccoli, tomatoes and zucchini in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 275,
+    name: 'Rice bowl with broccoli, mushrooms, tomatoes and carrots',
+    products: [
+      'rice',
+      'broccoli',
+      'carrots',
+      'mushrooms',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice until soft. Cut broccoli, mushrooms, tomatoes and carrots in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 276,
+    name: 'Rice bowl with paprika, mushrooms, carrots, tomatoes and zucchini',
+    products: [
+      'rice',
+      'paprika',
+      'carrots',
+      'mushrooms',
+      'tomatoes',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice until soft. Cut paprika, mushrooms, carrots, tomatoes and zucchini in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 277,
+    name:
+      'Rice bowl with paprika, lentils, mushrooms, carrots, tomatoes and zucchini',
+    products: [
+      'rice',
+      'paprika',
+      'carrots',
+      'mushrooms',
+      'lentils',
+      'tomatoes',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut paprika, mushrooms, carrots, tomatoes and zucchini in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 278,
+    name:
+      'Rice bowl with broccoli, paprika, zucchini, lentils, carrots and tomatoes',
+    products: [
+      'rice',
+      'paprika',
+      'carrots',
+      'lentils',
+      'broccoli',
+      'tomatoes',
+      'zucchini',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut broccoli, paprika, zucchini, carrots and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 279,
+    name: 'Rice bowl with broccoli, paprika, lentils, carrots and tomatoes',
+    products: [
+      'rice',
+      'paprika',
+      'carrots',
+      'lentils',
+      'broccoli',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut broccoli, paprika, carrots and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 280,
+    name: 'Rice bowl with broccoli, paprika, lentils and tomatoes',
+    products: ['rice', 'paprika', 'lentils', 'broccoli', 'tomatoes', 'spices'],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut broccoli, paprika and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 281,
+    name: 'Rice bowl with broccoli, lentils and tomatoes',
+    products: ['rice', 'lentils', 'broccoli', 'tomatoes', 'spices'],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut broccoli and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 282,
+    name: 'Rice bowl with broccoli, paprika, lentils and tomatoes',
+    products: ['rice', 'lentils', 'paprika', 'broccoli', 'tomatoes', 'spices'],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut paprika, broccoli and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 283,
+    name: 'Rice bowl with broccoli, mushrooms, paprika, lentils and tomatoes',
+    products: [
+      'rice',
+      'lentils',
+      'paprika',
+      'mushrooms',
+      'broccoli',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut paprika, mushrooms, broccoli and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 284,
+    name:
+      'Rice bowl with broccoli, carrots, mushrooms, paprika, lentils and tomatoes',
+    products: [
+      'rice',
+      'lentils',
+      'paprika',
+      'mushrooms',
+      'carrots',
+      'broccoli',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut carrots, paprika, mushrooms, broccoli and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 285,
+    name: 'Rice bowl with carrots, mushrooms, paprika, lentils and tomatoes',
+    products: [
+      'rice',
+      'lentils',
+      'paprika',
+      'mushrooms',
+      'carrots',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut carrots, paprika, mushrooms and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 286,
+    name:
+      'Rice bowl with carrots, zucchini, mushrooms, paprika, lentils and tomatoes',
+    products: [
+      'rice',
+      'lentils',
+      'paprika',
+      'zucchini',
+      'mushrooms',
+      'carrots',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut zucchini, carrots, paprika, mushrooms and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 287,
+    name: 'Rice bowl with carrots, zucchini, mushrooms, and tomatoes',
+    products: [
+      'rice',
+      'zucchini',
+      'mushrooms',
+      'carrots',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice until soft. Cut zucchini, carrots, mushrooms and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 288,
+    name: 'Rice bowl with zucchini, mushrooms, and tomatoes',
+    products: ['rice', 'zucchini', 'mushrooms', 'tomatoes', 'spices'],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice until soft. Cut zucchini, mushrooms and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 289,
+    name: 'Rice bowl with carrots, mushrooms, and tomatoes',
+    products: ['rice', 'carrots', 'mushrooms', 'tomatoes', 'spices'],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice until soft. Cut carrots, mushrooms and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 290,
+    name: 'Rice bowl with carrots, lentils, and tomatoes',
+    products: ['rice', 'carrots', 'lentils', 'tomatoes', 'spices'],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut carrots and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 291,
+    name: 'Rice bowl with carrots, broccoli, lentils, and tomatoes',
+    products: ['rice', 'carrots', 'lentils', 'broccoli', 'tomatoes', 'spices'],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut broccoli, carrots and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 292,
+    name: 'Rice bowl with carrots, mushrooms, broccoli, lentils, and tomatoes',
+    products: [
+      'rice',
+      'carrots',
+      'lentils',
+      'mushrooms',
+      'broccoli',
+      'tomatoes',
+      'spices',
+    ],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut mushrooms, broccoli, carrots and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
+    isBookmarked: false,
+  },
+  {
+    id: 293,
+    name: 'Rice bowl with mushrooms, lentils, and tomatoes',
+    products: ['rice', 'lentils', 'mushrooms', 'tomatoes', 'spices'],
+    image: 'images/riceBowl.jpg',
+    instruction:
+      'Cook rice and lentils until soft. Cut mushrooms, and tomatoes in small pieces and add spices. Mix vegetables and put rice with vegetables in a bowl.',
     isBookmarked: false,
   },
 ]
