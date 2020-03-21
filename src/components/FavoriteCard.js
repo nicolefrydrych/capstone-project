@@ -3,14 +3,13 @@ import styled from 'styled-components'
 import { useToggle } from 'react-hooks-lib'
 import Bookmark from './Bookmark'
 
-export default function Card({
+export default function CardFavorite({
   id,
   name,
   instruction,
   image,
   products,
   isBookmarked,
-  handleDeleteRecipe,
   onBookmarkClick,
 }) {
   const { on, toggle } = useToggle(false)
@@ -22,8 +21,7 @@ export default function Card({
         onBookmarkClick={onBookmarkClick}
         statusOfBookmark={isBookmarked}
       />
-
-      <NameTextStyled data-cy="createdRecipeName">{name}</NameTextStyled>
+      <RecipeNameStyled data-cy="bookmarkedRecipeName">{name}</RecipeNameStyled>
 
       <ImageStyled src={image || 'images/defaultImage.jpg'} />
 
@@ -39,23 +37,13 @@ export default function Card({
       {on && (
         <InstructionContainer>
           <p>{instruction}</p>
-          <ProductListStyled>
+          <UnorderedListStyled>
             <IngredientsTextStyled>Ingredients:</IngredientsTextStyled>
             {products.map((product, index) => (
-              <ProductListItemStyled key={index}>
-                {product}
-              </ProductListItemStyled>
+              <ListItemStyled key={index}>{product}</ListItemStyled>
             ))}
-          </ProductListStyled>
+          </UnorderedListStyled>
         </InstructionContainer>
-      )}
-      {on === true ? (
-        <ImageBinStyled
-          onClick={() => handleDeleteRecipe(id)}
-          src="images/bin.svg"
-        />
-      ) : (
-        ''
       )}
     </CardStyled>
   )
@@ -72,23 +60,25 @@ const CardStyled = styled.section`
   width: 310px;
 `
 
+const RecipeNameStyled = styled.h3`
+  color: #737271;
+`
+
 const ImageStyled = styled.img`
   height: 140px;
   width: 260px;
   border: 3px solid #f7f5e6;
 `
-const ProductListStyled = styled.ul`
+
+const UnorderedListStyled = styled.ul`
   list-style-type: none;
   margin-top: 9px;
 `
 
-const ProductListItemStyled = styled.li`
+const ListItemStyled = styled.li`
   font-size: 16px;
   margin-left: 2px;
   margin-top: 3px;
-  color: #737271;
-`
-const NameTextStyled = styled.h3`
   color: #737271;
 `
 
@@ -104,16 +94,9 @@ const InstructionContainer = styled.section`
   margin-left: 5px;
   color: #6b6967;
 `
+
 const IngredientsTextStyled = styled.div`
   font-weight: bold;
   margin-top: 10px;
   color: #6b6967;
-`
-const ImageBinStyled = styled.img`
-  position: absolute;
-  width: 30px;
-  height: 26px;
-  opacity: 0.3;
-  bottom: 10px;
-  right: 8px;
 `

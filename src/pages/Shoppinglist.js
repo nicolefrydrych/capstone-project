@@ -29,24 +29,26 @@ export default function Shoppinglist() {
   return (
     <>
       <Header headerName="Shopping list"></Header>
-      <PageStyled data-cy="selectedProduct">
-        <SelectStyled onChange={handleChange}>
+      <ShoppinglistContainer data-cy="selectedProduct">
+        <DropDownMenu onChange={handleChange}>
           <option value="">Select a product</option>
           {productToShoppinglist.map(product => (
             <option key={product.name} value={product.name}>
               {product.name}
             </option>
           ))}
-        </SelectStyled>
+        </DropDownMenu>
         {productToShoppinglist
           .filter(product => product.isSelected === true)
           .map(product => (
-            <DivStyled key={product.name}>
-              <SpanStyled onClick={() => onDelete(product.name)}>x</SpanStyled>
+            <ProductContainer key={product.name}>
+              <DeleteFeatureStyled onClick={() => onDelete(product.name)}>
+                x
+              </DeleteFeatureStyled>
               <ImageStyled src={product.image}></ImageStyled>
-            </DivStyled>
+            </ProductContainer>
           ))}
-      </PageStyled>
+      </ShoppinglistContainer>
     </>
   )
 
@@ -89,7 +91,7 @@ export default function Shoppinglist() {
   }
 }
 
-const PageStyled = styled.div`
+const ShoppinglistContainer = styled.div`
   display: grid;
   gap: 15px;
   flex-direction: column;
@@ -102,18 +104,18 @@ const ImageStyled = styled.img`
   border: 5px solid #f7f5e6;
 `
 
-const SpanStyled = styled.span`
+const DeleteFeatureStyled = styled.span`
   position: absolute;
   left: -10px;
   top: -14px;
   color: gray;
 `
 
-const DivStyled = styled.div`
+const ProductContainer = styled.section`
   position: relative;
 `
 
-const SelectStyled = styled.select`
+const DropDownMenu = styled.select`
   height: 50px;
   box-shadow: 0px 5px 16px -3px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;

@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function Bookmark({ _id, onBookmarkClick, statusOfBookmark }) {
+export default function Bookmark({ id, onBookmarkClick, statusOfBookmark }) {
   return (
     <BookmarkStyled
       data-cy="bookmark"
-      onClick={() => onBookmarkClick(_id)}
+      onClick={() => onBookmarkClick(id)}
       active={statusOfBookmark}
     />
   )

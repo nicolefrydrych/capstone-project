@@ -11,20 +11,20 @@ export default function StartPage() {
   return (
     <StartPageContainer>
       <LinkStyled to="/chooseameal">
-        <FirstDivStyled>
+        <FirstBoxStyled>
           {randomNumber === 0 && (
-            <HintStyledLeft>Tip of the day: {veganHints}</HintStyledLeft>
+            <LeftHintStyled>Tip of the day: {veganHints}</LeftHintStyled>
           )}
-          <DivStyled>Are you hungry? Let's cook! </DivStyled>
-        </FirstDivStyled>
+          <TextStyled>Are you hungry? Let's cook! </TextStyled>
+        </FirstBoxStyled>
       </LinkStyled>
       <LinkStyled to="/shoppinglist">
-        <SecondDivStyled>
+        <SecondBoxStyled>
           {randomNumber === 1 && (
-            <HintStyledRight>Tip of the day: {veganHints}</HintStyledRight>
+            <RightHintStyled>Tip of the day: {veganHints}</RightHintStyled>
           )}
-          <DivStyled>Let's go shopping!</DivStyled>
-        </SecondDivStyled>
+          <TextStyled>Let's go shopping!</TextStyled>
+        </SecondBoxStyled>
       </LinkStyled>
     </StartPageContainer>
   )
@@ -43,7 +43,7 @@ const LinkStyled = styled(NavLink)`
   color: white;
 `
 
-const HintStyledRight = styled.p`
+const RightHintStyled = styled.p`
   position: absolute;
   top: 16px;
   right: 16px;
@@ -56,7 +56,7 @@ const HintStyledRight = styled.p`
   color: #9e9393;
 `
 
-const HintStyledLeft = styled.p`
+const LeftHintStyled = styled.p`
   position: absolute;
   top: 16px;
   left: 16px;
@@ -69,7 +69,7 @@ const HintStyledLeft = styled.p`
   color: #9e9393;
 `
 
-const FirstDivStyled = styled.section`
+const FirstBoxStyled = styled.section`
   position: relative;
   width: auto;
   height: 100%;
@@ -79,7 +79,7 @@ const FirstDivStyled = styled.section`
   align-items: center;
 `
 
-const SecondDivStyled = styled.section`
+const SecondBoxStyled = styled.section`
   position: relative;
   width: auto;
   height: 100%;
@@ -88,7 +88,7 @@ const SecondDivStyled = styled.section`
   align-items: center;
 `
 
-const DivStyled = styled.div`
+const TextStyled = styled.div`
   margin: 0 auto;
   text-align: center;
   color: white;
