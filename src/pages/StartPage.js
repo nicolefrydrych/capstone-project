@@ -11,20 +11,20 @@ export default function StartPage() {
   return (
     <StartPageContainer>
       <LinkStyled to="/chooseameal">
-        <FirstBoxStyled>
+        <LeftBoxStyled>
           {randomNumber === 0 && (
             <LeftHintStyled>Tip of the day: {veganHints}</LeftHintStyled>
           )}
-          <TextStyled>Are you hungry? Let's cook! </TextStyled>
-        </FirstBoxStyled>
+          <TextInHint>Are you hungry? Let's cook! </TextInHint>
+        </LeftBoxStyled>
       </LinkStyled>
       <LinkStyled to="/shoppinglist">
-        <SecondBoxStyled>
+        <RightBoxStyled>
           {randomNumber === 1 && (
             <RightHintStyled>Tip of the day: {veganHints}</RightHintStyled>
           )}
-          <TextStyled>Let's go shopping!</TextStyled>
-        </SecondBoxStyled>
+          <TextInHint>Let's go shopping!</TextInHint>
+        </RightBoxStyled>
       </LinkStyled>
     </StartPageContainer>
   )
@@ -43,17 +43,23 @@ const LinkStyled = styled(NavLink)`
   color: white;
 `
 
-const RightHintStyled = styled.p`
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  border: 1px solid #baafb0;
-  text-align: center;
-  border-radius: 50px 10px 50px 50px;
-  padding: 20px 14px;
-  width: 140px;
-  background-color: #d3e0d7;
-  color: #9e9393;
+const LeftBoxStyled = styled.section`
+  position: relative;
+  width: auto;
+  height: 100%;
+  background-color: #bda8b2;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+`
+
+const RightBoxStyled = styled.section`
+  position: relative;
+  width: auto;
+  height: 100%;
+  background-color: #a7bdaf;
+  display: flex;
+  align-items: center;
 `
 
 const LeftHintStyled = styled.p`
@@ -69,26 +75,20 @@ const LeftHintStyled = styled.p`
   color: #9e9393;
 `
 
-const FirstBoxStyled = styled.section`
-  position: relative;
-  width: auto;
-  height: 100%;
-  background-color: #bda8b2;
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
+const RightHintStyled = styled.p`
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: 1px solid #baafb0;
+  text-align: center;
+  border-radius: 50px 10px 50px 50px;
+  padding: 20px 14px;
+  width: 140px;
+  background-color: #d3e0d7;
+  color: #9e9393;
 `
 
-const SecondBoxStyled = styled.section`
-  position: relative;
-  width: auto;
-  height: 100%;
-  background-color: #a7bdaf;
-  display: flex;
-  align-items: center;
-`
-
-const TextStyled = styled.div`
+const TextInHint = styled.div`
   margin: 0 auto;
   text-align: center;
   color: white;

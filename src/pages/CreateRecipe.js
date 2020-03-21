@@ -52,7 +52,7 @@ export default function CreateRecipe({ addNewRecipe }) {
         <ButtonContainer>
           <Button type="submit" buttonName="submit"></Button>
           <Button
-            margin={50}
+            margin={40}
             type="button"
             buttonName="cancel"
             onClick={deleteInputFields}
@@ -83,6 +83,34 @@ const CardForm = styled.form`
   align-items: center;
 `
 
+const UnorderedListStyled = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`
+
+const ListItemStyled = styled.li`
+  margin-top: 40px;
+  background: white;
+  padding: 10px 0 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+`
+
+const LabelStyled = styled.label`
+  float: left;
+  box-shadow: 0px -1px 26px -8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-top: -27px;
+  margin-left: 17px;
+  background: #ffffff;
+  height: 26px;
+  padding: 3px 12px;
+  color: #b9b9b9;
+  font-size: 14px;
+`
+
 const InputStyled = styled.input`
   box-sizing: border-box;
   width: 100%;
@@ -103,33 +131,6 @@ const SpanStyled = styled.span`
   text-align: center;
   color: gray;
   font-size: 16px;
-`
-
-const LabelStyled = styled.label`
-  float: left;
-  box-shadow: 0px -1px 26px -8px rgba(0, 0, 0, 0.2);
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  margin-top: -27px;
-  margin-left: 17px;
-  background: #ffffff;
-  height: 26px;
-  padding: 3px 12px;
-  color: #b9b9b9;
-  font-size: 14px;
-`
-
-const UnorderedListStyled = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-`
-const ListItemStyled = styled.li`
-  margin-top: 40px;
-  background: white;
-  padding: 10px 0 0;
-  border: 1px solid #dddddd;
-  border-radius: 5px;
 `
 
 const ButtonContainer = styled.section`

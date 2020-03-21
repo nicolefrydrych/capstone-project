@@ -43,5 +43,4 @@ const ProductContainer = styled.div`
   border-radius: 10%;
   padding: 16px 16px;
   box-shadow: 0 0 6px #0002;
-
 `

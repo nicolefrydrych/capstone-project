@@ -67,29 +67,19 @@ const CardStyled = styled.section`
   gap: 8px;
   background-image: linear-gradient(60deg, #faf5ef, white);
   padding: 24px 20px 12px;
-  border-radius: 15px;
+  border-radius: 16px;
   box-shadow: 0 10px 10px #0002;
   width: 310px;
+`
+
+const NameTextStyled = styled.h3`
+  color: #737271;
 `
 
 const ImageStyled = styled.img`
   height: 140px;
   width: 260px;
   border: 3px solid #f7f5e6;
-`
-const ProductListStyled = styled.ul`
-  list-style-type: none;
-  margin-top: 9px;
-`
-
-const ProductListItemStyled = styled.li`
-  font-size: 16px;
-  margin-left: 2px;
-  margin-top: 3px;
-  color: #737271;
-`
-const NameTextStyled = styled.h3`
-  color: #737271;
 `
 
 const ToggleInstructionStyled = styled.h5`
@@ -104,11 +94,25 @@ const InstructionContainer = styled.section`
   margin-left: 5px;
   color: #6b6967;
 `
+
+const ProductListStyled = styled.ul`
+  list-style-type: none;
+  margin-top: 9px;
+`
+
+const ProductListItemStyled = styled.li`
+  font-size: 16px;
+  margin-left: 2px;
+  margin-top: 3px;
+  color: #737271;
+`
+
 const IngredientsTextStyled = styled.div`
   font-weight: bold;
   margin-top: 10px;
   color: #6b6967;
 `
+
 const ImageBinStyled = styled.img`
   position: absolute;
   width: 30px;
