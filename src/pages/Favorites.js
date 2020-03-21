@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Header from '../components/Header'
-import CardFavorite from '../components/CardFavorite'
+import FavoriteCard from '../components/FavoriteCard'
 
 export default function Favorites({ recipes, onBookmarkClick }) {
   const filteredRecipes = recipes.filter(recipe => recipe.isBookmarked === true)
@@ -13,7 +13,7 @@ export default function Favorites({ recipes, onBookmarkClick }) {
         <FavoriteList>
           {filteredRecipes.length !== 0 ? (
             filteredRecipes.map(recipe => (
-              <CardFavorite
+              <FavoriteCard
                 key={recipe.id}
                 {...recipe}
                 onBookmarkClick={onBookmarkClick}

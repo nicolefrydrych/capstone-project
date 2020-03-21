@@ -1,22 +1,22 @@
 import React from 'react'
-import CardFavorite from './CardFavorite'
+import FavoriteCard from './FavoriteCard'
 import { action } from '@storybook/addon-actions'
 
 export default {
-  title: 'pages/CardFavorite',
-  component: CardFavorite,
+  title: 'pages/FavoriteCard',
+  component: FavoriteCard,
 }
 
-const styledCardFavorite = {
+const styledFavoriteCard = {
   position: 'absolute',
   left: '30%',
   top: '3%',
   transform: 'translate("-50", "-50")',
 }
 
-export const standardCardFavorite = () => (
-  <div style={styledCardFavorite}>
-    <CardFavorite
+export const standardFavoriteCard = () => (
+  <div style={styledFavoriteCard}>
+    <FavoriteCard
       id="Test"
       name="Title"
       image="images/defaultImage.jpg"
@@ -24,6 +24,6 @@ export const standardCardFavorite = () => (
       products={['Product1', 'Product2']}
       isBookmarked="true"
       handleBookmarkClick={action('handleBookmarkClick')}
-    ></CardFavorite>
+    ></FavoriteCard>
   </div>
 )
