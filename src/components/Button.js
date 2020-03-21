@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-export default function Header({ buttonName, ...props }) {
+export default function Button({ buttonName, ...props }) {
   return <ButtonStyled {...props}>{buttonName}</ButtonStyled>
 }
 
@@ -14,4 +14,5 @@ const ButtonStyled = styled.button`
   text-align: center;
   color: white;
   font-family: 'Gill Sans';
+  margin-bottom: ${props => props.margin || 0}px;
 `

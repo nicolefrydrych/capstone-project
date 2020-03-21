@@ -20,6 +20,7 @@ body::after {
   content: "";
   background: url("images/lemon.jpg");
   max-width: 460px;
+  height: 100%;
   margin: 0 auto;
   opacity: 0.4;
   top: 0;

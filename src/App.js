@@ -52,6 +52,10 @@ export default function App() {
         </ContentCointainer>
         <Navigation />
       </AppGrid>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </Router>
   )
 

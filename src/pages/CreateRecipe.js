@@ -51,7 +51,12 @@ export default function CreateRecipe({ addNewRecipe }) {
         </UnorderedListStyled>
         <ButtonContainer>
           <Button type="submit" buttonName="submit"></Button>
-          <Button type="button" buttonName="cancel" onClick={deleteInputFields}>
+          <Button
+            margin={50}
+            type="button"
+            buttonName="cancel"
+            onClick={deleteInputFields}
+          >
             Cancel
           </Button>
         </ButtonContainer>
@@ -86,6 +91,7 @@ const InputStyled = styled.input`
   font-size: 16px;
   padding-left: 5px;
   background: white;
+  border: 1px solid white;
   color: gray;
   height: ${props => props.height || 35}px;
 `
