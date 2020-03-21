@@ -12,12 +12,12 @@ export default function Bookmark({ id, onBookmarkClick, statusOfBookmark }) {
 }
 
 const BookmarkStyled = styled.button`
-  height: 33px;
+  height: 32px;
   padding: 0;
   outline: 0;
-  border: 13px solid ${props => (props.active ? '#ba97a0' : '#e0c3c6')};
+  border: 12px solid ${props => (props.active ? '#ba97a0' : '#e0c3c6')};
   border-bottom-color: white;
   position: absolute;
   right: 22px;
-  top: -15px;
+  top: -16px;
 `

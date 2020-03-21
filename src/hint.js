@@ -6,7 +6,7 @@ const hintsData = [
   'Eat seasonal products!',
   'Buy local products!',
   'Cook healthy!',
-  'Eat vegan!',
+  'Be vegan!',
   'Eat cornflakes with almond milk!',
 ]
 

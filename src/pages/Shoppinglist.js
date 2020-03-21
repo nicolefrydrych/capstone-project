@@ -97,23 +97,6 @@ const ShoppinglistContainer = styled.div`
   flex-direction: column;
   margin: 110px 50px 40px;
 `
-const ImageStyled = styled.img`
-  width: 80px;
-  height: 80px;
-  border-radius: 10%;
-  border: 5px solid #f7f5e6;
-`
-
-const DeleteFeatureStyled = styled.span`
-  position: absolute;
-  left: -10px;
-  top: -14px;
-  color: gray;
-`
-
-const ProductContainer = styled.section`
-  position: relative;
-`
 
 const DropDownMenu = styled.select`
   height: 50px;
@@ -124,4 +107,22 @@ const DropDownMenu = styled.select`
   margin-bottom: 20px;
   background: white;
   font-family: 'Gill Sans';
+`
+
+const ProductContainer = styled.section`
+  position: relative;
+`
+
+const DeleteFeatureStyled = styled.span`
+  position: absolute;
+  left: -10px;
+  top: -14px;
+  color: gray;
+`
+
+const ImageStyled = styled.img`
+  width: 80px;
+  height: 80px;
+  border-radius: 10%;
+  border: 5px solid #f7f5e6;
 `

@@ -70,18 +70,6 @@ const ImageStyled = styled.img`
   border: 3px solid #f7f5e6;
 `
 
-const UnorderedListStyled = styled.ul`
-  list-style-type: none;
-  margin-top: 9px;
-`
-
-const ListItemStyled = styled.li`
-  font-size: 16px;
-  margin-left: 2px;
-  margin-top: 3px;
-  color: #737271;
-`
-
 const ToggleInstructionStyled = styled.h5`
   width: 90px;
   height: 21px;
@@ -93,6 +81,18 @@ const ToggleInstructionStyled = styled.h5`
 const InstructionContainer = styled.section`
   margin-left: 5px;
   color: #6b6967;
+`
+
+const UnorderedListStyled = styled.ul`
+  list-style-type: none;
+  margin-top: 9px;
+`
+
+const ListItemStyled = styled.li`
+  font-size: 16px;
+  margin-left: 2px;
+  margin-top: 3px;
+  color: #737271;
 `
 
 const IngredientsTextStyled = styled.div`

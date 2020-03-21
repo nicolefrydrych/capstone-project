@@ -13,6 +13,13 @@ export default function Navigation() {
   )
 }
 
+const NavigationStyled = styled.nav`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  border-top: 2px solid white;
+`
+
 const LinkStyled = styled(NavLink)`
   flex-grow: 1;
   color: black;
@@ -29,11 +36,4 @@ const LinkStyled = styled(NavLink)`
   &.active {
     background: #b8a6b3;
   }
-`
-
-const NavigationStyled = styled.nav`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-flow: column;
-  border-top: 2px solid white;
 `

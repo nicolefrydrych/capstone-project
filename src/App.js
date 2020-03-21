@@ -52,10 +52,6 @@ export default function App() {
         </ContentCointainer>
         <Navigation />
       </AppGrid>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
     </Router>
   )
 
@@ -101,6 +97,7 @@ const AppGrid = styled.div`
   grid-template-rows: auto 55px;
   height: 100vh;
 `
+
 const ContentCointainer = styled.div`
   overflow: auto;
 `
