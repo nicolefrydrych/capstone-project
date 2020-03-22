@@ -20,8 +20,6 @@ export default function App() {
     recipes === null && getRecipes().then(res => setRecipes(res))
   })
 
-  //recipesData.forEach(recipe => postRecipes(recipe))
-
   return (
     <Router>
       <AppGrid>
