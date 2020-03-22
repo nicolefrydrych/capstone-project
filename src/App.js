@@ -8,18 +8,19 @@ import Favorites from './pages/Favorites'
 import CreateRecipe from './pages/CreateRecipe'
 import Shoppinglist from './pages/Shoppinglist'
 import { getFromLocal, saveToLocal, getRecipes } from './common/services'
-import recipesData from './recipes'
 
 export default function App() {
-  const [recipes, setRecipes] = useState(getFromLocal('recipes') || recipesData)
+  const [recipes, setRecipes] = useState(getFromLocal('recipes'))
 
   useEffect(() => {
     saveToLocal('recipes', recipes)
   })
 
-  // useEffect(() => {
-  //   recipes === null && getRecipes().then(res => setRecipes(res))
-  // })
+  useEffect(() => {
+    recipes === null && getRecipes().then(res => setRecipes(res))
+  })
+
+  //recipesData.forEach(recipe => postRecipes(recipe))
 
   return (
     <Router>

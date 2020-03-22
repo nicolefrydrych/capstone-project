@@ -3296,11 +3296,9 @@ const recipesData = [
   },
   {
     id: 243,
-    name:
-      'Mashed potatoes with carrots, lentils, paprika, mushrooms and tomatoes',
+    name: 'Mashed potatoes with carrots, lentils, paprika and tomatoes',
     products: [
       'potatoes',
-      'mushrooms',
       'lentils',
       'paprika',
       'carrots',
@@ -3309,7 +3307,7 @@ const recipesData = [
     ],
     image: 'images/mashedPotatoes.jpg',
     instruction:
-      'Cook potatoes and lentils until soft and mash them. Cut mushrooms, paprika, carrots and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
+      'Cook potatoes and lentils until soft and mash them. Cut paprika, carrots and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
     isBookmarked: false,
   },
   {
@@ -3333,15 +3331,8 @@ const recipesData = [
   },
   {
     id: 245,
-    name: 'Mashed potatoes with carrots, paprika, mushrooms and tomatoes',
-    products: [
-      'potatoes',
-      'mushrooms',
-      'paprika',
-      'carrots',
-      'tomatoes',
-      'spices',
-    ],
+    name: 'Mashed potatoes with paprika, mushrooms and tomatoes',
+    products: ['potatoes', 'mushrooms', 'paprika', 'tomatoes', 'spices'],
     image: 'images/mashedPotatoes.jpg',
     instruction:
       'Cook potatoes until soft and mash them. Cut mushrooms, paprika, carrots and tomatoes in small pieces and add spices. Fry vegetables in a pan and serve them with mashed potatoes.',
