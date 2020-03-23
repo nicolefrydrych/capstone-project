@@ -10,6 +10,7 @@ export default {
 const styles = {
   position: 'absolute',
   top: '30%',
+  left: '25%',
   transform: 'translate("-50", "-50")',
 }
 

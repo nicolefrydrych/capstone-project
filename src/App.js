@@ -8,17 +8,19 @@ import Favorites from './pages/Favorites'
 import CreateRecipe from './pages/CreateRecipe'
 import Shoppinglist from './pages/Shoppinglist'
 import { getFromLocal, saveToLocal, getRecipes } from './common/services'
+import recipesData from './recipes'
 
 export default function App() {
-  const [recipes, setRecipes] = useState(getFromLocal('recipes'))
+  const [recipes, setRecipes] = useState(getFromLocal('recipes') || recipesData)
 
   useEffect(() => {
     saveToLocal('recipes', recipes)
   })
 
-  useEffect(() => {
-    recipes === null && getRecipes().then(res => setRecipes(res))
-  })
+  // Get recipes from mongo database
+  // useEffect(() => {
+  //   recipes === null && getRecipes().then(res => setRecipes(res))
+  // })
 
   return (
     <Router>
@@ -32,11 +34,11 @@ export default function App() {
               <CardList
                 recipes={recipes}
                 onBookmarkClick={handleBookmarkClick}
-                onDeleteCard={deleteCard}
+                onDeleteCard={handledeleteCard}
               />
             </Route>
             <Route path="/createarecipe">
-              <CreateRecipe addNewRecipe={addRecipe} />
+              <CreateRecipe addData={addRecipe} />
             </Route>
             <Route path="/shoppinglist">
               <Shoppinglist />
@@ -54,7 +56,7 @@ export default function App() {
     </Router>
   )
 
-  function deleteCard(id) {
+  function handledeleteCard(id) {
     const index = recipes.findIndex(recipe => recipe.id === id)
 
     setRecipes([...recipes.slice(0, index), ...recipes.slice(index + 1)])

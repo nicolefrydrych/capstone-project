@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Button from '../components/Button'
 import styled from 'styled-components'
 
-export default function CreateRecipe({ addNewRecipe }) {
+export default function CreateRecipe({ addData }) {
   const { register, handleSubmit } = useForm({ mode: 'onChange' })
 
   return (
@@ -21,6 +21,7 @@ export default function CreateRecipe({ addNewRecipe }) {
               type="text"
               name="name"
               id="name"
+              required
             />
             <SpanStyled>Enter recipe name</SpanStyled>
           </ListItemStyled>
@@ -33,6 +34,7 @@ export default function CreateRecipe({ addNewRecipe }) {
               type="text"
               name="instruction"
               id="instruction"
+              required
             />
             <SpanStyled>Enter the instruction</SpanStyled>
           </ListItemStyled>
@@ -64,8 +66,8 @@ export default function CreateRecipe({ addNewRecipe }) {
     </>
   )
 
-  function addRecipe(data) {
-    addNewRecipe(data)
+  function addRecipe(newRecipe) {
+    addData(newRecipe)
     deleteInputFields()
   }
 

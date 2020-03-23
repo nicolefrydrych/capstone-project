@@ -24,7 +24,7 @@ export default function Cardlist({ recipes, onBookmarkClick, onDeleteCard }) {
                     key={recipe.id}
                     {...recipe}
                     onBookmarkClick={onBookmarkClick}
-                    handleDeleteRecipe={onDeleteCard}
+                    onDeleteCard={onDeleteCard}
                   ></Card>
                 ))
             : recipes &&
@@ -33,7 +33,7 @@ export default function Cardlist({ recipes, onBookmarkClick, onDeleteCard }) {
                   key={recipe.id}
                   {...recipe}
                   onBookmarkClick={onBookmarkClick}
-                  handleDeleteRecipe={onDeleteCard}
+                  onDeleteCard={onDeleteCard}
                 ></Card>
               ))}
         </CardContainer>

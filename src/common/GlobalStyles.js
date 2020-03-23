@@ -7,6 +7,8 @@ const GlobalStyles = createGlobalStyle`
     padding:0;
   }
 
+  *:focus {outline:none}
+  
 body {
   font-size: 18px;
   font-family: 'Gill Sans';
@@ -27,8 +29,6 @@ body::after {
   position: absolute;
   z-index: -1; 
 }
-
-*:focus {outline:none}
 `
 
 export default GlobalStyles

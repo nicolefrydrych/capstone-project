@@ -23,7 +23,8 @@ export const standardCard = () => (
       instruction="Test Instruction"
       products={['Product1', 'Product2']}
       isBookmarked="true"
-      handleBookmarkClick={action('handleBookmarkClick')}
+      onBookmarkClick={action('onBookmarkClick')}
+      handleDeleteRecipe={action('handleDeleteRecipe')}
     ></Card>
   </div>
 )
