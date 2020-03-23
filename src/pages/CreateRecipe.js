@@ -21,6 +21,7 @@ export default function CreateRecipe({ addData }) {
               type="text"
               name="name"
               id="name"
+              required
             />
             <SpanStyled>Enter recipe name</SpanStyled>
           </ListItemStyled>
@@ -33,6 +34,7 @@ export default function CreateRecipe({ addData }) {
               type="text"
               name="instruction"
               id="instruction"
+              required
             />
             <SpanStyled>Enter the instruction</SpanStyled>
           </ListItemStyled>
@@ -65,9 +67,7 @@ export default function CreateRecipe({ addData }) {
   )
 
   function addRecipe(newRecipe) {
-    document.querySelector('[name=name]').value &&
-      document.querySelector('[name=instruction]').value &&
-      addData(newRecipe)
+    addData(newRecipe)
     deleteInputFields()
   }
 
