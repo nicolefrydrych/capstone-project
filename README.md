@@ -14,6 +14,6 @@
 
 ### `npm run storybook`
 
-## 6. Use Cypress with
+## 5. Use Cypress with
 
 ### `npm run cypress`
