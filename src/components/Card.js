@@ -10,7 +10,7 @@ export default function Card({
   image,
   products,
   isBookmarked,
-  handleDeleteRecipe,
+  onDeleteCard,
   onBookmarkClick,
 }) {
   const { on, toggle } = useToggle(false)
@@ -50,10 +50,7 @@ export default function Card({
         </InstructionContainer>
       )}
       {on === true ? (
-        <ImageBinStyled
-          onClick={() => handleDeleteRecipe(id)}
-          src="images/bin.svg"
-        />
+        <ImageBinStyled onClick={() => onDeleteCard(id)} src="images/bin.svg" />
       ) : (
         ''
       )}

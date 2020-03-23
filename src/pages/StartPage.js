@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import hintsData from '../hint'
+import tipsData from '../tips'
 
 export default function StartPage() {
   const randomNumber = Math.floor(Math.random(1) * 2)
 
-  const veganHints = hintsData[Math.floor(Math.random() * hintsData.length)]
+  const veganHints = tipsData[Math.floor(Math.random() * tipsData.length)]
 
   return (
     <StartPageContainer>

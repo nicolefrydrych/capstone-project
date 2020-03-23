@@ -23,7 +23,7 @@ export const standardFavoriteCard = () => (
       instruction="Test Instruction"
       products={['Product1', 'Product2']}
       isBookmarked="true"
-      handleBookmarkClick={action('handleBookmarkClick')}
+      onBookmarkClick={action('onBookmarkClick')}
     ></FavoriteCard>
   </div>
 )

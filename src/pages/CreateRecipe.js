@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Button from '../components/Button'
 import styled from 'styled-components'
 
-export default function CreateRecipe({ addNewRecipe }) {
+export default function CreateRecipe({ addData }) {
   const { register, handleSubmit } = useForm({ mode: 'onChange' })
 
   return (
@@ -64,8 +64,10 @@ export default function CreateRecipe({ addNewRecipe }) {
     </>
   )
 
-  function addRecipe(data) {
-    addNewRecipe(data)
+  function addRecipe(newRecipe) {
+    document.querySelector('[name=name]').value &&
+      document.querySelector('[name=instruction]').value &&
+      addData(newRecipe)
     deleteInputFields()
   }
 

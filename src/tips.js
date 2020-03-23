@@ -1,4 +1,4 @@
-const hintsData = [
+const tipsData = [
   'Eat vegetables!',
   'Eat fruits!',
   'Drink oat milk!',
@@ -10,4 +10,4 @@ const hintsData = [
   'Eat cornflakes with almond milk!',
 ]
 
-export default hintsData
+export default tipsData
