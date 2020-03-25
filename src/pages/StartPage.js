@@ -10,7 +10,7 @@ export default function StartPage() {
 
   return (
     <StartPageContainer>
-      <LinkStyled to="/chooseameal">
+      <LinkStyled to="/selectproducts">
         <LeftBoxStyled>
           {randomNumber === 0 && (
             <LeftHintStyled>Tip of the day: {veganHints}</LeftHintStyled>

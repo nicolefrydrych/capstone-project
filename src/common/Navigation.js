@@ -5,7 +5,7 @@ import styled from 'styled-components/macro'
 export default function Navigation() {
   return (
     <NavigationStyled>
-      <LinkStyled to="/chooseameal"> Choose a meal </LinkStyled>
+      <LinkStyled to="/selectproducts"> Select products </LinkStyled>
       <LinkStyled to="/createarecipe"> Create a recipe </LinkStyled>
       <LinkStyled to="/shoppinglist"> Shopping list </LinkStyled>
       <LinkStyled to="/favorites"> Favorite recipes </LinkStyled>

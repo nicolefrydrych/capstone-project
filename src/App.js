@@ -30,7 +30,7 @@ export default function App() {
             <Route exact path="/">
               <StartPage />
             </Route>
-            <Route path="/chooseameal">
+            <Route path="/selectproducts">
               <CardList
                 recipes={recipes}
                 onBookmarkClick={handleBookmarkClick}

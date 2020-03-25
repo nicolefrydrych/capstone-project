@@ -9,7 +9,7 @@ export default function Cardlist({ recipes, onBookmarkClick, onDeleteCard }) {
 
   return (
     <>
-      <Header headerName="Choose a meal"></Header>
+      <Header headerName="Select products"></Header>
       <ScrollContainerAll>
         <ProductList onProductClick={handleProductClick} />
         <CardContainer>
