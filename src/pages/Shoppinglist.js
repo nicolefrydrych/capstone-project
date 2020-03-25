@@ -124,5 +124,5 @@ const ImageStyled = styled.img`
   width: 80px;
   height: 80px;
   border-radius: 10%;
-  border: 5px solid #f7f5e6;
+  border: 4px solid #f7f5e6;
 `
