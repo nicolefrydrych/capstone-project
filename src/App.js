@@ -19,7 +19,7 @@ export default function App() {
 
   // Get recipes from mongo database
   // useEffect(() => {
-  //   recipes === null && getRecipes().then(res => setRecipes(res))
+  // recipes === null && getRecipes().then(res => setRecipes(res))
   // })
 
   return (
