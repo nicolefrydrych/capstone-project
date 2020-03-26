@@ -35,6 +35,7 @@ const ScrollContainerAll = styled.div`
   align-items: center;
   margin-top: 100px;
 `
+
 const FavoriteList = styled.section`
   display: grid;
   gap: 50px;
